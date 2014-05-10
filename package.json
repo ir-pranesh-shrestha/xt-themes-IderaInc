@@ -1,0 +1,87 @@
+{
+    "name": "xt-themes",
+    "description": "Visualisation Themes for FusionCharts XT",
+    "homepage": "http://www.fusioncharts.com/",
+    "version": "0.0.0",
+    "license": "MIT",
+    "author": "FusionCharts Technologies  <mail@labs.fusioncharts.com>",
+
+    "keywords": [
+        "fusioncharts",
+        "charts",
+        "gauges",
+        "maps",
+        "themes"
+    ],
+
+    "preferGlobal": false,
+
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/fusioncharts/xt-themes.git"
+    },
+
+    "dependencies": {},
+    "devDependencies": {
+        "jshint": "2.4.2"
+    },
+
+    "scripts": {
+        "test": "develop/ci/test",
+        "drone": "develop/ci/drone"
+    },
+
+    "jshintConfig": {
+        "bitwise": false,
+        "camelcase": true,
+        "curly": true,
+        "eqeqeq": false,
+        "es3": false,
+        "forin": false,
+        "freeze": true,
+        "immed": true,
+        "indent": 4,
+        "latedef": true,
+        "newcap": true,
+        "noarg": true,
+        "noempty": true,
+        "nonew": false,
+        "plusplus": false,
+        "quotmark": "single",
+        "undef": true,
+        "unused": true,
+        "trailing": true,
+        "asi": false,
+        "boss": true,
+        "debug": false,
+        "eqnull": true,
+        "evil": false,
+        "expr": true,
+        "funcscope": false,
+        "globalstrict": false,
+        "iterator": false,
+        "lastsemic": false,
+        "laxbreak": false,
+        "laxcomma": false,
+        "loopfunc": false,
+        "maxlen": 120,
+        "multistr": false,
+        "notypeof": false,
+        "proto": false,
+        "scripturl": false,
+        "smarttabs": false,
+        "shadow": false,
+        "sub": false,
+        "supernew": false,
+
+        "browser": false,
+        "devel": false,
+        "node": true,
+
+        "onevar": true,
+
+        "globals": {
+            "FusionCharts": true
+        }
+    }
+}
