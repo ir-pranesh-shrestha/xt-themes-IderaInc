@@ -58,14 +58,14 @@ FusionCharts.register('theme', {
         },
         geo: {
             chart: {
-                showLabels: "0",
-                fillColor: "#0075c2",
-                showBorder: "1",
-                borderColor: "#eeeeee",
-                borderThickness: "1",
-                borderAlpha: "50",
-                entityFillhoverColor: "#0075c2",
-                entityFillhoverAlpha: "80"
+                showLabels: '0',
+                fillColor: '#0075c2',
+                showBorder: '1',
+                borderColor: '#eeeeee',
+                borderThickness: '1',
+                borderAlpha: '50',
+                entityFillhoverColor: '#0075c2',
+                entityFillhoverAlpha: '80'
             }
         },
         pie2d: {
@@ -77,9 +77,9 @@ FusionCharts.register('theme', {
             },
             data: function (index, dataItem, dataLength) {
                 var math = window.Math,
-                    alphaSlab = dataLength > 50 ? 
-                        math.round(100 / math.ceil(dataLength / 10)) : 20,
-                    alpha = 100 - alphaSlab * math.floor(index / 10);
+                alphaSlab = dataLength > 50 ?
+                    math.round(100 / math.ceil(dataLength / 10)) : 20,
+                alpha = 100 - alphaSlab * math.floor(index / 10);
                 return {alpha: alpha};
             }
         },
@@ -95,9 +95,9 @@ FusionCharts.register('theme', {
             },
             data: function (index, dataItem, dataLength) {
                 var math = window.Math,
-                    alphaSlab = dataLength > 50 ? 
-                        math.round(100 / math.ceil(dataLength / 10)) : 20,
-                    alpha = 100 - alphaSlab * math.floor(index / 10);
+                alphaSlab = dataLength > 50 ?
+                    math.round(100 / math.ceil(dataLength / 10)) : 20,
+                alpha = 100 - alphaSlab * math.floor(index / 10);
                 return {alpha: alpha};
             }
         },
@@ -167,12 +167,12 @@ FusionCharts.register('theme', {
         },
         pareto2d: {
             chart: {
-                paletteColors: '#0075c2'   
+                paletteColors: '#0075c2'
             }
         },
         pareto3d: {
             chart: {
-                paletteColors: '#0075c2'    
+                paletteColors: '#0075c2'
             }
         },
         angulargauge: {
