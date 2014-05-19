@@ -1,6 +1,6 @@
 #!/bin/bash
 # ----------------------------------------------------------------------------------------------------------------------
-# Script description will be here!
+# Run lint on the source theme files to find out coding style errors or syntax errors.
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Stop on first error
