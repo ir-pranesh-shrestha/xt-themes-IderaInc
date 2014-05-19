@@ -58,14 +58,14 @@ FusionCharts.register('theme', {
         },
         geo: {
             chart: {
-                showLabels: "0",
-                fillColor: "#04476c",
-                showBorder: "1",
-                borderColor: "#eeeeee",
-                borderThickness: "1",
-                borderAlpha: "50",
-                entityFillhoverColor: "#04476c",
-                entityFillhoverAlpha: "80"
+                showLabels: '0',
+                fillColor: '#04476c',
+                showBorder: '1',
+                borderColor: '#eeeeee',
+                borderThickness: '1',
+                borderAlpha: '50',
+                entityFillhoverColor: '#04476c',
+                entityFillhoverAlpha: '80'
             }
         },
         pie2d: {
@@ -77,11 +77,11 @@ FusionCharts.register('theme', {
             },
             data: function (index, dataItem, dataLength) {
                 var math = window.Math,
-                    alphaSlab = dataLength > 50 ? 
+                    alphaSlab = dataLength > 50 ?
                         math.round(100 / math.ceil(dataLength / 10)) : 20,
                     alpha = 100 - alphaSlab * math.floor(index / 10);
 
-                    return {alpha: alpha}
+                return {alpha: alpha};
             }
         },
         doughnut2d: {
@@ -96,11 +96,11 @@ FusionCharts.register('theme', {
             },
             data: function (index, dataItem, dataLength) {
                 var math = window.Math,
-                    alphaSlab = dataLength > 50 ? 
+                    alphaSlab = dataLength > 50 ?
                         math.round(100 / math.ceil(dataLength / 10)) : 20,
                     alpha = 100 - alphaSlab * math.floor(index / 10);
 
-                    return {alpha: alpha}
+                return {alpha: alpha};
             }
         },
         msline: {
@@ -169,12 +169,12 @@ FusionCharts.register('theme', {
         },
         pareto2d: {
             chart: {
-                paletteColors: '#04476c'   
+                paletteColors: '#04476c'
             }
         },
         pareto3d: {
             chart: {
-                paletteColors: '#04476c'    
+                paletteColors: '#04476c'
             }
         },
         angulargauge: {
