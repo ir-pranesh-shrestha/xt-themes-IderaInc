@@ -33,3 +33,19 @@ This project follows regular git-flow. Refer to standard FusionCharts guidelines
 
 1. Copy `develop/src/fusioncharts.theme.boilerplate.js` to a new file in the same folder, replacing `boilerplate` with your choice of theme name.
 2. Edit your new theme file.
+
+## How to release a version?
+
+1. Select a version name following the semvar convention, e.g. `0.0.1`.
+2. Create a release branch from latest `develop` with the name `release/<version>`, e.g. `release/0.0.1`.
+3. Update `version` information in `package.json` to the latest version.
+4. Run the release script:
+
+        $ npm run-script release
+
+5. If everything works, make two commits:
+    * First, commit only the change in `package.json`.
+    * Then, commit the changes in `./themes` directory.
+6. Merge the release branch into `master` and into `develop`.
+7. Tag the latest commit on `master` with the version number, e.g. `0.0.1`.
+8. Push `master` and `develop` to remote.
