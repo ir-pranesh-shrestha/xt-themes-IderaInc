@@ -32,7 +32,8 @@
         "test": "develop/ci/test/test",
         "lint": "develop/ci/lint/lint",
         "build": "develop/ci/build/build",
-        "drone": "develop/ci/drone/drone"
+        "drone": "develop/ci/drone/drone",
+        "release": "develop/ci/release/release"
     },
 
     "jshintConfig": {
