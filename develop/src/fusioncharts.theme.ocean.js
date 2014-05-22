@@ -3,6 +3,8 @@
  * Copyright FusionCharts Technologies LLP
  * License Information at <http://www.fusioncharts.com/license>
  *
+ * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version)
+ *
  * Ocean Theme v1.0.0
  */
 FusionCharts.register('theme', {
