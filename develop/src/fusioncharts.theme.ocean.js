@@ -1,11 +1,9 @@
 /**!
- * @license FusionCharts JavaScript Library Theme File
+ * @license Ocean Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
+ * FusionCharts JavaScript Library
+ *
  * Copyright FusionCharts Technologies LLP
  * License Information at <http://www.fusioncharts.com/license>
- *
- * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version)
- *
- * Ocean Theme
  */
 FusionCharts.register('theme', {
     name: 'ocean',

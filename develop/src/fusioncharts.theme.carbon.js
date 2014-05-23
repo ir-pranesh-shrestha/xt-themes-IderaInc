@@ -1,11 +1,9 @@
 /**!
- * @license FusionCharts JavaScript Library Theme File
+ * @license Carbon Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
+ * FusionCharts JavaScript Library
+ *
  * Copyright FusionCharts Technologies LLP
  * License Information at <http://www.fusioncharts.com/license>
- *
- * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version)
- *
- * Carbon Theme
  */
 FusionCharts.register('theme', {
     name: 'carbon',

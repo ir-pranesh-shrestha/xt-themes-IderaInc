@@ -1,13 +1,13 @@
 /**!
- * @license FusionCharts JavaScript Library Theme File
- * Copyright FusionCharts Technologies LLP
- * License Information at <http://www.fusioncharts.com/license>
+ * @license Boilerplate Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
+ * FusionCharts JavaScript Library
  *
- * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version)
- *
- * Boilerplate Theme
+ * This theme file includes the following theme variants:
  * - boilerplate-basic
  * - boilerplate-extended
+ *
+ * Copyright FusionCharts Technologies LLP
+ * License Information at <http://www.fusioncharts.com/license>
  */
 FusionCharts.register('theme', [{
     name: 'boilerplate-basic',
