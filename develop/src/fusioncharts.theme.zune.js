@@ -106,7 +106,7 @@ FusionCharts.register('theme', {
         },
         column2d: {
             chart: {
-                paletteColors: '#04476c',
+                paletteColors: '#0075c2',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1',
                 rotateValues: '1'
@@ -114,14 +114,14 @@ FusionCharts.register('theme', {
         },
         bar2d: {
             chart: {
-                paletteColors: '#04476c',
+                paletteColors: '#0075c2',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1'
             }
         },
         column3d: {
             chart: {
-                paletteColors: '#04476c',
+                paletteColors: '#0075c2',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1',
                 rotateValues: '1'
@@ -129,7 +129,7 @@ FusionCharts.register('theme', {
         },
         bar3d: {
             chart: {
-                paletteColors: '#04476c',
+                paletteColors: '#0075c2',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1'
             }

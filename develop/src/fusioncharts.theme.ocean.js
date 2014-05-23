@@ -80,8 +80,7 @@ FusionCharts.register('theme', {
                     alphaSlab = dataLength > 50 ? 
                         math.round(100 / math.ceil(dataLength / 10)) : 20,
                     alpha = 100 - alphaSlab * math.floor(index / 10);
-
-                    return {alpha: alpha}
+                return {alpha: alpha};
             }
         },
         doughnut2d: {
@@ -99,8 +98,7 @@ FusionCharts.register('theme', {
                     alphaSlab = dataLength > 50 ? 
                         math.round(100 / math.ceil(dataLength / 10)) : 20,
                     alpha = 100 - alphaSlab * math.floor(index / 10);
-
-                    return {alpha: alpha}
+                return {alpha: alpha};
             }
         },
         msline: {
