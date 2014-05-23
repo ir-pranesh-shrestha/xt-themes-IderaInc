@@ -1,0 +1,75 @@
+#!/bin/bash
+# ----------------------------------------------------------------------------------------------------------------------
+# This script is intended to run in post-push as trigger. It runs tests on code and ensures that every commit can
+# produce fully working output files.
+#
+# Do not run this script anywhere other than drone
+# ----------------------------------------------------------------------------------------------------------------------
+
+# Stop on first error
+set -e;
+
+# Track total script execution time
+drone_start_time=`date +%s`;
+
+# Check if the environment is drone
+if [ "${DRONE}" != true ]; then
+    echo "Was expecting DRONE.";
+    exit 1;
+fi
+
+# If build ID is not present, then it is an error
+if [ -z "${BUILD_ID}" ]; then
+    echo "Expecting BUILD_ID";
+    exit 1;
+fi
+
+# Output the build script banner
+echo -e "\033[33m";
+echo "  ______         _              _____ _                _       ";
+echo " |  ____|       (_)            / ____| |              | |      ";
+echo " | |__ _   _ ___ _  ___  _ __ | |    | |__   __ _ _ __| |_ ___ ";
+echo " |  __| | | / __| |/ _ \| '_ \| |    | '_ \ / _` | '__| __/ __|";
+echo " | |  | |_| \__ \ | (_) | | | | |____| | | | (_| | |  | |_\__ \";
+echo " |_|   \__,_|___/_|\___/|_| |_|\_____|_| |_|\__,_|_|   \__|___/";
+echo "      | |        | | | |                                       ";
+echo " __  _| |_ ______| |_| |__   ___ _ __ ___   ___  ___           ";
+echo " \ \/ / __|______| __| '_ \ / _ \ '_ ` _ \ / _ \/ __|          ";
+echo "  >  <| |_       | |_| | | |  __/ | | | | |  __/\__ \          ";
+echo " /_/\_\\__|       \__|_| |_|\___|_| |_| |_|\___||___/          ";
+echo "                                                               ";
+echo -e "\033[0m";
+
+echo "
+________________________________________________________________________________
+
+If you are Doctor Who, you can sit read every line of this log. Otherwise, you
+may find it more interesting to start reading from the line that starts with
+\"npm info ok\". In case that line isn't there, something in the script did not
+behave the way it was expected.
+________________________________________________________________________________
+"
+
+# Install the testing environment (if not already)
+dep_start_time=`date +%s`; # Tack dependency installation time
+git submodule update --init --recursive; # Just in case we have submodules ater on
+npm -d install;
+
+# Notify the dependency installation time
+dep_end_time=`date +%s`;
+echo -e "\033[32mDependencies installed in `expr $dep_end_time - $dep_start_time`s.\033[0m";
+
+# Output the installation complete and process initialisation banner
+echo "
+________________________________________________________________________________
+
+All ugly stuff are complete. The real action begins now...
+________________________________________________________________________________
+"
+
+# Run the test script that is expected create all artefacts.
+npm test
+
+# Output drone processing time
+drone_end_time=`date +%s`;
+echo -e "\033[32mDroned in `expr $drone_end_time - $drone_start_time`s.\033[0m";
