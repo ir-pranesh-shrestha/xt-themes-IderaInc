@@ -5,7 +5,7 @@
  *
  * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version)
  *
- * Ocean Theme v1.0.0
+ * Ocean Theme
  */
 FusionCharts.register('theme', {
     name: 'ocean',

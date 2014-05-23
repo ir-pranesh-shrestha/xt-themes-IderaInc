@@ -5,7 +5,7 @@
  *
  * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version)
  *
- * Carbon Theme v1.0.0
+ * Carbon Theme
  */
 FusionCharts.register('theme', {
     name: 'carbon',

@@ -5,7 +5,7 @@
  *
  * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version)
  *
- * Zune Theme v1.0.0
+ * Zune Theme
  */
 FusionCharts.register('theme', {
     name: 'zune',

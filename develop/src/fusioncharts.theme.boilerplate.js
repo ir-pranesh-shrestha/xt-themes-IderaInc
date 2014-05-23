@@ -5,7 +5,7 @@
  *
  * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version)
  *
- * Boilerplate Theme v1.0.0
+ * Boilerplate Theme
  * - boilerplate-basic
  * - boilerplate-extended
  */
