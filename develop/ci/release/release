@@ -31,8 +31,8 @@ if [[ ${GIT_CURRENT_BRANCH} != ${GIT_ALLOWED_BRANCH_NAME} ]]; then
 fi
 
 # Set-up variables for releases. Avoid trailing slashes in paths.
-COMPILED_THEMES_PATH="out/build";
-PUBLISH_PATH="themes";
+COMPILED_THEMES_PATH="./out/build";
+PUBLISH_PATH="./themes";
 THEME_FILE_PATTERN="fusioncharts.theme.*.js";
 
 # If compiled themes don't exist, we need to run the `build` script. But, why not run the entire `test`? Just to ensure
