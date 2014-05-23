@@ -1,0 +1,23 @@
+#!/bin/bash
+# ----------------------------------------------------------------------------------------------------------------------
+# Run lint on the source theme files to find out coding style errors or syntax errors.
+# ----------------------------------------------------------------------------------------------------------------------
+
+# Stop on first error
+set -e
+
+# Being creative!
+echo -e "\033[33m";
+echo "  _    _     _   _           ";
+echo " | |  (_)_ _| |_(_)_ _  __ _ ";
+echo " | |__| | ' \  _| | ' \/ _\` |";
+echo " |____|_|_||_\__|_|_||_\__, |";
+echo "                       |___/ ";
+echo -e "\033[0m";
+
+# Run test on source files and test specs
+jshint --version
+jshint ./develop/src/
+
+# Notify
+echo -e "\033[32mlint passed! Celebrate.\033[0m\n";

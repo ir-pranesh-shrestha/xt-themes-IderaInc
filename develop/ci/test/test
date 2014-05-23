@@ -1,0 +1,48 @@
+#!/bin/bash
+# ----------------------------------------------------------------------------------------------------------------------
+# This script triggers other scripts that compile themes and produce final, consumable output. In the process, it also
+# tests for coding style and syntax errors.
+# ----------------------------------------------------------------------------------------------------------------------
+
+
+# Stop on first error
+set -e;
+
+# Clean workspace directory
+if [ -d ./out ]; then
+    rm -rf ./out;
+fi
+mkdir ./out;
+
+# Output git status if not drone
+if [ "${DRONE}" != true ]; then
+    git --version;
+    git_untracked=$((`git status --porcelain 2>/dev/null | grep "^??" | wc -l`));
+    git_dirty=`[[ $(git diff --shortstat 2>/dev/null | tail -n1) != "" ]] && echo "stinky" || echo ""`;
+
+    if [ ${git_untracked} -ne 0 ]; then
+        echo -e "\033[31m";
+        echo "WARNING: Found ${git_untracked} untracked file(s).";
+        echo "         Build may pass locally, but fail when done using clean checkout.";
+
+        echo -e "\nList of untracked files:\n`git status --porcelain | grep "^??"`";
+
+        echo -e "\033[0m";
+    fi
+
+    if [ ${git_dirty}=="stinky" ]; then
+        echo -e "\033[31m";
+        echo "WARNING: Found dirty GIT index. Perhaps missing a commit.";
+        echo "         Build may pass locally, but fail when done using clean checkout.";
+
+        echo -e "\nDiff Summary: `git diff --shortstat`";
+        echo -e "\033[0m";
+    fi
+fi
+
+# The following needs to be executed for artefact creation
+# --------------------------------------------------------
+# 1. Lint source files
+# 2. Preprocess and build files
+npm run-script lint;
+npm run-script build;

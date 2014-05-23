@@ -1,9 +1,9 @@
 /**!
- * @license FusionCharts JavaScript Library Theme File
+ * @license Carbon Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
+ * FusionCharts JavaScript Library
+ *
  * Copyright FusionCharts Technologies LLP
  * License Information at <http://www.fusioncharts.com/license>
- *
- * Carbon Theme v1.0.0
  */
 FusionCharts.register('theme', {
     name: 'carbon',
@@ -56,12 +56,31 @@ FusionCharts.register('theme', {
             dataset: [{}],
             trendlines: [{}]
         },
+        geo: {
+            chart: {
+                showLabels: '0',
+                fillColor: '#444444',
+                showBorder: '1',
+                borderColor: '#eeeeee',
+                borderThickness: '1',
+                borderAlpha: '50',
+                entityFillhoverColor: '#444444',
+                entityFillhoverAlpha: '80'
+            }
+        },
         pie2d: {
             chart: {
                 placeValuesInside: '0',
                 use3dlighting: '0',
                 valueFontColor: '#333333',
                 captionPadding: '15'
+            },
+            data: function (index, dataItem, dataLength) {
+                var math = window.Math,
+                    alphaSlab = dataLength > 50 ?
+                        math.round(100 / math.ceil(dataLength / 10)) : 20,
+                    alpha = 100 - alphaSlab * math.floor(index / 10);
+                return {alpha: alpha};
             }
         },
         doughnut2d: {
@@ -73,6 +92,13 @@ FusionCharts.register('theme', {
                 centerLabelBold: '1',
                 centerLabelFontColor: '#333333',
                 captionPadding: '15'
+            },
+            data: function (index, dataItem, dataLength) {
+                var math = window.Math,
+                    alphaSlab = dataLength > 50 ?
+                        math.round(100 / math.ceil(dataLength / 10)) : 20,
+                    alpha = 100 - alphaSlab * math.floor(index / 10);
+                return {alpha: alpha};
             }
         },
         msline: {
@@ -80,7 +106,7 @@ FusionCharts.register('theme', {
         },
         column2d: {
             chart: {
-                paletteColors: '#04476c',
+                paletteColors: '#444444',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1',
                 rotateValues: '1'
@@ -88,14 +114,14 @@ FusionCharts.register('theme', {
         },
         bar2d: {
             chart: {
-                paletteColors: '#04476c',
+                paletteColors: '#444444',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1'
             }
         },
         column3d: {
             chart: {
-                paletteColors: '#04476c',
+                paletteColors: '#444444',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1',
                 rotateValues: '1'
@@ -103,12 +129,20 @@ FusionCharts.register('theme', {
         },
         bar3d: {
             chart: {
-                paletteColors: '#04476c',
+                paletteColors: '#444444',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1'
             }
         },
         area2d: {
+            chart: {
+                valueBgColor: '#ffffff',
+                valueBgAlpha: '90',
+                valueBorderPadding: '-2',
+                valueBorderRadius: '2'
+            }
+        },
+        splinearea: {
             chart: {
                 valueBgColor: '#ffffff',
                 valueBgAlpha: '90',
@@ -129,6 +163,16 @@ FusionCharts.register('theme', {
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1',
                 rotateValues: '1'
+            }
+        },
+        pareto2d: {
+            chart: {
+                paletteColors: '#444444'
+            }
+        },
+        pareto3d: {
+            chart: {
+                paletteColors: '#444444'
             }
         },
         angulargauge: {
