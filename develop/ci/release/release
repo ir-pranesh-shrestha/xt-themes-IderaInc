@@ -37,7 +37,7 @@ THEME_FILE_PATTERN="fusioncharts.theme.*.js";
 
 # If compiled themes don't exist, we need to run the `build` script. But, why not run the entire `test`? Just to ensure
 # there are no errors.
-[[ ! -d ${COMPILED_THEMES_PATH} ]] && npm test
+[[ ! -d ${COMPILED_THEMES_PATH} ]] && npm test;
 
 # Now that the stage is set up, let us get creative!
 echo -e "\033[33m";
@@ -51,7 +51,7 @@ echo -e "\033[0m";
 echo -e "\033[32mRelease process started for version ${PACKAGE_VERSION}...\033[0m\n";
 
 # Create the publish path if it does not exist.
-[[ ! -d ${PUBLISH_PATH} ]] && mkdir -p ${PUBLISH_PATH}
+[[ ! -d ${PUBLISH_PATH} ]] && mkdir -p ${PUBLISH_PATH};
 
 # Prepare some variables for use in copying
 theme_file_copied_count=0;
