@@ -1,0 +1,147 @@
+#!/bin/bash
+# ----------------------------------------------------------------------------------------------------------------------
+# Publish compiled theme files to the `themes` directory.
+#
+# This script does the following things:
+#
+# - Checks if the current git branch is in the format `release/<version>`, where `<version>` is picked from the value
+# specified in `package.json`.
+# - Checks if compiled theme files exist, if they don't, it reruns `npm test` to test for sanity and compile theme files
+# in temporary folder.
+# - Copies over files matching specified pattern from the temporary build directory to the designated publish directory,
+# currently `./themes`.
+# - In the process, it keeps track of existing published theme files that are replaced.
+# - In the end, it cleans up theme files which have been published but are no longer maintained.
+# ----------------------------------------------------------------------------------------------------------------------
+
+# Stop on error
+set -e
+
+# Release can only be done on `release/*` branches. Make sure the current branch is a release branch, and it has the
+# exact same version as specified in `package.json`.
+GIT_CURRENT_BRANCH=`git rev-parse --abbrev-ref HEAD`;
+PACKAGE_VERSION=`grep -o '\"version\"\s*\:\s*\"[0-9a-z.-]*\"' package.json | awk 'NR>1{print $1}' RS=" FS=" | tr -d '"'`;
+GIT_ALLOWED_BRANCH_NAME="release/${PACKAGE_VERSION}";
+
+if [[ ${GIT_CURRENT_BRANCH} != ${GIT_ALLOWED_BRANCH_NAME} ]]; then
+    echo -e "\033[1m\033[31m[FAIL] Release script can only be run on release branches.";
+    echo -e "       Current package version is \"${PACKAGE_VERSION}\".";
+    echo -e "       Switch to branch \`${GIT_ALLOWED_BRANCH_NAME}\` and run this release script.\033[0m";
+    exit 2
+fi
+
+# Set-up variables for releases. Avoid trailing slashes in paths.
+COMPILED_THEMES_PATH="./out/build";
+PUBLISH_PATH="./themes";
+THEME_FILE_PATTERN="fusioncharts.theme.*.js";
+
+# If compiled themes don't exist, we need to run the `build` script. But, why not run the entire `test`? Just to ensure
+# there are no errors.
+[[ ! -d ${COMPILED_THEMES_PATH} ]] && npm test;
+
+# Now that the stage is set up, let us get creative!
+echo -e "\033[33m";
+echo "  ___     _                  ";
+echo " | _ \___| |___ __ _ ___ ___ ";
+echo " |   / -_) / -_) _\` (_-</ -_)";
+echo " |_|_\___|_\___\__,_/__/\___|";
+echo "                             ";
+echo -e "\033[0m";
+
+echo -e "\033[32mRelease process started for version ${PACKAGE_VERSION}...\033[0m\n";
+
+# Create the publish path if it does not exist.
+[[ ! -d ${PUBLISH_PATH} ]] && mkdir -p ${PUBLISH_PATH};
+
+# Prepare some variables for use in copying
+theme_file_copied_count=0;
+theme_file_replace_list=();
+theme_file_delete_list=();
+
+# Loop through the files that match provided pattern in the compiled themes directory and copy over ones that match the
+# pattern. Any files of the same name in the publish path will be replaced with a warning. So you can go over and
+# check the ones that were replaced.
+for theme_file_path in $(find "${COMPILED_THEMES_PATH}" -name "${THEME_FILE_PATTERN}");
+do
+    # Extract file name from the path.
+    theme_file="$(basename ${theme_file_path})";
+
+    # Check if the file already exists. Warn if it does, but overwrite.
+    if [[ -e "${PUBLISH_PATH}/${theme_file}" ]]; then
+        # Add file name to the overwrite list for later use.
+        theme_file_replace_list=("${theme_file_replace_list[@]}" "${theme_file}");
+    fi
+
+    # Do the actual copying. To my dear `cp`: May the -f be with you.
+    cp -f "${theme_file_path}" "${PUBLISH_PATH}";
+
+    # Bump the count of total files copied.
+    theme_file_copied_count=$((theme_file_copied_count+1));
+done
+
+# Print number of file(s) copied to release folder.
+echo -e "\033[1m\033[32m✔︎ ${theme_file_copied_count} file(s) copied to \"${PUBLISH_PATH}\".\033[0m";
+
+# Print details of files that were replaced, if any.
+if [[ ${#theme_file_replace_list[@]} -gt 0 ]]; then
+
+    # Just some perfection. Be correct with grammar when telling how many files were replaced. #TryToBePerfect
+    if [[ ${#theme_file_replace_list[@]} -gt 1 ]]; then
+        echo -e "\n\033[1m  ${#theme_file_replace_list[@]} existing files were replaced:\033[0m";
+    else
+        echo -e "\n\033[1m  ${#theme_file_replace_list[@]} existing file was replaced.\033[0m";
+    fi
+
+    # Print list of files replaced, in slightly digestable format.
+    for i in ${!theme_file_replace_list[@]};
+    do
+        # Truncate larger lists. This prevents spamming of log. We can always use "git status" to check for changes.
+        if [[ ${i} -gt 4 ]]; then
+            echo -e "   ... $((${#theme_file_replace_list[@]} - ${i})) more file(s)...";
+            break;
+        fi
+        # If list is still within limit, print the file name.
+        echo -e "   - ${theme_file_replace_list[${i}]}";
+    done
+fi
+
+# Cleanup stale files which are no longer part of our release. These are files present in the current release directory,
+# but not produced or maintained any more in our builds.
+for theme_file_path in $(find "${PUBLISH_PATH}" -name "${THEME_FILE_PATTERN}");
+do
+    # Extract file name from the path.
+    theme_file="$(basename ${theme_file_path})";
+
+    # Check if the file does not exist in the current build
+    if [[ ! -e "${COMPILED_THEMES_PATH}/${theme_file}" ]]; then
+        # Add the file name to delete list
+        theme_file_delete_list=("${theme_file_delete_list[@]}" "${theme_file}");
+        # Delete the file
+        rm -f "${theme_file_path}"
+    fi
+done
+
+# Print details of files that were deleted, if any.
+if [[ ${#theme_file_delete_list[@]} -gt 0 ]]; then
+
+    # Just some perfection. Be correct with grammar when telling how many files were deleted. #TryToBePerfect
+    if [[ ${#theme_file_delete_list[@]} -gt 1 ]]; then
+        echo -e "\n\033[1m\033[31m  ${#theme_file_delete_list[@]} unmaintained files were deleted:\033[0m";
+    else
+        echo -e "\n\033[1m\033[31m  ${#theme_file_delete_list[@]} unmaintained file was deleted.\033[0m";
+    fi
+
+    # Print list of files deleted, in slightly digestable format.
+    for i in ${!theme_file_delete_list[@]};
+    do
+        # Truncate larger lists. This prevents spamming of log. We can always use "git status" to check for changes.
+        if [[ ${i} -gt 1 ]]; then
+            echo -e "   ... $((${#theme_file_delete_list[@]} - ${i})) more file(s)...";
+            break;
+        fi
+        # If list is still within limit, print the file name.
+        echo -e "   - ${theme_file_delete_list[${i}]}";
+    done
+fi
+
+echo -e "\nCheck \"git status\" for changes and commit these files."
