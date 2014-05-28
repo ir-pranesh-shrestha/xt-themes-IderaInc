@@ -26,7 +26,7 @@ FusionCharts.register('theme', {
                 useRoundEdges: '0',
                 showPlotBorder: '0',
                 showAlternateHGridColor: '0',
-                showAlternateVGridColor: "0",
+                showAlternateVGridColor: '0',
                 toolTipColor: '#ffffff',
                 toolTipBorderThickness: '0',
                 toolTipBgColor: '#000000',
@@ -47,7 +47,7 @@ FusionCharts.register('theme', {
                 divLineGapLen: '1',
                 scrollheight: '10',
                 flatScrollBars: '1',
-                scrollShowButtons: "0",
+                scrollShowButtons: '0',
                 scrollColor: '#cccccc',
                 showHoverEffect: '1',
                 valueFontSize: '10',
@@ -105,12 +105,12 @@ FusionCharts.register('theme', {
         },
         line: {
             chart: {
-                lineThickness: "2"
+                lineThickness: '2'
             }
         },
         spline: {
             chart: {
-                lineThickness: "2"
+                lineThickness: '2'
             }
         },
         column2d: {
@@ -168,12 +168,12 @@ FusionCharts.register('theme', {
         },
         msstackedcolumn2dlinedy: {
             chart: {
-                showValues: "0"
+                showValues: '0'
             }
         },
         msstackedcombidy2d: {
             chart: {
-                showValues: "0"
+                showValues: '0'
             }
         },
         scrollcolumn2d: {
