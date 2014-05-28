@@ -1,16 +1,16 @@
 /**!
- * @license Carbon Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
+ * @license Fint Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
  * FusionCharts JavaScript Library
  *
  * Copyright FusionCharts Technologies LLP
  * License Information at <http://www.fusioncharts.com/license>
  */
 FusionCharts.register('theme', {
-    name: 'carbon',
+    name: 'fint',
     theme: {
         base: {
             chart: {
-                paletteColors: '#444444,#666666,#888888,#aaaaaa,#cccccc,#555555,#777777,#999999,#bbbbbb,#dddddd',
+                paletteColors: '#0075c2,#1aaf5d,#f2c500,#f45b00,#8e0000,#0e948c,#8cbb2c,#f3de00,#c02d00,#5b0101',
                 labelDisplay: 'auto',
                 baseFontColor: '#333333',
                 baseFont: 'Helvetica Neue,Arial',
@@ -61,12 +61,12 @@ FusionCharts.register('theme', {
         geo: {
             chart: {
                 showLabels: '0',
-                fillColor: '#444444',
+                fillColor: '#0075c2',
                 showBorder: '1',
                 borderColor: '#eeeeee',
                 borderThickness: '1',
                 borderAlpha: '50',
-                entityFillhoverColor: '#444444',
+                entityFillhoverColor: '#0075c2',
                 entityFillhoverAlpha: '80'
             }
         },
@@ -115,7 +115,7 @@ FusionCharts.register('theme', {
         },
         column2d: {
             chart: {
-                paletteColors: '#444444',
+                paletteColors: '#0075c2',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1',
                 rotateValues: '1'
@@ -123,14 +123,14 @@ FusionCharts.register('theme', {
         },
         bar2d: {
             chart: {
-                paletteColors: '#444444',
+                paletteColors: '#0075c2',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1'
             }
         },
         column3d: {
             chart: {
-                paletteColors: '#444444',
+                paletteColors: '#0075c2',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1',
                 rotateValues: '1'
@@ -138,7 +138,7 @@ FusionCharts.register('theme', {
         },
         bar3d: {
             chart: {
-                paletteColors: '#444444',
+                paletteColors: '#0075c2',
                 valueFontColor: '#ffffff',
                 placeValuesInside: '1'
             }
@@ -185,12 +185,12 @@ FusionCharts.register('theme', {
         },
         pareto2d: {
             chart: {
-                paletteColors: '#444444'
+                paletteColors: '#0075c2'
             }
         },
         pareto3d: {
             chart: {
-                paletteColors: '#444444'
+                paletteColors: '#0075c2'
             }
         },
         angulargauge: {

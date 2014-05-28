@@ -10,7 +10,7 @@ FusionCharts.register('theme', {
     theme: {
         base: {
             chart: {
-                paletteColors: '#0075c2,#0e948c,#1aaf5d,#8cbb2c,#f2c500,#f3de00,#f45b00,#c02d00,#8e0000,#5b0101',
+                paletteColors: '#0075c2,#1aaf5d,#f2c500,#f45b00,#8e0000,#0e948c,#8cbb2c,#f3de00,#c02d00,#5b0101',
                 labelDisplay: 'auto',
                 baseFontColor: '#333333',
                 baseFont: 'Helvetica Neue,Arial',
@@ -18,7 +18,7 @@ FusionCharts.register('theme', {
                 subcaptionFontSize: '14',
                 subcaptionFontBold: '0',
                 showBorder: '0',
-                bgAlpha: '0',
+                bgColor: '#ffffff',
                 showShadow: '0',
                 canvasBgColor: '#ffffff',
                 canvasBorderAlpha: '0',
@@ -26,6 +26,7 @@ FusionCharts.register('theme', {
                 useRoundEdges: '0',
                 showPlotBorder: '0',
                 showAlternateHGridColor: '0',
+                showAlternateVGridColor: "0",
                 toolTipColor: '#ffffff',
                 toolTipBorderThickness: '0',
                 toolTipBgColor: '#000000',
@@ -46,6 +47,7 @@ FusionCharts.register('theme', {
                 divLineGapLen: '1',
                 scrollheight: '10',
                 flatScrollBars: '1',
+                scrollShowButtons: "0",
                 scrollColor: '#cccccc',
                 showHoverEffect: '1',
                 valueFontSize: '10',
@@ -77,9 +79,9 @@ FusionCharts.register('theme', {
             },
             data: function (index, dataItem, dataLength) {
                 var math = window.Math,
-                alphaSlab = dataLength > 50 ?
-                    math.round(100 / math.ceil(dataLength / 10)) : 20,
-                alpha = 100 - alphaSlab * math.floor(index / 10);
+                    alphaSlab = dataLength > 50 ?
+                        math.round(100 / math.ceil(dataLength / 10)) : 20,
+                    alpha = 100 - alphaSlab * math.floor(index / 10);
                 return {alpha: alpha};
             }
         },
@@ -95,14 +97,21 @@ FusionCharts.register('theme', {
             },
             data: function (index, dataItem, dataLength) {
                 var math = window.Math,
-                alphaSlab = dataLength > 50 ?
-                    math.round(100 / math.ceil(dataLength / 10)) : 20,
-                alpha = 100 - alphaSlab * math.floor(index / 10);
+                    alphaSlab = dataLength > 50 ?
+                        math.round(100 / math.ceil(dataLength / 10)) : 20,
+                    alpha = 100 - alphaSlab * math.floor(index / 10);
                 return {alpha: alpha};
             }
         },
-        msline: {
-            chart: {}
+        line: {
+            chart: {
+                lineThickness: "2"
+            }
+        },
+        spline: {
+            chart: {
+                lineThickness: "2"
+            }
         },
         column2d: {
             chart: {
@@ -157,7 +166,16 @@ FusionCharts.register('theme', {
                 rotateValues: '1'
             }
         },
-        mscombi2d: {},
+        msstackedcolumn2dlinedy: {
+            chart: {
+                showValues: "0"
+            }
+        },
+        msstackedcombidy2d: {
+            chart: {
+                showValues: "0"
+            }
+        },
         scrollcolumn2d: {
             chart: {
                 valueFontColor: '#ffffff',
@@ -214,9 +232,7 @@ FusionCharts.register('theme', {
                 valueFontBold: '1'
             },
             pointers: {
-                pointer: [{
-
-                }]
+                pointer: [{}]
             }
         },
         bubble: {
@@ -240,6 +256,35 @@ FusionCharts.register('theme', {
                     alpha: '0'
                 }]
             }]
+        },
+        scatter: {
+            chart: {
+                use3dlighting: '0',
+                showYAxisLine: '1',
+                showAlternateHGridColor: '0',
+                showAlternateVGridColor: '0'
+            },
+            categories: [{
+                verticalLineDashed: '1',
+                verticalLineDashLen: '1',
+                verticalLineDashGap: '1',
+                verticalLineThickness: '1',
+                verticalLineColor: '#000000',
+                category: [{}]
+            }],
+            vtrendlines: [{
+                line: [{
+                    alpha: '0'
+                }]
+            }]
+        },
+        boxandwhisker2d: {
+            chart: {
+                valueBgColor: '#ffffff',
+                valueBgAlpha: '90',
+                valueBorderPadding: '-2',
+                valueBorderRadius: '2'
+            }
         }
     }
 });
