@@ -166,7 +166,90 @@ FusionCharts.register('theme', {
                 rotateValues: '1'
             }
         },
+        mscolumn3d: {
+            chart: {
+                showValues: '0'
+            }
+        },
         msstackedcolumn2dlinedy: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        stackedcolumn2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        stackedarea2d: {
+            chart: {
+                valueBgColor: '#ffffff',
+                valueBgAlpha: '90',
+                valueBorderPadding: '-2',
+                valueBorderRadius: '2'
+            }
+        },
+        stackedbar2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        msstackedcolumn2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        mscombi3d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        mscombi2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        mscolumn3dlinedy: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        stackedcolumn3dline: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        stackedcolumn2dline: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        scrollstackedcolumn2d: {
+            chart: {
+                valueFontColor: '#ffffff'
+            }
+        },
+        scrollcombi2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        scrollcombidy2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        logstackedcolumn2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        logmsline: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        logmscolumn2d: {
             chart: {
                 showValues: '0'
             }
@@ -185,12 +268,14 @@ FusionCharts.register('theme', {
         },
         pareto2d: {
             chart: {
-                paletteColors: '#0075c2'
+                paletteColors: '#0075c2',
+                showValues: '0'
             }
         },
         pareto3d: {
             chart: {
-                paletteColors: '#0075c2'
+                paletteColors: '#0075c2',
+                showValues: '0'
             }
         },
         angulargauge: {
@@ -240,6 +325,8 @@ FusionCharts.register('theme', {
                 use3dlighting: '0',
                 showplotborder: '0',
                 showYAxisLine: '1',
+                yAxisLineThickness: '1',
+                yAxisLineColor: '#999999',
                 showAlternateHGridColor: '0',
                 showAlternateVGridColor: '0'
             },
@@ -261,6 +348,8 @@ FusionCharts.register('theme', {
             chart: {
                 use3dlighting: '0',
                 showYAxisLine: '1',
+                yAxisLineThickness: '1',
+                yAxisLineColor: '#999999',
                 showAlternateHGridColor: '0',
                 showAlternateVGridColor: '0'
             },
@@ -284,6 +373,46 @@ FusionCharts.register('theme', {
                 valueBgAlpha: '90',
                 valueBorderPadding: '-2',
                 valueBorderRadius: '2'
+            }
+        },
+        thermometer: {
+            chart: {
+                gaugeFillColor: '#0075c2'
+            }
+        },
+        cylinder: {
+            chart: {
+                cylFillColor: '#0075c2'
+            }
+        },
+        sparkline: {
+            chart: {
+                linecolor: '#0075c2'
+            }
+        },
+        sparkcolumn: {
+            chart: {
+                plotFillColor: '#0075c2'
+            }
+        },
+        sparkwinloss: {
+            chart: {
+                winColor: '#0075c2',
+                lossColor: '#1aaf5d',
+                drawColor: '#f2c500',
+                scoreLessColor: '#f45b00'
+            }
+        },
+        hbullet: {
+            chart: {
+                plotFillColor: '#0075c2',
+                targetColor: '#1aaf5d'
+            }
+        },
+        vbullet: {
+            chart: {
+                plotFillColor: '#0075c2',
+                targetColor: '#1aaf5d'
             }
         }
     }
