@@ -21,7 +21,7 @@ FusionCharts.register('theme', {
                 bgColor: '#ffffff',
                 showShadow: '0',
                 canvasBgColor: '#ffffff',
-                canvasBorderAlpha: '0',
+                showCanvasBorder: '0',
                 useplotgradientcolor: '0',
                 useRoundEdges: '0',
                 showPlotBorder: '0',
