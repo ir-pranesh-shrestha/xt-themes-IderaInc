@@ -1,12 +1,12 @@
 /**!
- * @license Zune Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
+ * @license Fint Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
  * FusionCharts JavaScript Library
  *
  * Copyright FusionCharts Technologies LLP
  * License Information at <http://www.fusioncharts.com/license>
  */
 FusionCharts.register('theme', {
-    name: 'zune',
+    name: 'fint',
     theme: {
         base: {
             chart: {

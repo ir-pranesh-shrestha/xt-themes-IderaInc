@@ -10,7 +10,7 @@ FusionCharts.register('theme', {
     theme: {
         base: {
             chart: {
-                paletteColors: '#04476c,#0e948c,#4d998d,#64ad93,#77be99,#8fcda0,#a7dca6,#bbe7a0,#cef19a,#dcefc1',
+                paletteColors: '#04476c,#4d998d,#77be99,#a7dca6,#cef19a,#0e948c,#64ad93,#8fcda0,#bbe7a0,#dcefc1',
                 labelDisplay: 'auto',
                 baseFontColor: '#333333',
                 baseFont: 'Helvetica Neue,Arial',
@@ -18,14 +18,15 @@ FusionCharts.register('theme', {
                 subcaptionFontSize: '14',
                 subcaptionFontBold: '0',
                 showBorder: '0',
-                bgAlpha: '0',
+                bgColor: '#ffffff',
                 showShadow: '0',
                 canvasBgColor: '#ffffff',
-                canvasBorderAlpha: '0',
+                showCanvasBorder: '0',
                 useplotgradientcolor: '0',
                 useRoundEdges: '0',
                 showPlotBorder: '0',
                 showAlternateHGridColor: '0',
+                showAlternateVGridColor: '0',
                 toolTipColor: '#ffffff',
                 toolTipBorderThickness: '0',
                 toolTipBgColor: '#000000',
@@ -46,6 +47,7 @@ FusionCharts.register('theme', {
                 divLineGapLen: '1',
                 scrollheight: '10',
                 flatScrollBars: '1',
+                scrollShowButtons: '0',
                 scrollColor: '#cccccc',
                 showHoverEffect: '1',
                 valueFontSize: '10',
@@ -101,8 +103,15 @@ FusionCharts.register('theme', {
                 return {alpha: alpha};
             }
         },
-        msline: {
-            chart: {}
+        line: {
+            chart: {
+                lineThickness: '2'
+            }
+        },
+        spline: {
+            chart: {
+                lineThickness: '2'
+            }
         },
         column2d: {
             chart: {
@@ -157,7 +166,99 @@ FusionCharts.register('theme', {
                 rotateValues: '1'
             }
         },
-        mscombi2d: {},
+        mscolumn3d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        msstackedcolumn2dlinedy: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        stackedcolumn2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        stackedarea2d: {
+            chart: {
+                valueBgColor: '#ffffff',
+                valueBgAlpha: '90',
+                valueBorderPadding: '-2',
+                valueBorderRadius: '2'
+            }
+        },
+        stackedbar2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        msstackedcolumn2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        mscombi3d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        mscombi2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        mscolumn3dlinedy: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        stackedcolumn3dline: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        stackedcolumn2dline: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        scrollstackedcolumn2d: {
+            chart: {
+                valueFontColor: '#ffffff'
+            }
+        },
+        scrollcombi2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        scrollcombidy2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        logstackedcolumn2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        logmsline: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        logmscolumn2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
+        msstackedcombidy2d: {
+            chart: {
+                showValues: '0'
+            }
+        },
         scrollcolumn2d: {
             chart: {
                 valueFontColor: '#ffffff',
@@ -167,12 +268,14 @@ FusionCharts.register('theme', {
         },
         pareto2d: {
             chart: {
-                paletteColors: '#04476c'
+                paletteColors: '#04476c',
+				showValues: '0'
             }
         },
         pareto3d: {
             chart: {
-                paletteColors: '#04476c'
+                paletteColors: '#04476c',
+				showValues: '0'
             }
         },
         angulargauge: {
@@ -214,9 +317,7 @@ FusionCharts.register('theme', {
                 valueFontBold: '1'
             },
             pointers: {
-                pointer: [{
-
-                }]
+                pointer: [{}]
             }
         },
         bubble: {
@@ -224,6 +325,8 @@ FusionCharts.register('theme', {
                 use3dlighting: '0',
                 showplotborder: '0',
                 showYAxisLine: '1',
+                yAxisLineThickness: '1',
+                yAxisLineColor: '#999999',
                 showAlternateHGridColor: '0',
                 showAlternateVGridColor: '0'
             },
@@ -240,6 +343,77 @@ FusionCharts.register('theme', {
                     alpha: '0'
                 }]
             }]
+        },
+        scatter: {
+            chart: {
+                use3dlighting: '0',
+                showYAxisLine: '1',
+                yAxisLineThickness: '1',
+                yAxisLineColor: '#999999',
+                showAlternateHGridColor: '0',
+                showAlternateVGridColor: '0'
+            },
+            categories: [{
+                verticalLineDashed: '1',
+                verticalLineDashLen: '1',
+                verticalLineDashGap: '1',
+                verticalLineThickness: '1',
+                verticalLineColor: '#000000',
+                category: [{}]
+            }],
+            vtrendlines: [{
+                line: [{
+                    alpha: '0'
+                }]
+            }]
+        },
+        boxandwhisker2d: {
+            chart: {
+                valueBgColor: '#ffffff',
+                valueBgAlpha: '90',
+                valueBorderPadding: '-2',
+                valueBorderRadius: '2'
+            }
+        },
+        thermometer: {
+            chart: {
+                gaugeFillColor: '#04476c'
+            }
+        },
+        cylinder: {
+            chart: {
+                cylFillColor: '#04476c'
+            }
+        },
+        sparkline: {
+            chart: {
+                linecolor: '#04476c'
+            }
+        },
+        sparkcolumn: {
+            chart: {
+                plotFillColor: '#04476c'
+            }
+        },
+        sparkwinloss: {
+            chart: {
+                winColor: '#04476c',
+                lossColor: '#4d998d',
+                drawColor: '#77be99',
+                scoreLessColor: '#a7dca6'
+            }
+        },
+        hbullet: {
+            chart: {
+                plotFillColor: '#04476c',
+                targetColor: '#4d998d'
+            }
+        },
+        vbullet: {
+            chart: {
+                plotFillColor: '#04476c',
+                targetColor: '#4d998d'
+            }
         }
     }
 });
