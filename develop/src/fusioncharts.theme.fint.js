@@ -67,7 +67,10 @@ FusionCharts.register('theme', {
                 borderThickness: '1',
                 borderAlpha: '50',
                 entityFillhoverColor: '#0075c2',
-                entityFillhoverAlpha: '80'
+                entityFillhoverAlpha: '80',
+                connectorColor: '#cccccc',
+                connectorThickness: '1.5',
+                markerFillHoverAlpha: '90'
             }
         },
         pie2d: {
@@ -328,7 +331,8 @@ FusionCharts.register('theme', {
                 yAxisLineThickness: '1',
                 yAxisLineColor: '#999999',
                 showAlternateHGridColor: '0',
-                showAlternateVGridColor: '0'
+                showAlternateVGridColor: '0',
+                plotFillHoverColor: '#2b8ecf'
             },
             categories: [{
                 verticalLineDashed: '1',

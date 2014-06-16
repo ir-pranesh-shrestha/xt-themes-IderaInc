@@ -1,5 +1,5 @@
 /*
- Boilerplate Theme v0.0.2
+ Boilerplate Theme v0.0.3
  FusionCharts JavaScript Library
 
  This theme file includes the following theme variants:
