@@ -331,7 +331,8 @@ FusionCharts.register('theme', {
                 yAxisLineThickness: '1',
                 yAxisLineColor: '#999999',
                 showAlternateHGridColor: '0',
-                showAlternateVGridColor: '0'
+                showAlternateVGridColor: '0',
+                plotFillHoverColor: '#2b8ecf'
             },
             categories: [{
                 verticalLineDashed: '1',
