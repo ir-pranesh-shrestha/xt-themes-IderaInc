@@ -67,7 +67,10 @@ FusionCharts.register('theme', {
                 borderThickness: '1',
                 borderAlpha: '50',
                 entityFillhoverColor: '#04476c',
-                entityFillhoverAlpha: '80'
+                entityFillhoverAlpha: '80',
+                connectorColor: '#cccccc',
+                connectorThickness: '1.5',
+                markerFillHoverAlpha: '90'
             }
         },
         pie2d: {
