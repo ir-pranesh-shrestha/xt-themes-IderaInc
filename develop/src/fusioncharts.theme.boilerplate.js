@@ -109,8 +109,9 @@ var themeArray = [{
     }
   }
 }]; // end of definition of themes
-FusionCharts.addDep({
+
+export default {
   extension: themeArray,
   name: 'boilerplateTheme',
   type: 'theme'
-});
+};

@@ -424,8 +424,9 @@ var themeObject = {
     }
   }
 };
-FusionCharts.addDep({
+
+export default {
   extension: themeObject,
   name: 'zuneTheme',
   type: 'theme'
-});
+};

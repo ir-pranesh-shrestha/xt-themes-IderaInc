@@ -425,8 +425,9 @@ var themeObject = {
     }
   }
 };
-FusionCharts.addDep({
+
+export default {
   extension: themeObject,
   name: 'fintTheme',
   type: 'theme'
-});
+};

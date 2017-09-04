@@ -19,6 +19,9 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "del": "^2.2.2",
     "google-closure-compiler": "^20160208.4.0",
     "gulp": "^3.9.1",
@@ -26,12 +29,17 @@
     "gulp-preprocess": "^2.0.0",
     "gulp-wrap": "^0.13.0",
     "jshint": "2.4.2",
-    "metascript": "0.18.0"
+    "metascript": "0.18.0",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
   },
   "scripts": {
+    "start": "webpack-dev-server",
     "test": "develop/ci/test/test",
     "lint": "develop/ci/lint/lint",
-    "build": "develop/ci/build/build",
+    "dev:build": "NODE_ENV=development webpack",
+    "prod:build": "NODE_ENV=production webpack",
+    "build": "npm run prod:build",
     "drone": "develop/ci/drone/drone",
     "release": "develop/ci/release/release"
   },

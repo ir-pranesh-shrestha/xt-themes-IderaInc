@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XT-Themes</title>
+  </head>
+  <body>
+    <div id="chart-container"></div>
+    <script src="./assets/fusioncharts.js"></script>
+    <script src="./assets/fusioncharts.charts.js"></script>
+    <script src="../themes/fusioncharts.theme.boilerplate.js"></script>
+    <script src="../themes/fusioncharts.theme.carbon.js"></script>
+    <script src="../themes/fusioncharts.theme.fint.js"></script>
+    <script src="../themes/fusioncharts.theme.ocean.js"></script>
+    <script src="../themes/fusioncharts.theme.zune.js"></script>
+    <script>
+      var chart = new FusionCharts({
+        "type": "column2d",
+        "renderAt": "chart-container",
+        "width": "500",
+        "height": "300",
+        "dataFormat": "json",
+        "dataSource": {
+          "chart": {
+            "caption": "Revenue",
+            "subCaption": "Harry's SuperMart",
+            "xAxisName": "Month",
+            "yAxisName": "Revenue",
+            "theme": "carbon"
+          },
+        "data": [{
+            "label": "Jan",
+            "value": "420000"
+          }, {
+            "label": "Feb",
+            "value": "810000"
+          }, {
+            "label": "Mar",
+            "value": "720000"
+          }, {
+            "label": "Apr",
+            "value": "550000"
+          }, {
+            "label": "May",
+            "value": "910000"
+          }, {
+            "label": "Jun",
+            "value": "510000"
+          }]
+        }
+      });
+      chart.render();
+    </script>
+  </body>
+</html>
