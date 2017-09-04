@@ -48,7 +48,7 @@
     "camelcase": true,
     "curly": true,
     "eqeqeq": false,
-    "es3": false,
+    "esnext": true,
     "forin": false,
     "freeze": true,
     "immed": true,
