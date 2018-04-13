@@ -9,6 +9,7 @@
  * Copyright FusionCharts Technologies LLP
  * License Information at <http://www.fusioncharts.com/license>
  */
+/*jshint unused:false*/
 var themeArray = [{
   name: 'boilerplate-basic',
   theme: {
@@ -24,7 +25,7 @@ var themeArray = [{
       categories: [{
         fontColor: '#0F4F40',
         fontSize: 15,
-        category: function(index) {
+        category: function (index) {
           return {
             showLabel: (index % 2) ? 0 : 1
           };
@@ -36,7 +37,7 @@ var themeArray = [{
       }],
       dataset: [{
         color: '#8C3146',
-        data: function(index, dataObj) {
+        data: function (index, dataObj) {
           if (index == 8) {
             dataObj.value = '';
           }
@@ -47,7 +48,7 @@ var themeArray = [{
         }
       }],
       trendlines: [{
-        line: function(index) {
+        line: function (index) {
           if (index) {
             return {
               color: '#ff0000',
@@ -87,7 +88,7 @@ var themeArray = [{
       categories: {
         fontColor: '#ff0000',
         fontSize: 15,
-        category: function(index) {
+        category: function (index) {
           return {
             showLabel: (index % 2) ? 1 : 0
           };
@@ -99,7 +100,7 @@ var themeArray = [{
       },
       dataset: [{
         color: '#00ffff',
-        data: function(index) {
+        data: function (index) {
           return {
             color: (index % 2 ? '#0FF000' : '#ffffff'),
             alpha: '100'
@@ -108,10 +109,16 @@ var themeArray = [{
       }]
     }
   }
-}]; // end of definition of themes
+}], // end of definition of themes
+  boilerplateBasic = {
+    extension: themeArray[0],
+    name: 'boilerplateBasicTheme',
+    type: 'theme'
+  },
+  boilerplateExtended = {
+    extension: themeArray[1],
+    name: 'boilerplateExtendedTheme',
+    type: 'theme'
+  };
 
-export default {
-  extension: themeArray,
-  name: 'boilerplateTheme',
-  type: 'theme'
-};
+export { boilerplateBasic, boilerplateExtended };
