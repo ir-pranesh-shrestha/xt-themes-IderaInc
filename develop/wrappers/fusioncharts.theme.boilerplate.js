@@ -1,4 +1,5 @@
 import FusionCharts from 'FusionCharts';
-import boilerplateTheme from '../src/fusioncharts.theme.boilerplate';
+import {boilerplateBasic, boilerplateExtended} from '../src/fusioncharts.theme.boilerplate';
 
-FusionCharts.addDep(boilerplateTheme);
+FusionCharts.addDep(boilerplateBasic);
+FusionCharts.addDep(boilerplateExtended);
