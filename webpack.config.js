@@ -1,13 +1,30 @@
 const path = require('path'),
-  webpack = require('webpack');
+  webpack = require('webpack'),
+  WrapperPlugin = require('wrapper-webpack-plugin');
 
-let IS_DEV = process.env.NODE_ENV === 'development';
+let IS_DEV = process.env.NODE_ENV === 'development',
+moduleWrapperHeader = `
+(function (factory) {
+  if (typeof module === 'object' && typeof module.exports !== "undefined") {
+      module.exports = factory;
+  } else {
+      factory(FusionCharts);
+  }
+}(function (FusionCharts) {
+`,
+  moduleWrapperFooter = `
+}));
+`;
 
 function getPlugins () {
-  if (IS_DEV) {
-    return [];
-  } else {
-    return [
+  var plugins = [new WrapperPlugin({
+    test: /\.js$/,
+    header: moduleWrapperHeader,
+    footer: moduleWrapperFooter
+  })];
+
+  if (!IS_DEV){
+    plugins.push(
       new webpack.optimize.UglifyJsPlugin({
         mangle: false,
         sourceMap: true,
@@ -23,8 +40,9 @@ function getPlugins () {
           screw_ie8: false
         }
       })
-    ];
+    );
   }
+  return plugins;
 }
 
 module.exports = {
@@ -38,9 +56,6 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'themes')
-  },
-  externals: {
-    FusionCharts: 'FusionCharts'
   },
   devServer: {
     contentBase: path.join(__dirname, 'sample'),
