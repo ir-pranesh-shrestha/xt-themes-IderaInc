@@ -1,6 +1,6 @@
 const path = require('path'),
   webpack = require('webpack'),
-  WrapperPlugin = require('wrapper-webpack-plugin')
+  WrapperPlugin = require('wrapper-webpack-plugin'),
   UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
   fs = require('fs-extra'),
   BASE_PATH = './develop/wrappers';
