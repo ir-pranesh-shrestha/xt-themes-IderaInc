@@ -1,9 +1,11 @@
 const path = require('path'),
   webpack = require('webpack'),
-  WrapperPlugin = require('wrapper-webpack-plugin');
+  WrapperPlugin = require('wrapper-webpack-plugin')
+  UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
+  fs = require('fs-extra'),
+  BASE_PATH = './develop/wrappers';
 
-let IS_DEV = process.env.NODE_ENV === 'development',
-moduleWrapperHeader = `
+let moduleWrapperHeader = `
 (function (factory) {
   if (typeof module === 'object' && typeof module.exports !== "undefined") {
       module.exports = factory;
@@ -16,28 +18,27 @@ moduleWrapperHeader = `
 }));
 `;
 
-function getPlugins () {
+
+function getPlugins (isSource) {
   var plugins = [new WrapperPlugin({
     test: /\.js$/,
     header: moduleWrapperHeader,
     footer: moduleWrapperFooter
   })];
 
-  if (!IS_DEV){
+  if (!isSource){
     plugins.push(
-      new webpack.optimize.UglifyJsPlugin({
-        mangle: false,
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
         sourceMap: true,
-        mangleProperties: {
-          screw_ie8: false,
-          ignore_quoted: true
-        },
-        compress: {
-          screw_ie8: false,
-          properties: false
-        },
-        output: {
-          screw_ie8: false
+        uglifyOptions: {
+          ecma: 5,
+          ie8: true,
+          mangle: false,
+          compress: false,
+          keep_classnames: true,
+          keep_fnames: true
         }
       })
     );
@@ -45,17 +46,26 @@ function getPlugins () {
   return plugins;
 }
 
-module.exports = {
-  entry: {
-    'fusioncharts.theme.boilerplate': './develop/wrappers/fusioncharts.theme.boilerplate.js',
-    'fusioncharts.theme.carbon': './develop/wrappers/fusioncharts.theme.carbon.js',
-    'fusioncharts.theme.fint': './develop/wrappers/fusioncharts.theme.fint.js',
-    'fusioncharts.theme.ocean': './develop/wrappers/fusioncharts.theme.ocean.js',
-    'fusioncharts.theme.zune': './develop/wrappers/fusioncharts.theme.zune.js'
-  },
+function getEntryObject(){
+  var themeFiles = fs
+    .readdirSync(path.resolve(__dirname, BASE_PATH))
+    .filter(file => file.match(/.*\.js$/));
+
+  let entryObj = themeFiles.reduce((entryObj, themeFile) => {
+    entryObj[themeFile.replace(/.js$/, '')] = './' + path.join(BASE_PATH, themeFile);
+    return entryObj;
+  }, {});
+  return entryObj;
+}
+
+let entryObject = getEntryObject();
+
+module.exports = [
+{
+  entry: entryObject,
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'themes')
+    path: path.resolve(__dirname, 'themes/min')
   },
   devServer: {
     contentBase: path.join(__dirname, 'sample'),
@@ -69,5 +79,25 @@ module.exports = {
     }]
   },
   devtool: 'source-map',
-  plugins: getPlugins()
-};
+  plugins: getPlugins(false),
+},
+{
+  entry: entryObject,
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'themes/source')
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'sample'),
+    watchContentBase: true
+  },
+  module: {
+    rules: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader'
+    }]
+  },
+  plugins: getPlugins(true)
+}
+];
