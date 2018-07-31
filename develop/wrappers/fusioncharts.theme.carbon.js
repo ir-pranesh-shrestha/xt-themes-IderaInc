@@ -1,3 +1,3 @@
-import carbonTheme from '../src/fusioncharts.theme.carbon';
+import carbonTheme from '../src/carbon/';
 
 FusionCharts.addDep(carbonTheme);

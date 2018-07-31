@@ -1,3 +1,3 @@
-import zuneTheme from '../src/fusioncharts.theme.zune';
+import zuneTheme from '../src/zune/';
 
 FusionCharts.addDep(zuneTheme);
