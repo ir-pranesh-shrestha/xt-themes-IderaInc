@@ -31,6 +31,8 @@
     "gulp-wrap": "^0.13.0",
     "jshint": "2.4.2",
     "metascript": "0.18.0",
+    "rollup": "^0.63.4",
+    "rollup-plugin-postcss": "^1.6.2",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^3.12.0",
@@ -43,7 +45,7 @@
     "lint": "develop/ci/lint/lint",
     "dev:build": "NODE_ENV=development webpack",
     "prod:build": "NODE_ENV=production webpack",
-    "build": "npm run prod:build",
+    "build": "npm run prod:build && npx rollup -c",
     "drone": "develop/ci/drone/drone",
     "release": "develop/ci/release/release"
   },
