@@ -68,23 +68,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _fusionchartsTheme = __webpack_require__(1);
+var _boilerplate = __webpack_require__(4);
 
-FusionCharts.addDep(_fusionchartsTheme.boilerplateBasic);
-FusionCharts.addDep(_fusionchartsTheme.boilerplateExtended);
+FusionCharts.addDep(_boilerplate.boilerplateBasic);
+FusionCharts.addDep(_boilerplate.boilerplateExtended);
 
 /***/ }),
-/* 1 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

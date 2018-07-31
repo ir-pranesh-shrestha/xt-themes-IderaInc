@@ -1,3 +1,3 @@
-import fintTheme from '../src/fusioncharts.theme.fint';
+import fintTheme from '../src/fint/';
 
 FusionCharts.addDep(fintTheme);

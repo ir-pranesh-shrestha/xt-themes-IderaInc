@@ -68,28 +68,28 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 8:
+/***/ 21:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _fusionchartsTheme = __webpack_require__(9);
+var _zune = __webpack_require__(22);
 
-var _fusionchartsTheme2 = _interopRequireDefault(_fusionchartsTheme);
+var _zune2 = _interopRequireDefault(_zune);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-FusionCharts.addDep(_fusionchartsTheme2['default']);
+FusionCharts.addDep(_zune2['default']);
 
 /***/ }),
 
-/***/ 9:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

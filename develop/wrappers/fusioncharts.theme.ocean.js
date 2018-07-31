@@ -1,3 +1,3 @@
-import oceanTheme from '../src/fusioncharts.theme.ocean';
+import oceanTheme from '../src/ocean/';
 
 FusionCharts.addDep(oceanTheme);

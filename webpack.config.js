@@ -18,6 +18,21 @@ let moduleWrapperHeader = `
 }));
 `;
 
+let debServerConfig = {
+    contentBase: path.join(__dirname, 'sample'),
+    watchContentBase: true
+  },
+  moduleConfig = {
+    rules: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader'
+    }, {
+      test:/\.css$/,
+      use:['style-loader','css-loader']
+    }]
+  };
+
 
 function getPlugins (isSource) {
   var plugins = [new WrapperPlugin({
@@ -67,17 +82,8 @@ module.exports = [
     filename: '[name].js',
     path: path.resolve(__dirname, 'themes/min')
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'sample'),
-    watchContentBase: true
-  },
-  module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
-    }]
-  },
+  devServer: debServerConfig,
+  module: moduleConfig,
   devtool: 'source-map',
   plugins: getPlugins(false),
 },
@@ -87,17 +93,8 @@ module.exports = [
     filename: '[name].js',
     path: path.resolve(__dirname, 'themes/source')
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'sample'),
-    watchContentBase: true
-  },
-  module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
-    }]
-  },
+  devServer: debServerConfig,
+  module: moduleConfig,
   plugins: getPlugins(true)
 }
 ];
