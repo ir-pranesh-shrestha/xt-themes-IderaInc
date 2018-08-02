@@ -708,6 +708,10 @@ var themeObject = {
         crossLineAnimation: '1',
         crossLineAlpha: '60',
         drawCrossLineOnTop: '0',
+        trendlineColor: '#F6F6F6',
+        trendlineThickness: '1',
+        vtrendlineColor: '#F6F6F6',
+        vtrendlineThickness: '1',
 
         // font & typography customization
         baseFont: 'Fira Sans Light',
@@ -1020,7 +1024,7 @@ var themeObject = {
     msarea: {
       chart: {
         showLegend: '1',
-        legendIconSides: '2',
+        legendIconSides: '4',
         plotFillAlpha: '70',
         drawCrossLine: '1'
       }
@@ -1034,13 +1038,19 @@ var themeObject = {
         showSum: '0',
         valueBgColor: '#262A33',
         valueBgAlpha: '70',
-        drawCrossLine: '1'
+        drawCrossLine: '1',
+        showPlotBorder: '1',
+        plotBorderColor: '#262A33',
+        plotBorderThickness: '0.75',
+        plotBorderAlpha: '100'
       }
     },
 
     // 20. Zoom Line Chart
     zoomline: {
       chart: {
+        paletteColors: '#36B5D8, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141, #F0DC46, #F066AC',
+        crossLineValueFont: 'Fira Sans Regular',
         lineThickness: '2.5',
         flatScrollBars: '1',
         scrollShowButtons: '0',
@@ -1065,6 +1075,8 @@ var themeObject = {
     // 21. Zoom Line Dual Y-Axis Chart
     zoomlinedy: {
       chart: {
+        paletteColors: '#36B5D8, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141, #F0DC46, #F066AC',
+        crossLineValueFont: 'Fira Sans Regular',
         lineThickness: '2.5',
         flatScrollBars: '1',
         scrollShowButtons: '0',
@@ -1128,7 +1140,7 @@ var themeObject = {
     stackedarea2d: {
       chart: {
         showLegend: '1',
-        legendIconSides: '2',
+        legendIconSides: '4',
         plotFillAlpha: '85',
         drawCrossLine: '1'
       }
@@ -1345,7 +1357,6 @@ var themeObject = {
     zoomscatter: {
       chart: {
         showLegend: '1',
-        drawCustomLegendIcon: '0',
         legendIconBorderThickness: '2',
         outCnvBaseFontColor: '#F6F6F6',
         divLineAlpha: '100',
@@ -1353,7 +1364,7 @@ var themeObject = {
       },
       dataset: [{
         drawLine: '0',
-        anchorRadius: '8',
+        anchorRadius: '6',
         anchorBorderThickness: '0.1',
         anchorAlpha: '50',
         hoverColor: '#999CA5',
@@ -1380,7 +1391,6 @@ var themeObject = {
       chart: {
         showLegend: '1',
         legendIconSides: '2',
-        drawCrossLine: '1',
         flatScrollBars: '1',
         scrollShowButtons: '0',
         scrollColor: '#ABABAB',
@@ -1402,7 +1412,7 @@ var themeObject = {
     scrollarea2d: {
       chart: {
         showLegend: '1',
-        legendIconSides: '2',
+        legendIconSides: '4',
         flatScrollBars: '1',
         scrollShowButtons: '0',
         scrollColor: '#ABABAB',
@@ -1611,7 +1621,7 @@ var themeObject = {
     realtimearea: {
       chart: {
         showLegend: '1',
-        legendIconSides: '2',
+        legendIconSides: '4',
         plotFillAlpha: '70',
         showRealTimeValue: '0'
       }
@@ -1649,7 +1659,7 @@ var themeObject = {
     realtimestackedarea: {
       chart: {
         showLegend: '1',
-        legendIconSides: '2',
+        legendIconSides: '4',
         plotFillAlpha: '85',
         showRealTimeValue: '0'
       }
@@ -1984,7 +1994,7 @@ var themeObject = {
     mssplinearea: {
       chart: {
         showLegend: '1',
-        legendIconSides: '2',
+        legendIconSides: '4',
         plotFillAlpha: '70'
         //drawCrossLine: '1'
       }
@@ -2298,7 +2308,9 @@ var themeObject = {
         trendLineThickness: '1',
         trendValueAlpha: '100',
         rollOverBandAlpha: '60',
-        rollOverBandColor: '#4B4B4B'
+        rollOverBandColor: '#4B4B4B',
+        trendlineAlpha: '100',
+        showTrendlinesOnTop: '1'
       },
 
       categories: [{
@@ -2345,7 +2357,16 @@ var themeObject = {
       chart: {
         drawAnchors: '0',
         lineThickness: '2',
-        showValues: '0'
+        showValues: '0',
+        legendIconSides: '2',
+        legendIconBorderThickness: '2',
+        anchorBgColor: '#262A33',
+        anchorRadius: '4',
+        anchorHoverRadius: '7',
+        anchorBorderHoverThickness: '1',
+        anchorBorderHoverColor: '#ECEBE4',
+        anchorBgHoverAlpha: '100',
+        setAdaptiveYMin: '1'
       }
     },
 
@@ -2392,7 +2413,7 @@ var themeObject = {
         valueFontSize: '12.5',
         valueFont: 'Fira Sans Light',
         useHoverColor: '1',
-        hoverFillColor: '#939393',
+        hoverFillColor: '#4B4B4B',
         showHoverEffect: '1',
         plotHoverEffect: '1'
       },
