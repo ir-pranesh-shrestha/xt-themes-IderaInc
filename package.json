@@ -44,9 +44,7 @@
     "start": "webpack-dev-server",
     "test": "develop/ci/test/test",
     "lint": "develop/ci/lint/lint",
-    "dev:build": "NODE_ENV=development webpack",
-    "prod:build": "NODE_ENV=production webpack",
-    "build": "npm run prod:build && npx rollup -c",
+    "build": "npx webpack && npx rollup -c",
     "drone": "develop/ci/drone/drone",
     "release": "develop/ci/release/release"
   },

@@ -84,6 +84,7 @@ module.exports = [
   },
   devServer: debServerConfig,
   module: moduleConfig,
+  mode: 'production',
   devtool: 'source-map',
   plugins: getPlugins(false),
 },
@@ -94,6 +95,7 @@ module.exports = [
     path: path.resolve(__dirname, 'themes/source')
   },
   devServer: debServerConfig,
+  mode: 'none',
   module: moduleConfig,
   plugins: getPlugins(true)
 }
