@@ -1,4 +1,4 @@
-/**!
+/** !
  * @license Ocean Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
  * FusionCharts JavaScript Library
  *
@@ -80,10 +80,10 @@ var themeObject = {
         valueFontColor: '#333333',
         captionPadding: '15'
       },
-      data: function(index, dataItem, dataLength) {
+      data: function (index, dataItem, dataLength) {
         var math = window.Math,
           alphaSlab = dataLength > 50 ?
-          math.round(100 / math.ceil(dataLength / 10)) : 20,
+            math.round(100 / math.ceil(dataLength / 10)) : 20,
           alpha = 100 - alphaSlab * math.floor(index / 10);
         return {
           alpha: alpha
@@ -100,10 +100,10 @@ var themeObject = {
         centerLabelFontColor: '#333333',
         captionPadding: '15'
       },
-      data: function(index, dataItem, dataLength) {
+      data: function (index, dataItem, dataLength) {
         var math = window.Math,
           alphaSlab = dataLength > 50 ?
-          math.round(100 / math.ceil(dataLength / 10)) : 20,
+            math.round(100 / math.ceil(dataLength / 10)) : 20,
           alpha = 100 - alphaSlab * math.floor(index / 10);
         return {
           alpha: alpha

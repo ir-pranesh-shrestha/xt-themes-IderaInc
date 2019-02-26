@@ -87,7 +87,7 @@ FusionCharts.addDep(__WEBPACK_IMPORTED_MODULE_0__src_zune___["a" /* default */])
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/**!
+/** !
  * @license Zune Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
  * FusionCharts JavaScript Library
  *
