@@ -1827,20 +1827,24 @@ var themeObject = {
                 fill: "#666666",
                 "font-family":
                   "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif"
-              },
-              background: {
-                fill: "#F7F7F7"
               }
+              
+              // backlog - https://fusioncharts.jira.com/browse/FTV3-812
+              // background: {
+              //   fill: "#F7F7F7"
+              // }
             },
             "button:hover": {
               text: {
                 fill: "#333333",
                 "font-family":
                   "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif"
-              },
-              background: {
-                fill: "#F7F7F7"
               }
+
+              // backlog - https://fusioncharts.jira.com/browse/FTV3-812
+              // background: {
+              //   fill: "#F7F7F7"
+              // }
             },
             "button:active": {
               text: {
@@ -1848,10 +1852,12 @@ var themeObject = {
                 "font-family":
                   "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
                 "font-weight": 600
-              },
-              background: {
-                fill: "#EBEBF5"
               }
+
+              // backlog - https://fusioncharts.jira.com/browse/FTV3-812
+              // background: {
+              //   fill: "#EBEBF5"
+              // }
             },
             separator: {
               stroke: "#E6E6E6"
