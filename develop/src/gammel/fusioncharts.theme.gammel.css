@@ -1,0 +1,41 @@
+/* ft calendar customization */
+.fc-cal-nav-prev-gammel, .fc-cal-nav-next-gammel {
+  font-family:
+  "Lucida Grande";
+  font-weight: 400;
+}
+
+.fc-cal-month-gammel {
+  font-family:
+  "Lucida Grande";
+  background-color: #7CB5EC;
+  color: #333333;
+}
+
+.fc-cal-day-gammel, .fc-cal-date-normal-gammel {
+  font-family:
+  "Lucida Grande";
+  color: #333333;
+  font-size: 11px;
+}
+
+.fc-cal-date-disabled-gammel {
+  font-family:
+  "Lucida Grande";
+  color: #999999;
+  font-size: 11px;
+}
+
+.fc-cal-date-selected-gammel {
+  font-family:
+  "Lucida Grande";
+  background-color: #7CB5EC;
+  color: #333333;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.fc-cal-weekend-gammel {
+  background-color: #F3F8FD;
+}
+

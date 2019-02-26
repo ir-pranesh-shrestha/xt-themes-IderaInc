@@ -1,10 +1,18 @@
 #!/bin/bash
 # ----------------------------------------------------------------------------------------------------------------------
-# Run lint on the source theme files to find out coding style errors or syntax errors.
+# Script description will be here!
 # ----------------------------------------------------------------------------------------------------------------------
 
 # Stop on first error
 set -e
+
+path=./develop/src/;
+if [ "$file" != "" ]; then
+	path="${file}";
+fi
+
+# Stitch the files before lint
+# ./develop/ci/stitch/stitch;
 
 # Being creative!
 echo -e "\033[33m";
@@ -16,8 +24,9 @@ echo "                       |___/ ";
 echo -e "\033[0m";
 
 # Run test on source files and test specs
-jshint --version
-jshint ./develop/src/
+echo -e "\neslint version: `eslint --version`\n";
+
+eslint $path --quiet --cache --config ./.eslint-override.js;
 
 # Notify
 echo -e "\033[32mlint passed! Celebrate.\033[0m\n";

@@ -1,5 +1,5 @@
 /*
- Candy Theme v0.1
+ Candy Theme v0.2
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
@@ -16,7 +16,8 @@ var themeObject = {
         // plot customization
         usePlotGradientColor: '0',
         showPlotBorder: '0',
-        paletteColors: '#36B5D8, #F0DC46, #F066AC, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141',
+        paletteColors:
+          '#36B5D8, #F0DC46, #F066AC, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141',
         showShadow: '0',
 
         // hover effects
@@ -394,7 +395,8 @@ var themeObject = {
     // 20. Zoom Line Chart
     zoomline: {
       chart: {
-        paletteColors: '#36B5D8, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141, #F0DC46, #F066AC',
+        paletteColors:
+          '#36B5D8, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141, #F0DC46, #F066AC',
         crossLineValueFont: 'Fira Sans Regular',
         lineThickness: '2.5',
         flatScrollBars: '1',
@@ -420,7 +422,8 @@ var themeObject = {
     // 21. Zoom Line Dual Y-Axis Chart
     zoomlinedy: {
       chart: {
-        paletteColors: '#36B5D8, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141, #F0DC46, #F066AC',
+        paletteColors:
+          '#36B5D8, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141, #F0DC46, #F066AC',
         crossLineValueFont: 'Fira Sans Regular',
         lineThickness: '2.5',
         flatScrollBars: '1',
@@ -674,10 +677,12 @@ var themeObject = {
         divLineAlpha: '100',
         vDivLineAlpha: '100'
       },
-      dataset: [{
-        regressionLineColor: '#F6F6F6',
-        regressionLineThickness: '1'
-      }]
+      dataset: [
+        {
+          regressionLineColor: '#F6F6F6',
+          regressionLineThickness: '1'
+        }
+      ]
     },
 
     // 38. Bubble Chart
@@ -707,16 +712,18 @@ var themeObject = {
         divLineAlpha: '100',
         vDivLineAlpha: '100'
       },
-      dataset: [{
-        drawLine: '0',
-        anchorRadius: '6',
-        anchorBorderThickness: '0.1',
-        anchorAlpha: '50',
-        hoverColor: '#999CA5',
-        regressionLineColor: '#F6F6F6',
-        regressionLineAlpha: '100',
-        regressionLineThickness: '1'
-      }]
+      dataset: [
+        {
+          drawLine: '0',
+          anchorRadius: '6',
+          anchorBorderThickness: '0.1',
+          anchorAlpha: '50',
+          hoverColor: '#999CA5',
+          regressionLineColor: '#F6F6F6',
+          regressionLineAlpha: '100',
+          regressionLineThickness: '1'
+        }
+      ]
     },
 
     // 40. Scroll Column 2D
@@ -843,11 +850,13 @@ var themeObject = {
         valueBelowPivot: '1'
       },
       dials: {
-        dial: [{
-          bgColor: '#F6F6F6',
-          borderColor: '#262A33',
-          borderThickness: '0.5'
-        }]
+        dial: [
+          {
+            bgColor: '#F6F6F6',
+            borderColor: '#262A33',
+            borderThickness: '0.5'
+          }
+        ]
       }
     },
 
@@ -1165,12 +1174,12 @@ var themeObject = {
     gantt: {
       chart: {
         taskBarFillMix: '{light+0}',
+        flatScrollBars: '1',
         gridBorderAlpha: '100',
         gridBorderColor: '#4B4B4B',
         ganttLineColor: '#4B4B4B',
         ganttLineAlpha: '100',
         taskBarRoundRadius: '3',
-        flatScrollBars: '1',
         showHoverEffect: '1',
         plotHoverEffect: '1',
         plotFillHoverAlpha: '50',
@@ -1193,30 +1202,35 @@ var themeObject = {
         legendIconBorderThickness: '0',
         legendBgAlpha: '0'
       },
-      categories: [{
-        fontcolor: '#F6F6F6',
-        fontsize: '14',
-        bgcolor: '#888A8F',
-        hoverBandAlpha: '45',
-        showGanttPaneHoverBand: '1',
-        bgAlpha: '50',
-        headerbgAlpha: '50',
-        showHoverBand: '1',
-        category: [{
+      categories: [
+        {
           fontcolor: '#F6F6F6',
           fontsize: '14',
+          bgcolor: '#888A8F',
+          hoverBandAlpha: '45',
+          showGanttPaneHoverBand: '1',
           bgAlpha: '50',
-          bgcolor: '#888A8F'
-        }]
-      }],
+          headerbgAlpha: '50',
+          showHoverBand: '1',
+          category: [
+            {
+              fontcolor: '#F6F6F6',
+              fontsize: '14',
+              bgAlpha: '50',
+              bgcolor: '#888A8F'
+            }
+          ]
+        }
+      ],
 
       tasks: {
         showBorder: '0',
         showHoverEffect: '0',
-        task: [{
-          color: '#36B5D8'
-        }]
-
+        task: [
+          {
+            color: '#36B5D8'
+          }
+        ]
       },
       processes: {
         fontcolor: '#F6F6F6',
@@ -1240,23 +1254,31 @@ var themeObject = {
         fontcolor: '#F6F6F6',
         bgcolor: '#888A8F',
         bgAlpha: '50',
-        datacolumn: [{
-          bgcolor: '#888A8F',
-          bgAlpha: '50'
-        }]
+        datacolumn: [
+          {
+            bgcolor: '#888A8F',
+            bgAlpha: '50'
+          }
+        ]
       },
 
-      connectors: [{
-        hoverThickness: '2',
-        connector: [{
-          color: '#E09653'
-        }]
-      }],
+      connectors: [
+        {
+          hoverThickness: '2',
+          connector: [
+            {
+              color: '#E09653'
+            }
+          ]
+        }
+      ],
 
       milestones: {
-        milestone: [{
-          color: '#6EC85A'
-        }]
+        milestone: [
+          {
+            color: '#6EC85A'
+          }
+        ]
       }
     },
 
@@ -1293,7 +1315,7 @@ var themeObject = {
       chart: {
         paletteColors: '#36B5D8',
         anchorBgColor: '#36B5D8',
-        //drawCrossLine: '1',
+        // drawCrossLine: "1",
         setAdaptiveYMin: '1',
         lineThickness: '2',
         drawAnchors: '1',
@@ -1311,7 +1333,7 @@ var themeObject = {
       chart: {
         drawAnchors: '0',
         paletteColors: '#36B5D8',
-        //drawCrossLine: '1',
+        // drawCrossLine: "1",
         plotFillAlpha: '85'
       }
     },
@@ -1321,7 +1343,7 @@ var themeObject = {
       chart: {
         showLegend: '1',
         legendIconSides: '2',
-        //drawCrossLine: '1',
+        // drawCrossLine: "1",
         setAdaptiveYMin: '1',
         lineThickness: '2',
         drawAnchors: '1',
@@ -1340,8 +1362,8 @@ var themeObject = {
       chart: {
         showLegend: '1',
         legendIconSides: '4',
-        plotFillAlpha: '70',
-        //drawCrossLine: '1'
+        plotFillAlpha: '70'
+        // drawCrossLine: "1"
       }
     },
 
@@ -1394,10 +1416,12 @@ var themeObject = {
         errorBarColor: '#999CA5',
         errorBarThickness: '1'
       },
-      dataset: [{
-        regressionLineColor: '#F6F6F6',
-        regressionLineThickness: '1'
-      }]
+      dataset: [
+        {
+          regressionLineColor: '#F6F6F6',
+          regressionLineThickness: '1'
+        }
+      ]
     },
 
     // 76. Inverse Y-Axis Area 2D Chart
@@ -1444,17 +1468,25 @@ var themeObject = {
         showLegend: '1',
         legendIconSides: '4'
       },
-      categories: [{
-        category: [{
-          fontItalic: '1'
-        }]
-      }],
-      dataset: [{
-        allowDrag: '1',
-        data: [{
-          alpha: '70'
-        }]
-      }]
+      categories: [
+        {
+          category: [
+            {
+              fontItalic: '1'
+            }
+          ]
+        }
+      ],
+      dataset: [
+        {
+          allowDrag: '1',
+          data: [
+            {
+              alpha: '70'
+            }
+          ]
+        }
+      ]
     },
 
     // 80. Drag-able Line 2D Chart
@@ -1474,18 +1506,26 @@ var themeObject = {
         anchorBorderHoverColor: '#ECEBE4',
         anchorBgHoverAlpha: '100'
       },
-      categories: [{
-        category: [{
-          fontItalic: '1'
-        }]
-      }],
-      dataset: [{
-        allowDrag: '1',
-        data: [{
-          alpha: '70',
-          dashed: '1'
-        }]
-      }]
+      categories: [
+        {
+          category: [
+            {
+              fontItalic: '1'
+            }
+          ]
+        }
+      ],
+      dataset: [
+        {
+          allowDrag: '1',
+          data: [
+            {
+              alpha: '70',
+              dashed: '1'
+            }
+          ]
+        }
+      ]
     },
 
     // 81. Drag-able Area 2D Chart
@@ -1501,14 +1541,20 @@ var themeObject = {
         anchorBorderHoverColor: '#ECEBE4',
         anchorBgHoverAlpha: '100'
       },
-      categories: [{
-        category: [{
-          fontItalic: '1'
-        }]
-      }],
-      dataset: [{
-        allowDrag: '1'
-      }]
+      categories: [
+        {
+          category: [
+            {
+              fontItalic: '1'
+            }
+          ]
+        }
+      ],
+      dataset: [
+        {
+          allowDrag: '1'
+        }
+      ]
     },
 
     // 82. Treemap Chart
@@ -1534,12 +1580,16 @@ var themeObject = {
         defaultParentBgColor: '#36B5D8',
         fontcolor: '#F6F6F6'
       },
-      data: [{
-        fillColor: '#4A5264',
-        data: [{
-          fillColor: '#4A5264'
-        }]
-      }]
+      data: [
+        {
+          fillColor: '#4A5264',
+          data: [
+            {
+              fillColor: '#4A5264'
+            }
+          ]
+        }
+      ]
     },
 
     // 83. Radar Chart
@@ -1658,23 +1708,33 @@ var themeObject = {
         showTrendlinesOnTop: '1'
       },
 
-      categories: [{
-        verticalLineColor: '#4B4B4B',
-        verticalLineThickness: '1',
-        verticalLineAlpha: '50'
-      }],
+      categories: [
+        {
+          verticalLineColor: '#4B4B4B',
+          verticalLineThickness: '1',
+          verticalLineAlpha: '50'
+        }
+      ],
 
-      trendlines: [{
-        line: [{
-          color: '#F6F6F6'
-        }]
-      }],
+      trendlines: [
+        {
+          line: [
+            {
+              color: '#F6F6F6'
+            }
+          ]
+        }
+      ],
 
-      vTRendlines: [{
-        line: [{
-          color: '#F6F6F6'
-        }]
-      }]
+      vTRendlines: [
+        {
+          line: [
+            {
+              color: '#F6F6F6'
+            }
+          ]
+        }
+      ]
     },
 
     // 87. Drag Node Chart
@@ -1686,15 +1746,21 @@ var themeObject = {
         showDetailedLegend: '1',
         divLineAlpha: '0'
       },
-      dataset: [{
-        color: '#36B5D8'
-      }],
-      connectors: [{
-        connector: [{
-          color: '#F0DC46',
-          strength: '1'
-        }]
-      }]
+      dataset: [
+        {
+          color: '#36B5D8'
+        }
+      ],
+      connectors: [
+        {
+          connector: [
+            {
+              color: '#F0DC46',
+              strength: '1'
+            }
+          ]
+        }
+      ]
     },
 
     // 88. Step Line Chart
@@ -1742,12 +1808,14 @@ var themeObject = {
         checkBoxColor: '#262A33'
       },
 
-      axis: [{
-        divLineColor: '#4B4B4B',
-        divLineAlpha: '50',
-        setAdaptiveYMin: '1',
-        divLineDashed: '0'
-      }]
+      axis: [
+        {
+          divLineColor: '#4B4B4B',
+          divLineAlpha: '50',
+          setAdaptiveYMin: '1',
+          divLineDashed: '0'
+        }
+      ]
     },
 
     // 90. Multi-level Pie Chart
@@ -1763,15 +1831,21 @@ var themeObject = {
         plotHoverEffect: '1'
       },
 
-      category: [{
-        color: '#262A33',
-        category: [{
-          color: '#36B5D8',
-          category: [{
-            color: '#36B5D8'
-          }]
-        }]
-      }]
+      category: [
+        {
+          color: '#262A33',
+          category: [
+            {
+              color: '#36B5D8',
+              category: [
+                {
+                  color: '#36B5D8'
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
 
     // 91. Select-Scatter Chart
@@ -1863,6 +1937,301 @@ var themeObject = {
         showLegend: '1',
         legendIconSides: '4'
       }
+    },
+
+    // 97. timeseries
+    timeseries: {
+      // caption styling
+      caption: {
+        style: {
+          text: {
+            'font-size': 18,
+            'font-family': 'Fira Sans Regular',
+            fill: '#F6F6F6'
+          }
+        }
+      },
+      // subcaption styling
+      subcaption: {
+        style: {
+          text: {
+            'font-family': 'Fira Sans Light',
+            'font-size': 15,
+            fill: '#999CA5'
+          }
+        }
+      },
+      chart: {
+        paletteColors:
+          '#36B5D8, #F066AC, #6EC85A, #6E80CA, #E09653, #F0DC46, #E1D7AD, #61C8C8, #EBE4F4, #E64141',
+        multiCanvasTooltip: 1,
+        baseFont: 'Fira Sans Light',
+        style: {
+          text: {
+            'font-family': 'Fira Sans Light'
+          },
+          background: {
+            fill: '#262A33'
+          },
+          canvas: {
+            fill: '#262A33',
+            stroke: '#4B4B4B',
+            'stroke-width': 0.5
+          },
+          tooltip: {
+            'font-size': 13,
+            color: '#F6F6F6',
+            'background-color': '#000000',
+            'background-opacity': 0.7,
+            'border-color': '#000000',
+            'border-width': 2,
+            'border-radius': 2,
+            padding: 7
+          },
+          navigator: {
+            brush: {
+              overlay: {
+                opacity: 0.15
+              },
+              handle: {
+                fill: '#ABABAB'
+              }
+            },
+            scroller: {
+              button: {
+                fill: '#ABABAB'
+              },
+              track: {
+                fill: '#C4C4C4'
+              },
+              scrollbar: {
+                fill: '#ABABAB'
+              }
+            }
+          }
+        }
+      },
+      extensions: {
+        customRangeSelector: {
+          style: {
+            calendar: {
+              days: 'fc-cal-day-candy',
+              normaldate: 'fc-cal-date-normal-candy',
+              disableddate: 'fc-cal-date-disabled-candy',
+              selecteddate: 'fc-cal-date-selected-candy',
+              header: 'fc-cal-month-header-candy',
+              weekend: 'fc-cal-weekend-candy',
+              body: 'fc-cal-body-candy',
+              navprev: 'fc-cal-nav-prev-candy',
+              navnext: 'fc-cal-nav-next-candy'
+            },
+            button: {
+              apply: {
+                color: '#FFFFFF',
+                'background-color': '#453E7F',
+                border: 'none'
+              },
+              cancel: {
+                color: '#999CA5',
+                'background-color': '#262A33',
+                border: 'none',
+                'font-family': 'Fira Sans Regular'
+              }
+            },
+            label: {
+              color: '#FFFFFF',
+              'font-family': 'Fira Sans Light'
+            },
+            input: {
+              'background-color': '#343434',
+              border: '0.5px solid #4B4B4B',
+              color: '#CCCCCC',
+              'font-family': 'Fira Sans Light'
+            },
+            title: {
+              text: {
+                fill: '#FFFFFF',
+                'font-family': 'Fira Sans Regular'
+              },
+              icon: {
+                fill: '#FFFFFF',
+                'font-family': 'Fira Sans Regular'
+              }
+            },
+            background: {
+              'background-color': '#262A33'
+            }
+          }
+        },
+        standardRangeSelector: {
+          style: {
+            button: {
+              text: {
+                fill: '#999CA5',
+                'font-family': 'Fira Sans Light'
+              }
+            },
+            'button:hover': {
+              text: {
+                fill: '#FFFFFF',
+                'font-family': 'Fira Sans Light'
+              }
+            },
+            'button:active': {
+              text: {
+                fill: '#FFFFFF',
+                'font-family': 'Fira Sans Regular'
+              }
+            },
+            separator: {
+              stroke: '#4B4B4B',
+              'stroke-width': 0.5
+            }
+          }
+        }
+      },
+      legend: {
+        item: {
+          style: {
+            text: {
+              fill: '#999CA5',
+              'font-size': 14,
+              'font-family': 'Fira Sans Regular',
+              'font-weight': 'bold'
+            }
+          }
+        }
+      },
+      xaxis: {
+        style: {
+          title: {
+            'font-size': 14,
+            'font-family': 'Fira Sans Regular',
+            fill: '#999CA5'
+          },
+          ticks: {
+            major: {
+              stroke: '#4B4B4B',
+              'stroke-width': 0.5
+            },
+            minor: {
+              stroke: '#4B4B4B',
+              'stroke-width': 0.25
+            }
+          },
+          text: {
+            major: {
+              color: '#F6F6F6'
+            },
+            minor: {
+              color: '#DDDDDD'
+            },
+            context: {
+              color: '#F6F6F6',
+              'font-family': 'Fira Sans Regular'
+            }
+          }
+        }
+      },
+      plotconfig: {
+        column: {
+          style: {
+            'plot:hover': {
+              opacity: 0.5
+            },
+            'plot:highlight': {
+              opacity: 0.75
+            }
+          }
+        },
+        line: {
+          style: {
+            plot: {
+              'stroke-width': 2
+            },
+            anchor: {
+              'stroke-width': 0
+            }
+          }
+        },
+        area: {
+          style: {
+            anchor: {
+              'stroke-width': 0
+            }
+          }
+        },
+        candlestick: {
+          style: {
+            bear: {
+              stroke: '#E64141',
+              fill: '#E64141'
+            },
+            bull: {
+              stroke: '#6EC85A',
+              fill: '#6EC85A'
+            },
+            'bear:hover': {
+              opacity: 0.5
+            },
+            'bear:highlight': {
+              opacity: 0.75
+            },
+            'bull:hover': {
+              opacity: 0.5
+            },
+            'bull:highlight': {
+              opacity: 0.75
+            }
+          }
+        },
+        ohlc: {
+          style: {
+            bear: {
+              stroke: '#E64141',
+              fill: '#E64141'
+            },
+            bull: {
+              stroke: '#6EC85A',
+              fill: '#6EC85A'
+            },
+            'bear:hover': {
+              opacity: 0.5
+            },
+            'bear:highlight': {
+              opacity: 0.75
+            },
+            'bull:hover': {
+              opacity: 0.5
+            },
+            'bull:highlight': {
+              opacity: 0.75
+            }
+          }
+        }
+      },
+      yaxis: [
+        {
+          style: {
+            title: {
+              'font-size': 14,
+              'font-family': 'Fira Sans Regular',
+              fill: '#999CA5'
+            },
+            'tick-mark': {
+              stroke: '#4B4B4B',
+              'stroke-width': 0.5
+            },
+            'grid-line': {
+              stroke: '#4B4B4B',
+              'stroke-width': 0.5
+            },
+            label: {
+              color: '#999CA5'
+            }
+          }
+        }
+      ]
     }
   }
 };

@@ -1,17 +1,21 @@
 /*
- Gammel Theme v0.1
+ Gammel Theme v0.2
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 */
+/* jshint ignore:start */
+import './fusioncharts.theme.gammel.css';
+/* jshint ignore:end */
 var themeObject = {
   name: 'gammel',
   theme: {
     base: {
       chart: {
         // plot customization
-        paletteColors: '#7CB5EC, #434348, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
+        paletteColors:
+          '#7CB5EC, #434348, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
         usePlotGradientColor: '0',
         showPlotBorder: '0',
         showShadow: '0',
@@ -51,10 +55,12 @@ var themeObject = {
 
         // font and text size customization
         baseFontSize: '11',
-        baseFont: 'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+        baseFont:
+          'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
         baseFontColor: '#666666',
         outCnvBaseFontSize: '11',
-        outCnvBaseFont: 'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+        outCnvBaseFont:
+          'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
         outCnvBaseFontColor: '#666666',
         captionFontSize: '18',
         captionFontBold: '0',
@@ -206,8 +212,9 @@ var themeObject = {
       data: function (b, a, c) {
         a = window.Math;
         return {
-          alpha: 100 -
-            (50 < c ? a.round(100 / a.ceil(c / 10)) : 20) * a.floor(b / 10)
+          alpha:
+            100 -
+            (c > 50 ? a.round(100 / a.ceil(c / 10)) : 20) * a.floor(b / 10)
         };
       }
     },
@@ -233,8 +240,9 @@ var themeObject = {
       data: function (b, a, c) {
         a = window.Math;
         return {
-          alpha: 100 -
-            (50 < c ? a.round(100 / a.ceil(c / 10)) : 20) * a.floor(b / 10)
+          alpha:
+            100 -
+            (c > 50 ? a.round(100 / a.ceil(c / 10)) : 20) * a.floor(b / 10)
         };
       }
     },
@@ -258,8 +266,9 @@ var themeObject = {
       data: function (b, a, c) {
         a = window.Math;
         return {
-          alpha: 100 -
-            (50 < c ? a.round(100 / a.ceil(c / 10)) : 20) * a.floor(b / 10)
+          alpha:
+            100 -
+            (c > 50 ? a.round(100 / a.ceil(c / 10)) : 20) * a.floor(b / 10)
         };
       }
     },
@@ -285,8 +294,9 @@ var themeObject = {
       data: function (b, a, c) {
         a = window.Math;
         return {
-          alpha: 100 -
-            (50 < c ? a.round(100 / a.ceil(c / 10)) : 20) * a.floor(b / 10)
+          alpha:
+            100 -
+            (c > 50 ? a.round(100 / a.ceil(c / 10)) : 20) * a.floor(b / 10)
         };
       }
     },
@@ -369,7 +379,7 @@ var themeObject = {
     // 17. Multi-series Bar 3D
     msbar3d: {
       chart: {
-        showValues: '0',
+        showValues: '0'
       }
     },
 
@@ -445,7 +455,7 @@ var themeObject = {
     stackedbar2d: {
       chart: {
         showValues: '0',
-        showSum: '1',
+        showSum: '1'
       }
     },
 
@@ -675,10 +685,10 @@ var themeObject = {
       chart: {
         showValues: '0',
         showShadow: '0',
+        adjustDiv: '1',
         lineThickness: '2',
         anchorRadius: '4',
         showLegend: '1',
-        adjustDiv: '1',
         flatScrollBars: '1',
         scrollShowButtons: '1',
         scrollHeight: '15',
@@ -780,11 +790,13 @@ var themeObject = {
         valueBelowPivot: '1'
       },
       dials: {
-        dial: [{
-          bgColor: '#000000',
-          borderThickness: '0',
-          rearExtension: '13'
-        }]
+        dial: [
+          {
+            bgColor: '#000000',
+            borderThickness: '0',
+            rearExtension: '13'
+          }
+        ]
       }
     },
 
@@ -793,7 +805,8 @@ var themeObject = {
       chart: {
         is3D: '0',
         placeValuesInside: '1',
-        valueFont: 'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif'
+        valueFont:
+          'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif'
       }
     },
 
@@ -1029,12 +1042,12 @@ var themeObject = {
     gantt: {
       chart: {
         taskBarFillMix: '{light+0}',
+        flatScrollBars: '1',
         gridBorderAlpha: '100',
         gridBorderColor: '#E6E6E6',
         ganttLineColor: '#E6E6E6',
         ganttLineAlpha: '100',
         taskBarRoundRadius: '2',
-        flatScrollBars: '1',
         showHoverEffect: '1',
         plotHoverEffect: '1',
         plotFillHoverAlpha: '50',
@@ -1058,19 +1071,23 @@ var themeObject = {
         legendBgAlpha: '0'
       },
 
-      categories: [{
-        fontcolor: '#434348',
-        fontsize: '11',
-        bgcolor: '#F4F4F4',
-        hoverBandAlpha: '50',
-        showGanttPaneHoverBand: '1',
-        showHoverBand: '1',
-        category: [{
+      categories: [
+        {
           fontcolor: '#434348',
           fontsize: '11',
-          bgcolor: '#F4F4F4'
-        }]
-      }],
+          bgcolor: '#F4F4F4',
+          hoverBandAlpha: '50',
+          showGanttPaneHoverBand: '1',
+          showHoverBand: '1',
+          category: [
+            {
+              fontcolor: '#434348',
+              fontsize: '11',
+              bgcolor: '#F4F4F4'
+            }
+          ]
+        }
+      ],
 
       tasks: {
         showBorder: '0',
@@ -1097,19 +1114,25 @@ var themeObject = {
         fontcolor: '#434348',
         bgcolor: '#FFFFFF',
         bgAlpha: '100',
-        datacolumn: [{
-          bgcolor: '#FFFFFF'
-        }]
+        datacolumn: [
+          {
+            bgcolor: '#FFFFFF'
+          }
+        ]
       },
 
-      connectors: [{
-        hoverThickness: '1.5'
-      }],
+      connectors: [
+        {
+          hoverThickness: '1.5'
+        }
+      ],
 
       milestones: {
-        milestone: [{
-          color: '#8EED7D'
-        }]
+        milestone: [
+          {
+            color: '#8EED7D'
+          }
+        ]
       }
     },
 
@@ -1195,7 +1218,8 @@ var themeObject = {
     // 73 Error Bar Chart
     errorbar2d: {
       chart: {
-        paletteColors: '#7CB5EC, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
+        paletteColors:
+          '#7CB5EC, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
         errorBarColor: '#434348',
         errorBarThickness: '1.3',
         showValues: '0'
@@ -1205,7 +1229,8 @@ var themeObject = {
     // 74 Error Line 2D Chart
     errorline: {
       chart: {
-        paletteColors: '#7CB5EC, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
+        paletteColors:
+          '#7CB5EC, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
         errorBarColor: '#434348',
         errorBarThickness: '1.3',
         drawAnchors: '1',
@@ -1223,7 +1248,8 @@ var themeObject = {
     // 75 Error Scatter Chart
     errorscatter: {
       chart: {
-        paletteColors: '#7CB5EC, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
+        paletteColors:
+          '#7CB5EC, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
         errorBarColor: '#434348',
         errorBarThickness: '1.3',
         drawCustomLegendIcon: '0',
@@ -1278,17 +1304,25 @@ var themeObject = {
         showValues: '0',
         showLegend: '1'
       },
-      categories: [{
-        category: [{
-          fontItalic: '1'
-        }]
-      }],
-      dataset: [{
-        data: [{
-          allowDrag: '1',
-          alpha: '70'
-        }]
-      }]
+      categories: [
+        {
+          category: [
+            {
+              fontItalic: '1'
+            }
+          ]
+        }
+      ],
+      dataset: [
+        {
+          data: [
+            {
+              allowDrag: '1',
+              alpha: '70'
+            }
+          ]
+        }
+      ]
     },
 
     // 80 Drag-able Line 2D Chart
@@ -1304,18 +1338,26 @@ var themeObject = {
         anchorBorderHoverThickness: '2',
         legendIconBorderThickness: '1'
       },
-      categories: [{
-        category: [{
-          fontItalic: '1'
-        }]
-      }],
-      dataset: [{
-        data: [{
-          allowDrag: '1',
-          alpha: '70',
-          dashed: '1'
-        }]
-      }]
+      categories: [
+        {
+          category: [
+            {
+              fontItalic: '1'
+            }
+          ]
+        }
+      ],
+      dataset: [
+        {
+          data: [
+            {
+              allowDrag: '1',
+              alpha: '70',
+              dashed: '1'
+            }
+          ]
+        }
+      ]
     },
 
     // 81 Drag-able Area 2D Chart
@@ -1326,17 +1368,25 @@ var themeObject = {
         drawAnchors: '0',
         plotFillAlpha: '70'
       },
-      categories: [{
-        category: [{
-          fontItalic: '1'
-        }]
-      }],
-      dataset: [{
-        data: [{
-          allowDrag: '1',
-          dashed: '1'
-        }]
-      }]
+      categories: [
+        {
+          category: [
+            {
+              fontItalic: '1'
+            }
+          ]
+        }
+      ],
+      dataset: [
+        {
+          data: [
+            {
+              allowDrag: '1',
+              dashed: '1'
+            }
+          ]
+        }
+      ]
     },
 
     // 82 Treemap Chart
@@ -1359,12 +1409,16 @@ var themeObject = {
         toolbarButtonScale: '1.50',
         plotToolText: '$label, $dataValue, $sValue'
       },
-      data: [{
-        fillColor: '#F4F4F4',
-        data: [{
-          fillColor: '#F4F4F4'
-        }]
-      }]
+      data: [
+        {
+          fillColor: '#F4F4F4',
+          data: [
+            {
+              fillColor: '#F4F4F4'
+            }
+          ]
+        }
+      ]
     },
 
     // 83 Radar Chart
@@ -1395,16 +1449,20 @@ var themeObject = {
         plotBorderThickness: '0.5',
         plotBorderColor: '#FFFFFF',
         tlFontColor: '#FDFDFD',
-        tlFont: 'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+        tlFont:
+          'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
         tlFontSize: '10',
         trFontColor: '#FDFDFD',
-        trFont: 'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+        trFont:
+          'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
         trFontSize: '10',
         blFontColor: '#FDFDFD',
-        blFont: 'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+        blFont:
+          'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
         blFontSize: '10',
         brFontColor: '#FDFDFD',
-        brFont: 'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+        brFont:
+          'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
         brFontSize: '10',
         captionPadding: '20',
         legendScaleLineThickness: '0',
@@ -1469,11 +1527,13 @@ var themeObject = {
         rollOverBandColor: '#E6E6E6'
       },
 
-      categories: [{
-        verticalLineColor: '#434348',
-        verticalLineThickness: '1',
-        verticalLineAlpha: '35'
-      }]
+      categories: [
+        {
+          verticalLineColor: '#434348',
+          verticalLineThickness: '1',
+          verticalLineAlpha: '35'
+        }
+      ]
     },
 
     // 87 Drag Node Chart
@@ -1485,17 +1545,22 @@ var themeObject = {
         showDetailedLegend: '1',
         divLineThickness: '0'
       },
-      dataset: [{
-        color: '#7CB5EC'
-      }],
-      connectors: [{
-        connector: [{
-          color: '#434348',
-          strength: '1.5'
-        }]
-      }]
+      dataset: [
+        {
+          color: '#7CB5EC'
+        }
+      ],
+      connectors: [
+        {
+          connector: [
+            {
+              color: '#434348',
+              strength: '1.5'
+            }
+          ]
+        }
+      ]
     },
-
 
     // 88 Step Line Chart
     msstepline: {
@@ -1524,11 +1589,13 @@ var themeObject = {
         legendIconBorderThickness: '1'
       },
 
-      axis: [{
-        divLineColor: '#E6E6E6',
-        setAdaptiveYMin: '1',
-        divLineDashed: '0'
-      }]
+      axis: [
+        {
+          divLineColor: '#E6E6E6',
+          setAdaptiveYMin: '1',
+          divLineDashed: '0'
+        }
+      ]
     },
 
     // 90 Multi-level Pie Chart
@@ -1539,15 +1606,21 @@ var themeObject = {
         showHoverEffect: '1',
         plotHoverEffect: '1'
       },
-      category: [{
-        color: '#8087E5',
-        category: [{
-          color: '#7CB5EC',
-          category: [{
-            color: '#7CB5EC'
-          }]
-        }]
-      }]
+      category: [
+        {
+          color: '#8087E5',
+          category: [
+            {
+              color: '#7CB5EC',
+              category: [
+                {
+                  color: '#7CB5EC'
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
 
     // 91 Select-Scatter Chart
@@ -1569,7 +1642,8 @@ var themeObject = {
     waterfall2d: {
       chart: {
         showValues: '0',
-        paletteColors: '#7CB5EC, #434348, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
+        paletteColors:
+          '#7CB5EC, #434348, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
         positiveColor: '#8EED7D',
         negativeColor: '#F7A35C',
         showConnectors: '1',
@@ -1614,6 +1688,326 @@ var themeObject = {
         gradient: '1',
         code: '#7CB5EC'
       }
+    },
+
+    // timeseries
+    timeseries: {
+      // caption styling
+      caption: {
+        style: {
+          text: {
+            'font-size': 18,
+            'font-family':
+              'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+            fill: '#333333',
+            'font-weight': 500
+          }
+        }
+      },
+      // subcaption styling
+      subcaption: {
+        style: {
+          text: {
+            'font-family':
+              'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+            'font-size': 12,
+            fill: '#666666'
+          }
+        }
+      },
+      chart: {
+        paletteColors:
+          '#7CB5EC, #434348, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1',
+        multiCanvasTooltip: 1,
+        baseFont:
+          'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+        style: {
+          text: {
+            'font-family':
+              'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif'
+          },
+          canvas: {
+            stroke: '#E6E6E6',
+            'stroke-width': 1
+          },
+          tooltip: {
+            'font-family':
+              'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+            'font-size': 12,
+            color: '#333333',
+            'background-color': '#F6F6F6',
+            'background-opacity': '0.85',
+            'border': '1px solid rgba(153, 153, 153, 0.9)',
+            // "border-width": "1",
+            'border-radius': '3'
+          },
+          navigator: {
+            brush: {
+              handle: {
+                fill: '#F2F2F2'
+              },
+              overlay: {
+                opacity: 1
+              }
+            },
+            scroller: {
+              button: {
+                fill: '#E6E6E6'
+              },
+              track: {
+                fill: '#F2F2F2'
+              },
+              scrollbar: {
+                fill: '#CCCCCC'
+              }
+            }
+          }
+        }
+      },
+      extensions: {
+        customRangeSelector: {
+          style: {
+            title: {
+              text: {
+                fill: '#333333',
+                'font-weight': '500'
+              },
+              icon: {
+                fill: '#333333'
+              }
+            },
+            label: {
+              'font-family':
+                'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+              color: '#666666'
+            },
+            input: {
+              'font-family':
+                'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+              color: '#333333',
+              'background-color': '#FFFFFF',
+              'border': '1px solid #CCCCCC'
+            },
+            button: {
+              apply: {
+                'font-family':
+                  'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+                'background-color': '#7CB5EC',
+                color: '#333333',
+                border: 'none',
+                'font-weight': 600
+              },
+              cancel: {
+                'font-family':
+                  'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+                color: '#666666',
+                'background-color': '#FFFFFF',
+                border: 'none',
+                'font-weight': 500
+              }
+            },
+            calendar: {
+              navprev: 'fc-cal-nav-prev-gammel',
+              navnext: 'fc-cal-nav-next-gammel',
+              month: 'fc-cal-month-gammel',
+              days: 'fc-cal-day-gammel',
+              normaldate: 'fc-cal-date-normal-gammel',
+              disableddate: 'fc-cal-date-disabled-gammel',
+              selecteddate: 'fc-cal-date-selected-gammel',
+              weekend: 'fc-cal-weekend-gammel'
+            }
+          }
+        },
+        standardRangeSelector: {
+          style: {
+            button: {
+              text: {
+                fill: '#666666',
+                'font-family':
+                  'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif'
+              }
+
+              // backlog - https://fusioncharts.jira.com/browse/FTV3-812
+              // background: {
+              //   fill: "#F7F7F7"
+              // }
+            },
+            'button:hover': {
+              text: {
+                fill: '#333333',
+                'font-family':
+                  'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif'
+              }
+
+              // backlog - https://fusioncharts.jira.com/browse/FTV3-812
+              // background: {
+              //   fill: "#F7F7F7"
+              // }
+            },
+            'button:active': {
+              text: {
+                fill: '#333333',
+                'font-family':
+                  'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+                'font-weight': 600
+              }
+
+              // backlog - https://fusioncharts.jira.com/browse/FTV3-812
+              // background: {
+              //   fill: "#EBEBF5"
+              // }
+            },
+            separator: {
+              stroke: '#E6E6E6'
+            }
+          }
+        }
+      },
+      legend: {
+        item: {
+          style: {
+            text: {
+              fill: '#333333',
+              'font-size': 12,
+              'font-family':
+                'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+              'font-weight': 600
+            }
+          }
+        }
+      },
+      xaxis: {
+        style: {
+          title: {
+            'font-size': 12,
+            'font-family':
+              'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+            fill: '#666666'
+          },
+          ticks: {
+            major: {
+              stroke: '#CCD6EB',
+              'stroke-width': 1
+            },
+            minor: {
+              stroke: '#CCD6EB',
+              'stroke-width': 0.75
+            }
+          },
+          text: {
+            major: {
+              color: '#666666'
+            },
+            minor: {
+              color: '#666666'
+            },
+            context: {
+              color: '#333333',
+              'font-weight': 600
+            }
+          }
+        }
+      },
+      plotconfig: {
+        column: {
+          style: {
+            'plot:hover': {
+              opacity: 0.75
+            },
+            'plot:highlight': {
+              opacity: 0.9
+            }
+          }
+        },
+        line: {
+          style: {
+            plot: {
+              'stroke-width': 2
+            },
+            anchor: {
+              'stroke-width': 1
+            }
+          }
+        },
+        area: {
+          style: {
+            anchor: {
+              'stroke-width': 1
+            }
+          }
+        },
+        candlestick: {
+          style: {
+            bear: {
+              stroke: '#F45B5B',
+              fill: '#F45B5B'
+            },
+            bull: {
+              stroke: '#8EED7D',
+              fill: '#8EED7D'
+            },
+            'bear:hover': {
+              opacity: 0.75
+            },
+            'bear:highlight': {
+              opacity: 0.9
+            },
+            'bull:hover': {
+              opacity: 0.75
+            },
+            'bull:highlight': {
+              opacity: 0.9
+            }
+          }
+        },
+        ohlc: {
+          style: {
+            bear: {
+              stroke: '#F45B5B',
+              fill: '#F45B5B'
+            },
+            bull: {
+              stroke: '#8EED7D',
+              fill: '#8EED7D'
+            },
+            'bear:hover': {
+              opacity: 0.75
+            },
+            'bear:highlight': {
+              opacity: 0.9
+            },
+            'bull:hover': {
+              opacity: 0.75
+            },
+            'bull:highlight': {
+              opacity: 0.9
+            }
+          }
+        }
+      },
+      yaxis: [
+        {
+          style: {
+            title: {
+              'font-size': 12,
+              'font-family':
+                'Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif',
+              fill: '#666666'
+            },
+            'tick-mark': {
+              stroke: '#E6E6E6',
+              'stroke-width': 1
+            },
+            'grid-line': {
+              stroke: '#E6E6E6',
+              'stroke-width': 1
+            },
+            label: {
+              color: '#666666'
+            }
+          }
+        }
+      ]
     }
   }
 };

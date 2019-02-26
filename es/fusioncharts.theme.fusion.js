@@ -25,11 +25,11 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "@font-face {\n  font-family: 'Source Sans Pro';\n  font-style: normal;\n  font-weight: 400;\n  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n/* latin */\n@font-face {\n  font-family: 'Source Sans Pro Light';\n  font-style: normal;\n  font-weight: 300;\n  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n";
+var css = "@font-face {\n  font-family: 'Source Sans Pro';\n  font-style: normal;\n  font-weight: 400;\n  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Source Sans Pro Light';\n  font-style: normal;\n  font-weight: 300;\n  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Source Sans Pro SemiBold';\n  font-style: normal;\n  font-weight: 600;\n  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n/* ft calendar customization */\n.fc-cal-date-normal {\n  color: #5F5F5F;\n  font-family: 'Source Sans Pro';\n  font-size: 11px;\n}\n\n.fc-cal-date-selected {\n  color: #FEFEFE;\n  font-family: 'Source Sans Pro SemiBold'\n}";
 styleInject(css);
 
 /*
- Fusion Theme v0.1
+ Fusion Theme v0.2
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
@@ -90,6 +90,7 @@ var themeObject = {
         yAxisNameFontSize: '15',
         sYAxisNameFontSize: '15',
         captionFontSize: '18',
+        captionFontFamily: 'Source Sans Pro SemiBold',
         subCaptionFontSize: '13',
         captionFontBold: '1',
         subCaptionFontBold: '0',
@@ -546,10 +547,10 @@ var themeObject = {
     stackedcolumn2dline: {
       chart: {
         showLegend: '1',
+        drawCustomLegendIcon: '0',
         lineThickness: '2',
         anchorRadius: '4',
         drawCrossLine: '1',
-        drawCustomLegendIcon: '0',
         anchorHoverEffect: '1',
         anchorHoverRadius: '4',
         anchorBorderHoverThickness: '1.5',
@@ -1064,12 +1065,12 @@ var themeObject = {
     gantt: {
       chart: {
         taskBarFillMix: '{light+0}',
+        flatScrollBars: '1',
         gridBorderAlpha: '100',
         gridBorderColor: '#EAEAEA',
         ganttLineColor: '#EAEAEA',
         ganttLineAlpha: '100',
         taskBarRoundRadius: '2',
-        flatScrollBars: '1',
         showHoverEffect: '1',
         plotHoverEffect: '1',
         plotFillHoverAlpha: '50',
@@ -1705,6 +1706,255 @@ var themeObject = {
         showLegend: '1',
         legendIconSides: '4'
       }
+    },
+
+    // timeseries
+    timeseries: {
+      // caption styling
+      caption: {
+        style: {
+          text: {
+            'font-size': 18,
+            'font-family': 'Source Sans Pro SemiBold',
+            fill: '#5A5A5A'
+          }
+        }
+      },
+      // sub-caption styling
+      subcaption: {
+        style: {
+          text: {
+            'font-family': 'Source Sans Pro',
+            'font-size': 13,
+            fill: '#999999'
+          }
+        }
+      },
+      chart: {
+        paletteColors: '#5D62B5, #29C3BE, #F2726F, #FFC533, #62B58F, #BC95DF, #67CDF2',
+        baseFont: 'Source Sans Pro',
+        multiCanvasTooltip: 1,
+        style: {
+          text: {
+            'font-family': 'Source Sans Pro'
+          },
+          canvas: {
+            'stroke-width': 1,
+            stroke: '#DFDFDF'
+          },
+          tooltip: {
+            'font-size': 13,
+            color: '#5A5A5A',
+            'background-color': '#FFFFFF',
+            opacity: '0.9',
+            'border-color': '#E1E1E1',
+            'border-width': '1',
+            'border-radius': '2',
+            padding: 6
+          },
+          navigator: {
+            brush: {
+              handle: {
+                fill: '#EBEBEB'
+              }
+            },
+            scroller: {
+              button: {
+                fill: '#EBEBEB'
+              },
+              track: {
+                fill: '#FFFFFF'
+              },
+              scrollbar: {
+                fill: '#EBEBEB'
+              }
+            }
+          }
+        }
+      },
+      extensions: {
+        customRangeSelector: {
+          style: {
+            title: {
+              text: {
+                'font-family': 'Source Sans Pro SemiBold'
+              },
+              icon: {
+                'font-family': 'Source Sans Pro SemiBold'
+              },
+              calendar: {
+                normaldate: 'fc-cal-date-normal',
+                selecteddate: 'fc-cal-date-selected',
+                body: 'fc-cal-body'
+              }
+            }
+          }
+        },
+        standardRangeSelector: {
+          style: {
+            button: {
+              text: {
+                fill: '#999999'
+              }
+            },
+            'button:hover': {
+              text: {
+                fill: '#5648D4',
+                'font-family': 'Source Sans Pro SemiBold'
+              }
+            },
+            'button:active': {
+              text: {
+                fill: '#5648D4',
+                'font-family': 'Source Sans Pro SemiBold'
+              }
+            },
+            separator: {
+              stroke: '#DFDFDF'
+            }
+          }
+        }
+      },
+      legend: {
+        item: {
+          style: {
+            text: {
+              fill: '#7C7C7C',
+              'font-size': 15,
+              'font-family': 'Source Sans Pro'
+            }
+          }
+        }
+      },
+      xaxis: {
+        style: {
+          title: {
+            'font-size': 15,
+            'font-family': 'Source Sans Pro',
+            fill: '#999999'
+          },
+          ticks: {
+            major: {
+              stroke: '#DFDFDF',
+              'stroke-width': 1
+            },
+            minor: {
+              stroke: '#DFDFDF',
+              'stroke-width': 0.75
+            }
+          },
+          text: {
+            major: {
+              color: '#5A5A5A'
+            },
+            minor: {
+              color: '#8D8D8D'
+            },
+            context: {
+              color: '#5A5A5A'
+            }
+          }
+        }
+      },
+      plotconfig: {
+        column: {
+          style: {
+            'plot:hover': {
+              opacity: 0.75
+            },
+            'plot:highlight': {
+              opacity: 0.75
+            }
+          }
+        },
+        line: {
+          style: {
+            plot: {
+              'stroke-width': 1.5
+            },
+            anchor: {
+              'stroke-width': 0
+            }
+          }
+        },
+        area: {
+          style: {
+            anchor: {
+              'stroke-width': 0
+            }
+          }
+        },
+        candlestick: {
+          style: {
+            bear: {
+              stroke: '#F2726F',
+              fill: '#F2726F'
+            },
+            'bear:hover': {
+              opacity: 0.75
+            },
+            'bear:highlight': {
+              opacity: 0.75
+            },
+            bull: {
+              stroke: '#62B58F',
+              fill: '#62B58F'
+            },
+            'bull:hover': {
+              opacity: 0.75
+            },
+            'bull:highlight': {
+              opacity: 0.75
+            }
+          }
+        },
+        ohlc: {
+          style: {
+            bear: {
+              stroke: '#F2726F',
+              fill: '#F2726F'
+            },
+            'bear:hover': {
+              opacity: 0.75
+            },
+            'bear:highlight': {
+              opacity: 0.75
+            },
+            bull: {
+              stroke: '#62B58F',
+              fill: '#62B58F'
+            },
+            'bull:hover': {
+              opacity: 0.75
+            },
+            'bull:highlight': {
+              opacity: 0.75
+            }
+          }
+        }
+      },
+      yaxis: [
+        {
+          style: {
+            title: {
+              'font-size': '15',
+              'font-family': 'Source Sans Pro',
+              fill: '#999999'
+            },
+            'tick-mark': {
+              stroke: '#DFDFDF',
+              'stroke-width': 1
+            },
+            'grid-line': {
+              stroke: '#DFDFDF',
+              'stroke-width': 1
+            },
+            label: {
+              color: '#5A5A5A'
+            }
+          }
+        }
+      ]
     }
   }
 };
