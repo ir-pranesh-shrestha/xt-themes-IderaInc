@@ -29,7 +29,7 @@ var css = "@font-face {\n  font-family: 'Fira Sans Light';\n  font-style: normal
 styleInject(css);
 
 /*
- Candy Theme v0.2
+ Candy Theme v0.3
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
@@ -2015,27 +2015,42 @@ var themeObject = {
             'border-width': 2,
             'border-radius': 2,
             padding: 7
-          },
-          navigator: {
-            brush: {
-              overlay: {
-                opacity: 0.15
-              },
-              handle: {
-                fill: '#ABABAB'
-              }
+          }
+        }
+      },
+      navigator: {
+        scrollbar: {
+          style: {
+            button: {
+              fill: '#ABABAB'
+            },
+            track: {
+              fill: '#C4C4C4'
             },
             scroller: {
-              button: {
-                fill: '#ABABAB'
-              },
-              track: {
-                fill: '#C4C4C4'
-              },
-              scrollbar: {
-                fill: '#ABABAB'
-              }
+              fill: '#ABABAB'
             }
+          }
+        },
+        window: {
+          style: {
+            handle: {
+              fill: '#ABABAB'
+            },
+            mask: {
+              opacity: 0.15,
+              stroke: '#4B4B4B',
+              'stroke-width': 0.55
+            }
+          }
+        }
+      },
+      crossline: {
+        style: {
+          line: {
+            stroke: '#4B4B4B',
+            'stroke-width': 1,
+            opacity: 0.6
           }
         }
       },
@@ -2064,6 +2079,11 @@ var themeObject = {
                 'background-color': '#262A33',
                 border: 'none',
                 'font-family': 'Fira Sans Regular'
+              }
+            },
+            'button:hover': {
+              cancel: {
+                color: '#FFFFFF'
               }
             },
             label: {
@@ -2137,27 +2157,27 @@ var themeObject = {
             'font-family': 'Fira Sans Regular',
             fill: '#999CA5'
           },
-          ticks: {
-            major: {
-              stroke: '#4B4B4B',
-              'stroke-width': 0.5
-            },
-            minor: {
-              stroke: '#4B4B4B',
-              'stroke-width': 0.25
-            }
+          'grid-line': {
+            stroke: '#4B4B4B',
+            'stroke-width': 0.55
           },
-          text: {
-            major: {
-              color: '#F6F6F6'
-            },
-            minor: {
-              color: '#DDDDDD'
-            },
-            context: {
-              color: '#F6F6F6',
-              'font-family': 'Fira Sans Regular'
-            }
+          'tick-mark-major': {
+            stroke: '#4B4B4B',
+            'stroke-width': 0.5
+          },
+          'tick-mark-minor': {
+            stroke: '#4B4B4B',
+            'stroke-width': 0.25
+          },
+          'label-major': {
+            color: '#F6F6F6'
+          },
+          'label-minor': {
+            color: '#DDDDDD'
+          },
+          'label-context': {
+            color: '#F6F6F6',
+            'font-family': 'Fira Sans Regular'
           }
         }
       },
@@ -2268,6 +2288,7 @@ var index = {
   extension: themeObject,
   name: 'candyTheme',
   type: 'theme'
-};
+}
+;
 
 export default index;
