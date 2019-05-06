@@ -31,5 +31,6 @@
 
 .fc-cal-date-selected {
   color: #FEFEFE;
-  font-family: 'Source Sans Pro SemiBold'
+  font-family: 'Source Sans Pro SemiBold';
+  font-size: 11px;
 }
