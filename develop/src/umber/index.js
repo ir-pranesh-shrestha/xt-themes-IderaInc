@@ -152,7 +152,8 @@ var themeObject = {
         anchorBgColor: "#FFF1E5",
         drawCrossLine: 1,
         lineThickness: 2,
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -166,7 +167,8 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -251,13 +253,7 @@ var themeObject = {
         smartLineThickness: 1,
         showValues: 1,
         showPercentValues: 1,
-        showPercentInToolTip: 0,
-        centerLabelFont: "Titillium Web Regular",
-        centerLabelFontSize: 12,
-        centerLabelColor: "#33302E",
-        // setting default as null
-        defaultCenterLabel: null,
-        centerLabel: null
+        showPercentInToolTip: 0
       }
     },
 
@@ -307,7 +303,8 @@ var themeObject = {
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
-        legendIconBorderThickness: 2
+        legendIconBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -336,7 +333,8 @@ var themeObject = {
         legendIconSides: 2,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -425,7 +423,8 @@ var themeObject = {
         legendIconSides: 2,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -618,7 +617,8 @@ var themeObject = {
         legendIconBorderThickness: 2,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: "#F2E5D9",
+        plotHoverEffect: 0
       }
     },
 
@@ -634,7 +634,8 @@ var themeObject = {
         drawCrossLine: 1,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: "#F2E5D9",
+        plotHoverEffect: 0
       }
     },
 
@@ -1154,7 +1155,8 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1181,7 +1183,8 @@ var themeObject = {
         legendIconSides: 2,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1228,8 +1231,8 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
         drawCrossLine: 1,
-        anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1248,7 +1251,8 @@ var themeObject = {
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
-        legendIconBorderThickness: 2
+        legendIconBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1283,7 +1287,8 @@ var themeObject = {
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
-        legendIconBorderThickness: 2
+        legendIconBorderThickness: 2,
+        plotHoverEffect: 0
       },
       categories: [
         {
@@ -1316,8 +1321,8 @@ var themeObject = {
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
-        anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       },
       categories: [
         {
@@ -1510,7 +1515,8 @@ var themeObject = {
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
-        legendIconBorderThickness: 2
+        legendIconBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1524,7 +1530,8 @@ var themeObject = {
         anchorBorderThickness: 2,
         legendIconSides: 2,
         legendIconBorderThickness: 2,
-        allowSelection: 0
+        allowSelection: 0,
+        plotHoverEffect: 0
       },
       axis: [
         {
@@ -1594,8 +1601,6 @@ var themeObject = {
     // kagi chart (93)
     kagi: {
       chart: {
-        anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2,
         rallyThickness: 2,
         declineThickness: 2,
         legendIconSides: 2,
@@ -1651,16 +1656,6 @@ var themeObject = {
       chart: {
         baseFont: "Titillium Web Regular",
         style: {
-          tooltip: {
-            "font-size": 11,
-            color: "#33302E",
-            "background-color": "#FFF9F5",
-            "background-opacity": 0.9,
-            "border-color": "#D5CDBE",
-            "border-width": 0.5,
-            "border-radius": 3,
-            padding: 6
-          },
           text: {
             "font-family": "Titillium Web Regular"
           },
@@ -1671,6 +1666,30 @@ var themeObject = {
             fill: "#FFF1E5",
             stroke: "#D5CDBE",
             "stroke-width": 0.75
+          }
+        }
+      },
+      tooltip: {
+        style: {
+          container: {
+            "background-color": "#FFF9F5",
+            opacity: 0.9,
+            "border": "0.5px solid #D5CDBE",
+            "border-radius": "3px",
+            padding: "6px"
+          },
+          text: {
+            "font-size": "11px",
+            color: "#606060"
+          },
+          header: {
+            "font-family": "Titillium Web SemiBold",
+            "font-size": "12px",
+            color: "#33302E",
+            padding: "0px"
+          },
+          body: {
+            padding: "0px"
           }
         }
       },
@@ -1796,7 +1815,7 @@ var themeObject = {
       },
       yaxis: [
         {
-          referenceLine: [
+          referenceline: [
             {
               style: {
                 marker: {
@@ -1901,7 +1920,6 @@ var themeObject = {
               selecteddate: "fc-cal-date-selected-umber",
               header: "fc-cal-month-header-umber",
               weekend: "fc-cal-weekend-umber",
-              body: "fc-cal-body-umber",
               navprev: "fc-cal-nav-prev-umber",
               navnext: "fc-cal-nav-next-umber"
             },

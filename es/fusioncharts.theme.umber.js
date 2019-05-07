@@ -25,7 +25,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "@font-face {\n  font-family: \"Titillium Web Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Titillium Web Regular\"), local(\"TitilliumWeb-Regular\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Titillium Web SemiBold\";\n  font-style: normal;\n  font-weight: 600;\n  src: local(\"Titillium Web SemiBold\"), local(\"TitilliumWeb-SemiBold\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n/* ft calendar customiztion */\n.fc-cal-day-umber {\n  background-color: #fff1e5;\n  color: #33302e;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-normal-umber {\n  background-color: #fff1e5;\n  color: #33302e;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-normal-umber:hover {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-disabled-umber {\n  background-color: #fff1e5;\n  color: #33302e80;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-month-header-umber {\n  background-color: #000000;\n  font-family: \"Titillium Web Regular\";\n}\n\n.fc-cal-weekend-umber {\n  background-color: #00000040;\n}\n\n.fc-cal-container-umber {\n  border: none;\n}\n\n.fc-cal-nav-next-umber,\n.fc-cal-nav-prev-umber {\n  font-family: \"Titillium Web Regular\";\n  font-size: 12px;\n}\n\n.fc-cal-date-selected-umber {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n}\n\n.fc-cal-date-selected-umber:hover {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n}\n";
+var css = "@font-face {\n  font-family: \"Titillium Web Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Titillium Web Regular\"), local(\"TitilliumWeb-Regular\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Titillium Web SemiBold\";\n  font-style: normal;\n  font-weight: 600;\n  src: local(\"Titillium Web SemiBold\"), local(\"TitilliumWeb-SemiBold\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n/* ft calendar customiztion */\n.fc-cal-day-umber {\n  background-color: #fff1e5;\n  color: #33302e;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-normal-umber {\n  background-color: #fff1e5;\n  color: #33302e;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-normal-umber:hover {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-disabled-umber {\n  background-color: #fff1e5;\n  color: rgba(51, 48, 46, 0.5);\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-month-header-umber {\n  background-color: #000000;\n  font-family: \"Titillium Web Regular\";\n}\n\n.fc-cal-weekend-umber {\n  background-color: rgba(0, 0, 0, 0.25);\n}\n\n.fc-cal-container-umber {\n  border: none;\n}\n\n.fc-cal-nav-next-umber,\n.fc-cal-nav-prev-umber {\n  font-family: \"Titillium Web Regular\";\n  font-size: 12px;\n}\n\n.fc-cal-date-selected-umber {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n}\n\n.fc-cal-date-selected-umber:hover {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n}\n";
 styleInject(css);
 
 /*
@@ -180,7 +180,8 @@ var themeObject = {
         anchorBgColor: "#FFF1E5",
         drawCrossLine: 1,
         lineThickness: 2,
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -194,7 +195,8 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -279,13 +281,7 @@ var themeObject = {
         smartLineThickness: 1,
         showValues: 1,
         showPercentValues: 1,
-        showPercentInToolTip: 0,
-        centerLabelFont: "Titillium Web Regular",
-        centerLabelFontSize: 12,
-        centerLabelColor: "#33302E",
-        // setting default as null
-        defaultCenterLabel: null,
-        centerLabel: null
+        showPercentInToolTip: 0
       }
     },
 
@@ -335,7 +331,8 @@ var themeObject = {
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
-        legendIconBorderThickness: 2
+        legendIconBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -364,7 +361,8 @@ var themeObject = {
         legendIconSides: 2,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -453,7 +451,8 @@ var themeObject = {
         legendIconSides: 2,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -646,7 +645,8 @@ var themeObject = {
         legendIconBorderThickness: 2,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: "#F2E5D9",
+        plotHoverEffect: 0
       }
     },
 
@@ -662,7 +662,8 @@ var themeObject = {
         drawCrossLine: 1,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: "#F2E5D9",
+        plotHoverEffect: 0
       }
     },
 
@@ -1182,7 +1183,8 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1209,7 +1211,8 @@ var themeObject = {
         legendIconSides: 2,
         drawCrossLine: 1,
         anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1256,8 +1259,8 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
         drawCrossLine: 1,
-        anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1276,7 +1279,8 @@ var themeObject = {
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
-        legendIconBorderThickness: 2
+        legendIconBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1311,7 +1315,8 @@ var themeObject = {
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
-        legendIconBorderThickness: 2
+        legendIconBorderThickness: 2,
+        plotHoverEffect: 0
       },
       categories: [
         {
@@ -1344,8 +1349,8 @@ var themeObject = {
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
-        anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2
+        anchorBorderThickness: 2,
+        plotHoverEffect: 0
       },
       categories: [
         {
@@ -1538,7 +1543,8 @@ var themeObject = {
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
-        legendIconBorderThickness: 2
+        legendIconBorderThickness: 2,
+        plotHoverEffect: 0
       }
     },
 
@@ -1552,7 +1558,8 @@ var themeObject = {
         anchorBorderThickness: 2,
         legendIconSides: 2,
         legendIconBorderThickness: 2,
-        allowSelection: 0
+        allowSelection: 0,
+        plotHoverEffect: 0
       },
       axis: [
         {
@@ -1622,8 +1629,6 @@ var themeObject = {
     // kagi chart (93)
     kagi: {
       chart: {
-        anchorBgColor: "#FFF1E5",
-        anchorBorderThickness: 2,
         rallyThickness: 2,
         declineThickness: 2,
         legendIconSides: 2,
@@ -1679,16 +1684,6 @@ var themeObject = {
       chart: {
         baseFont: "Titillium Web Regular",
         style: {
-          tooltip: {
-            "font-size": 11,
-            color: "#33302E",
-            "background-color": "#FFF9F5",
-            "background-opacity": 0.9,
-            "border-color": "#D5CDBE",
-            "border-width": 0.5,
-            "border-radius": 3,
-            padding: 6
-          },
           text: {
             "font-family": "Titillium Web Regular"
           },
@@ -1699,6 +1694,30 @@ var themeObject = {
             fill: "#FFF1E5",
             stroke: "#D5CDBE",
             "stroke-width": 0.75
+          }
+        }
+      },
+      tooltip: {
+        style: {
+          container: {
+            "background-color": "#FFF9F5",
+            opacity: 0.9,
+            "border": "0.5px solid #D5CDBE",
+            "border-radius": "3px",
+            padding: "6px"
+          },
+          text: {
+            "font-size": "11px",
+            color: "#606060"
+          },
+          header: {
+            "font-family": "Titillium Web SemiBold",
+            "font-size": "12px",
+            color: "#33302E",
+            padding: "0px"
+          },
+          body: {
+            padding: "0px"
           }
         }
       },
@@ -1824,7 +1843,7 @@ var themeObject = {
       },
       yaxis: [
         {
-          referenceLine: [
+          referenceline: [
             {
               style: {
                 marker: {
@@ -1929,7 +1948,6 @@ var themeObject = {
               selecteddate: "fc-cal-date-selected-umber",
               header: "fc-cal-month-header-umber",
               weekend: "fc-cal-weekend-umber",
-              body: "fc-cal-body-umber",
               navprev: "fc-cal-nav-prev-umber",
               navnext: "fc-cal-nav-next-umber"
             },

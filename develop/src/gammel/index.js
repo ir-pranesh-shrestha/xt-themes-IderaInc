@@ -1729,17 +1729,32 @@ var themeObject = {
           canvas: {
             stroke: "#E6E6E6",
             "stroke-width": 1
+          }
+        }
+      },
+      tooltip: {
+        style: {
+          container: {
+            "background-color": "#F6F6F6",
+            opacity: 0.85,
+            border: "1px solid rgba(153, 153, 153, 0.9)",
+            "border-radius": "3px",
+            padding: "8px"
           },
-          tooltip: {
+          text: {
             "font-family":
               "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
-            "font-size": 12,
-            color: "#333333",
-            "background-color": "#F6F6F6",
-            "background-opacity": "0.85",
-            border: "1px solid rgba(153, 153, 153, 0.9)",
-            // "border-width": "1",
-            "border-radius": "3"
+            color: "#333333"
+          },
+          header: {
+            "font-family":
+              "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
+            color: "#666666",
+            padding: "0px"
+          },
+          body: {
+            padding: "0px",
+            "font-size": "12px"
           }
         }
       },
@@ -2034,7 +2049,7 @@ var themeObject = {
       ]
     }
   }
-};
+}
 
 export default {
   extension: themeObject,
