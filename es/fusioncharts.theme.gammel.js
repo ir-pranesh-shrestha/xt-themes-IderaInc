@@ -25,7 +25,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "/* ft calendar customization */\n.fc-cal-nav-prev-gammel, .fc-cal-nav-next-gammel {\n  font-family:\n  \"Lucida Grande\";\n  font-weight: 400;\n}\n\n.fc-cal-month-gammel {\n  font-family:\n  \"Lucida Grande\";\n  background-color: #7CB5EC;\n  color: #333333;\n}\n\n.fc-cal-day-gammel, .fc-cal-date-normal-gammel {\n  font-family:\n  \"Lucida Grande\";\n  color: #333333;\n  font-size: 11px;\n}\n\n.fc-cal-date-disabled-gammel {\n  font-family:\n  \"Lucida Grande\";\n  color: #999999;\n  font-size: 11px;\n}\n\n.fc-cal-date-selected-gammel {\n  font-family:\n  \"Lucida Grande\";\n  background-color: #7CB5EC;\n  color: #333333;\n  font-weight: bold;\n  font-size: 11px;\n}\n\n.fc-cal-weekend-gammel {\n  background-color: #F3F8FD;\n}\n\n";
+var css = "/* ft calendar customization */\n.fc-cal-nav-prev-gammel, .fc-cal-nav-next-gammel {\n  font-family:\n  \"Lucida Grande\";\n  font-weight: 400;\n}\n\n.fc-cal-month-gammel {\n  font-family:\n  \"Lucida Grande\";\n  background-color: #7CB5EC;\n  color: #333333;\n}\n\n.fc-cal-day-gammel, .fc-cal-date-normal-gammel {\n  font-family:\n  \"Lucida Grande\";\n  color: #333333;\n  font-size: 11px;\n}\n\n.fc-cal-date-disabled-gammel {\n  font-family:\n  \"Lucida Grande\";\n  color: #999999;\n  font-size: 11px;\n}\n\n.fc-cal-weekend-gammel {\n  background-color: #F3F8FD;\n}\n\n.fc-cal-date-selected-gammel {\n  font-family:\n  \"Lucida Grande\";\n  background-color: #7CB5EC;\n  color: #333333;\n  font-weight: bold;\n  font-size: 11px;\n}";
 styleInject(css);
 
 /*
