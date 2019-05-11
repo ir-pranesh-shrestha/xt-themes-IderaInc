@@ -26,6 +26,10 @@
   font-size: 11px;
 }
 
+.fc-cal-weekend-gammel {
+  background-color: #F3F8FD;
+}
+
 .fc-cal-date-selected-gammel {
   font-family:
   "Lucida Grande";
@@ -34,8 +38,3 @@
   font-weight: bold;
   font-size: 11px;
 }
-
-.fc-cal-weekend-gammel {
-  background-color: #F3F8FD;
-}
-

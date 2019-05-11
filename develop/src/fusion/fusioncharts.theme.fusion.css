@@ -23,13 +23,14 @@
 }
 
 /* ft calendar customization */
-.fc-cal-date-normal {
+.fc-cal-date-normal-fusion {
   color: #5F5F5F;
   font-family: 'Source Sans Pro';
   font-size: 11px;
 }
 
-.fc-cal-date-selected {
+.fc-cal-date-selected-fusion {
   color: #FEFEFE;
-  font-family: 'Source Sans Pro SemiBold'
+  font-family: 'Source Sans Pro SemiBold';
+  font-size: 11px;
 }
