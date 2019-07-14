@@ -1,33 +1,3 @@
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
-
-  if (!css || typeof document === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var css = "/* ft calendar customization */\n.fc-cal-nav-prev-gammel, .fc-cal-nav-next-gammel {\n  font-family:\n  \"Lucida Grande\";\n  font-weight: 400;\n}\n\n.fc-cal-month-gammel {\n  font-family:\n  \"Lucida Grande\";\n  background-color: #7CB5EC;\n  color: #333333;\n}\n\n.fc-cal-day-gammel, .fc-cal-date-normal-gammel {\n  font-family:\n  \"Lucida Grande\";\n  color: #333333;\n  font-size: 11px;\n}\n\n.fc-cal-date-disabled-gammel {\n  font-family:\n  \"Lucida Grande\";\n  color: #999999;\n  font-size: 11px;\n}\n\n.fc-cal-weekend-gammel {\n  background-color: #F3F8FD;\n}\n\n.fc-cal-date-selected-gammel {\n  font-family:\n  \"Lucida Grande\";\n  background-color: #7CB5EC;\n  color: #333333;\n  font-weight: bold;\n  font-size: 11px;\n}";
-styleInject(css);
-
 /*
  Gammel Theme v0.3
  FusionCharts JavaScript Library
@@ -35,7 +5,6 @@ styleInject(css);
  Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 */
-/* jshint ignore:end */
 var themeObject = {
   name: "gammel",
   theme: {
@@ -1832,16 +1801,46 @@ var themeObject = {
         }
       },
       extensions: {
+        standardRangeSelector: {
+          style: {
+            "button-text": {
+              fill: "#666666",
+              "font-family":
+                "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif"
+            },
+            "button-text:hover": {
+              fill: "#333333",
+              "font-family":
+                "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif"
+            },
+            "button-text:active": {
+              fill: "#333333",
+              "font-family":
+                "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
+              "font-weight": 600
+            },
+            "button-background": {
+              fill: "#F7F7F7"
+            },
+            "button-background:hover": {
+                fill: "#F7F7F7"
+            },
+            "button-background:active": {
+              fill: "#EBEBF5"
+            },
+            separator: {
+              stroke: "#E6E6E6"
+            }
+          }
+        },
         customRangeSelector: {
           style: {
-            title: {
-              text: {
-                fill: "#333333",
-                "font-weight": "500"
-              },
-              icon: {
-                fill: "#333333"
-              }
+            "title-text": {
+              fill: "#333333",
+              "font-weight": "500"
+            },
+            "title-icon": {
+              fill: "#333333"
             },
             label: {
               "font-family":
@@ -1855,77 +1854,62 @@ var themeObject = {
               "background-color": "#FFFFFF",
               border: "1px solid #CCCCCC"
             },
-            button: {
-              apply: {
-                "font-family":
-                  "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
-                "background-color": "#7CB5EC",
-                color: "#333333",
-                border: "none",
-                "font-weight": 600
-              },
-              cancel: {
-                "font-family":
-                  "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
-                color: "#666666",
-                "background-color": "#FFFFFF",
-                border: "none",
-                "font-weight": 500
-              }
+            "button-apply": {
+              "font-family":
+                "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
+              "background-color": "#7CB5EC",
+              color: "#333333",
+              border: "none",
+              "font-weight": 600
             },
-            "button:hover": {
-              cancel: {
-                color: "#333333",
-                "font-weight": 600
-              }
+            "button-cancel": {
+              "font-family":
+                "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
+              color: "#666666",
+              "background-color": "#FFFFFF",
+              border: "none",
+              "font-weight": 500
             },
-            calendar: {
-              navprev: "fc-cal-nav-prev-gammel",
-              navnext: "fc-cal-nav-next-gammel",
-              month: "fc-cal-month-gammel",
-              days: "fc-cal-day-gammel",
-              normaldate: "fc-cal-date-normal-gammel",
-              disableddate: "fc-cal-date-disabled-gammel",
-              selecteddate: "fc-cal-date-selected-gammel",
-              weekend: "fc-cal-weekend-gammel"
-            }
-          }
-        },
-        standardRangeSelector: {
-          style: {
-            button: {
-              text: {
-                fill: "#666666",
-                "font-family":
-                  "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif"
-              },
-              background: {
-                fill: "#F7F7F7"
-              }
+            "button-cancel:hover": {
+              color: "#333333",
+              "font-weight": 600
             },
-            "button:hover": {
-              text: {
-                fill: "#333333",
-                "font-family":
-                  "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif"
-              },
-              background: {
-                fill: "#F7F7F7"
-              }
+            "cal-navprev": {
+              "font-family": "Lucida Grande",
+              "font-weight": 400
             },
-            "button:active": {
-              text: {
-                fill: "#333333",
-                "font-family":
-                  "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
-                "font-weight": 600
-              },
-              background: {
-                fill: "#EBEBF5"
-              }
+            "cal-navnext": {
+              "font-family": "Lucida Grande",
+              "font-weight": 400
             },
-            separator: {
-              stroke: "#E6E6E6"
+            "cal-header": {
+              "font-family": "Lucida Grande",
+              "background-color": "#7CB5EC",
+              color: "#333333"
+            },
+            "cal-days": {
+              "font-family": "Lucida Grande",
+              color: "#333333"
+            },
+            "cal-date": {
+              "font-family": "Lucida Grande",
+              "font-size": "11px",
+              color: "#333333"
+            },
+            "cal-disableddate": {
+              "font-family": "Lucida Grande",
+              "font-size": "11px",
+              color: "#999999"
+            },
+            "cal-selecteddate": {
+              "font-family": "Lucida Grande",
+              "background-color": "#7CB5EC",
+              color: "#333333",
+              "font-weight": "bold",
+              "font-size": "11px"
+            },
+            "cal-weekend": {
+              "background-color": "#F3F8FD"
             }
           }
         }
