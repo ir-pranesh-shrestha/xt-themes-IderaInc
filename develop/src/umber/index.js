@@ -332,7 +332,6 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
         drawCrossLine: 1,
-        anchorBgColor: "#FFF1E5",
         anchorBorderThickness: 2,
         plotHoverEffect: 0
       }
@@ -422,7 +421,6 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
         drawCrossLine: 1,
-        anchorBgColor: "#FFF1E5",
         anchorBorderThickness: 2,
         plotHoverEffect: 0
       }
@@ -749,7 +747,6 @@ var themeObject = {
         captionAlignment: "center",
         setAdaptiveMin: 1,
         showGaugeBorder: 0,
-        setAdaptiveMin: 1,
         adjustTM: 1,
         placeTicksInside: 0,
         autoAlignTickValues: 1,
@@ -813,7 +810,6 @@ var themeObject = {
         captionAlignment: "center",
         setAdaptiveMin: 1,
         showGaugeBorder: 0,
-        setAdaptiveMin: 1,
         adjustTM: 1,
         placeTicksInside: 0,
         autoAlignTickValues: 1,
@@ -1031,7 +1027,6 @@ var themeObject = {
         ganttLineColor: "#D5CDBE",
         ganttLineAlpha: 100,
         taskBarRoundRadius: 3,
-        flatScrollBars: 1,
         showHoverEffect: 1,
         plotHoverEffect: 1,
         plotFillHoverAlpha: 85,
@@ -1182,7 +1177,6 @@ var themeObject = {
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
         drawCrossLine: 1,
-        anchorBgColor: "#FFF1E5",
         anchorBorderThickness: 2,
         plotHoverEffect: 0
       }
@@ -1388,7 +1382,6 @@ var themeObject = {
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
-        anchorBgColor: "#FFF1E5",
         anchorBorderThickness: 2,
         radarFillColor: "#FFF9F5",
         radarBorderThickness: 0
@@ -1628,8 +1621,7 @@ var themeObject = {
         borderColor: "#D5CDBE",
         borderThickness: 0.5,
         nullEntityColor: "FFF9F5",
-        entityFillHoverColor: "#606060",
-        entityFillHoverAlpha: 85
+        entityFillHoverColor: "#606060"
       },
       colorrange: {
         gradient: 1,
