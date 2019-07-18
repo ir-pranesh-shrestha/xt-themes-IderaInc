@@ -2083,6 +2083,10 @@ var themeObject = {
             "button-text:active": {
               fill: "#FFFFFF",
               "font-family": "Fira Sans Regular"
+            },
+            separator: {
+              stroke: "#4B4B4B",
+              "stroke-width": 0.5
             }
           }
         },
