@@ -2042,35 +2042,38 @@ var themeObject = {
         }
       },
       extensions: {
+        standardRangeSelector: {
+          style: {
+            "button-text": {
+              fill: "#999CA5",
+              "font-family": "Fira Sans Light"
+            },
+            "button-text:hover": {
+              fill: "#FFFFFF",
+              "font-family": "Fira Sans Light"
+            },
+            "button-text:active": {
+              fill: "#FFFFFF",
+              "font-family": "Fira Sans Regular"
+            },
+            separator: {
+              stroke: "#4B4B4B",
+              "stroke-width": 0.5
+            }
+          }
+        },
         customRangeSelector: {
           style: {
-            calendar: {
-              days: "fc-cal-day-candy",
-              normaldate: "fc-cal-date-normal-candy",
-              disableddate: "fc-cal-date-disabled-candy",
-              selecteddate: "fc-cal-date-selected-candy",
-              header: "fc-cal-month-header-candy",
-              weekend: "fc-cal-weekend-candy",
-              navprev: "fc-cal-nav-prev-candy",
-              navnext: "fc-cal-nav-next-candy"
+            "title-text": {
+              fill: "#FFFFFF",
+              "font-family": "Fira Sans Regular"
             },
-            button: {
-              apply: {
-                color: "#FFFFFF",
-                "background-color": "#36869C",
-                border: "none"
-              },
-              cancel: {
-                color: "#999CA5",
-                "background-color": "#262A33",
-                border: "none",
-                "font-family": "Fira Sans Regular"
-              }
+            "title-icon": {
+              fill: "#FFFFFF",
+              "font-family": "Fira Sans Regular"
             },
-            "button:hover": {
-              cancel: {
-                color: "#FFFFFF"
-              }
+            container: {
+              "background-color": "#262A33"
             },
             label: {
               color: "#FFFFFF",
@@ -2082,44 +2085,63 @@ var themeObject = {
               color: "#CCCCCC",
               "font-family": "Fira Sans Light"
             },
-            title: {
-              text: {
-                fill: "#FFFFFF",
-                "font-family": "Fira Sans Regular"
-              },
-              icon: {
-                fill: "#FFFFFF",
-                "font-family": "Fira Sans Regular"
-              }
+            "button-apply": {
+              color: "#FFFFFF",
+              "background-color": "#36869C",
+              border: "none"
             },
-            background: {
-              "background-color": "#262A33"
-            }
-          }
-        },
-        standardRangeSelector: {
-          style: {
-            button: {
-              text: {
-                fill: "#999CA5",
-                "font-family": "Fira Sans Light"
-              }
+            "button-cancel": {
+              color: "#999CA5",
+              "background-color": "#262A33",
+              border: "none",
+              "font-family": "Fira Sans Regular"
             },
-            "button:hover": {
-              text: {
-                fill: "#FFFFFF",
-                "font-family": "Fira Sans Light"
-              }
+            "button-cancel:hover": {
+              color: "#FFFFFF"
             },
-            "button:active": {
-              text: {
-                fill: "#FFFFFF",
-                "font-family": "Fira Sans Regular"
-              }
+            "cal-header": {
+              "background-color": "#36869C",
+              "font-family": "Fira Sans Light"
             },
-            separator: {
-              stroke: "#4B4B4B",
-              "stroke-width": 0.5
+            "cal-navprev": {
+              "font-family": "Fira Sans Light",
+              "font-size": "12px"
+            },
+            "cal-navnext": {
+              "font-family": "Fira Sans Light",
+              "font-size": "12px"
+            },
+            "cal-weekend": {
+              "background-color": "#35555D"
+            },
+            "cal-days": {
+              "background-color": "#343434",
+              color: "#CCCCCC",
+              "font-family": "Fira Sans Light",
+              border: "none"
+            },
+            "cal-date": {
+              "background-color": "#343434",
+              color: "#CCCCCC",
+              "font-family": "Fira Sans Light",
+              border: "none"
+            },
+            "cal-date:hover": {
+              "background-color": "#6E6E6E",
+              color: "#FFFFFF",
+              "font-family": "Fira Sans Light",
+              border: "none"
+            },
+            "cal-disableddate": {
+              "background-color": "#343434",
+              color: "#999CA5BF",
+              "font-family": "Fira Sans Light",
+              border: "none"
+            },
+            "cal-selecteddate": {
+              "background-color": "#36869C",
+              color: "#FFFFFF",
+              "font-family": "Fira Sans Regular"
             }
           }
         }

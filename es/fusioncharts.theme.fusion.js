@@ -25,7 +25,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "@font-face {\n  font-family: 'Source Sans Pro';\n  font-style: normal;\n  font-weight: 400;\n  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Source Sans Pro Light';\n  font-style: normal;\n  font-weight: 300;\n  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Source Sans Pro SemiBold';\n  font-style: normal;\n  font-weight: 600;\n  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n/* ft calendar customization */\n.fc-cal-date-normal-fusion {\n  color: #5F5F5F;\n  font-family: 'Source Sans Pro';\n  font-size: 11px;\n}\n\n.fc-cal-date-selected-fusion {\n  color: #FEFEFE;\n  font-family: 'Source Sans Pro SemiBold';\n  font-size: 11px;\n}";
+var css = "@font-face {\n  font-family: 'Source Sans Pro';\n  font-style: normal;\n  font-weight: 400;\n  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Source Sans Pro Light';\n  font-style: normal;\n  font-weight: 300;\n  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: 'Source Sans Pro SemiBold';\n  font-style: normal;\n  font-weight: 600;\n  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}";
 styleInject(css);
 
 /*
@@ -1802,68 +1802,67 @@ var themeObject = {
           }
         },
         extensions: {
+          standardRangeSelector: {
+            style: {
+              separator: {
+                stroke: "#DFDFDF"
+              },
+              "button-text": {
+                fill: "#999999"
+              },
+              "button-text:hover": {
+                fill: "#5648D4",
+                "font-family": "Source Sans Pro SemiBold"
+              },
+              "button-text:active": {
+                fill: "#5648D4",
+                "font-family": "Source Sans Pro SemiBold"
+              }
+            }
+          },
           customRangeSelector: {
             style: {
-              title: {
-                text: {
-                  "font-family": "Source Sans Pro SemiBold"
-                },
-                icon: {
-                  "font-family": "Source Sans Pro SemiBold"
-                }
+              "title-text": {
+                "font-family": "Source Sans Pro SemiBold"
               },
-              calendar: {
-                normaldate: "fc-cal-date-normal-fusion",
-                selecteddate: "fc-cal-date-selected-fusion"
+              "title-icon": {
+                "font-family": "Source Sans Pro SemiBold"
               },
               label: {
                 color: "#999999",
                 "font-family": "Source Sans Pro SemiBold"
               },
-              button: {
-                apply: {
-                  color: "#FFFFFF",
-                  "background-color": "#5648D4",
-                  border: "none"
-                },
-                cancel: {
-                  color: "#999999",
-                  "background-color": "#FFFFFF",
-                  border: "none"
-                }
+              "button-apply": {
+                color: "#FFFFFF",
+                "background-color": "#5648D4",
+                border: "none"
               },
-              "button:hover": {
-                apply: {
-                  "font-family": "Source Sans Pro SemiBold"
-                },
-                cancel: {
-                  color: "#5648D4",
-                  "font-family": "Source Sans Pro SemiBold"
-                }
-              }
-            }
-          },
-          standardRangeSelector: {
-            style: {
-              button: {
-                text: {
-                  fill: "#999999"
-                }
+              "button-apply:hover": {
+                "font-family": "Source Sans Pro SemiBold"
               },
-              "button:hover": {
-                text: {
-                  fill: "#5648D4",
-                  "font-family": "Source Sans Pro SemiBold"
-                }
+              "button-cancel": {
+                color: "#999999",
+                "background-color": "#FFFFFF",
+                border: "none"
               },
-              "button:active": {
-                text: {
-                  fill: "#5648D4",
-                  "font-family": "Source Sans Pro SemiBold"
-                }
+              "button-cancel:hover": {
+                color: "#5648D4",
+                "font-family": "Source Sans Pro SemiBold"
               },
-              separator: {
-                stroke: "#DFDFDF"
+              "cal-selecteddate": {
+                color: "#FEFEFE",
+                "font-family": "Source Sans Pro SemiBold",
+                "font-size": "11px"
+              },
+              "cal-date": {
+                color: "#5F5F5F",
+                "font-family": "Source Sans Pro",
+                "font-size": "11px"
+              },
+              "cal-disableddate": {
+                color: "#CACACA",
+                "font-family": "Source Sans Pro",
+                "font-size": "11px"
               }
             }
           }

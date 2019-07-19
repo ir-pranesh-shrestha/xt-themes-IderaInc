@@ -1774,68 +1774,67 @@ var themeObject = {
           }
         },
         extensions: {
+          standardRangeSelector: {
+            style: {
+              separator: {
+                stroke: "#DFDFDF"
+              },
+              "button-text": {
+                fill: "#999999"
+              },
+              "button-text:hover": {
+                fill: "#5648D4",
+                "font-family": "Source Sans Pro SemiBold"
+              },
+              "button-text:active": {
+                fill: "#5648D4",
+                "font-family": "Source Sans Pro SemiBold"
+              }
+            }
+          },
           customRangeSelector: {
             style: {
-              title: {
-                text: {
-                  "font-family": "Source Sans Pro SemiBold"
-                },
-                icon: {
-                  "font-family": "Source Sans Pro SemiBold"
-                }
+              "title-text": {
+                "font-family": "Source Sans Pro SemiBold"
               },
-              calendar: {
-                normaldate: "fc-cal-date-normal-fusion",
-                selecteddate: "fc-cal-date-selected-fusion"
+              "title-icon": {
+                "font-family": "Source Sans Pro SemiBold"
               },
               label: {
                 color: "#999999",
                 "font-family": "Source Sans Pro SemiBold"
               },
-              button: {
-                apply: {
-                  color: "#FFFFFF",
-                  "background-color": "#5648D4",
-                  border: "none"
-                },
-                cancel: {
-                  color: "#999999",
-                  "background-color": "#FFFFFF",
-                  border: "none"
-                }
+              "button-apply": {
+                color: "#FFFFFF",
+                "background-color": "#5648D4",
+                border: "none"
               },
-              "button:hover": {
-                apply: {
-                  "font-family": "Source Sans Pro SemiBold"
-                },
-                cancel: {
-                  color: "#5648D4",
-                  "font-family": "Source Sans Pro SemiBold"
-                }
-              }
-            }
-          },
-          standardRangeSelector: {
-            style: {
-              button: {
-                text: {
-                  fill: "#999999"
-                }
+              "button-apply:hover": {
+                "font-family": "Source Sans Pro SemiBold"
               },
-              "button:hover": {
-                text: {
-                  fill: "#5648D4",
-                  "font-family": "Source Sans Pro SemiBold"
-                }
+              "button-cancel": {
+                color: "#999999",
+                "background-color": "#FFFFFF",
+                border: "none"
               },
-              "button:active": {
-                text: {
-                  fill: "#5648D4",
-                  "font-family": "Source Sans Pro SemiBold"
-                }
+              "button-cancel:hover": {
+                color: "#5648D4",
+                "font-family": "Source Sans Pro SemiBold"
               },
-              separator: {
-                stroke: "#DFDFDF"
+              "cal-selecteddate": {
+                color: "#FEFEFE",
+                "font-family": "Source Sans Pro SemiBold",
+                "font-size": "11px"
+              },
+              "cal-date": {
+                color: "#5F5F5F",
+                "font-family": "Source Sans Pro",
+                "font-size": "11px"
+              },
+              "cal-disableddate": {
+                color: "#CACACA",
+                "font-family": "Source Sans Pro",
+                "font-size": "11px"
               }
             }
           }

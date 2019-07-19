@@ -25,7 +25,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "@font-face {\n  font-family: \"Fira Sans Light\";\n  font-style: normal;\n  font-weight: 300;\n  src: local(\"Fira Sans Light\"), local(\"FiraSans-Light\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Fira Sans Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Fira Sans Regular\"), local(\"FiraSans-Regular\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n/* ft calendar customiztion */\n.fc-cal-day-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgb(204, 204, 204);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-normal-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgb(204, 204, 204);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-normal-candy:hover {\n  background-color: rgb(110, 110, 110);\n  color: rgb(255, 255, 255);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-date-disabled-candy {\n  background-color: rgb(52, 52, 52);\n  color: rgba(153, 156, 165, 0.75);\n  font-family: \"Fira Sans Light\";\n  border: none;\n}\n\n.fc-cal-month-header-candy {\n  background-color: rgb(54, 134, 156);\n  font-family: \"Fira Sans Light\";\n}\n\n.fc-cal-weekend-candy {\n  background-color: rgb(53, 85, 93);\n}\n\n.fc-cal-container-candy {\n  border: 0.5px solid rgb(75, 75, 75);\n}\n\n.fc-cal-nav-next-candy,\n.fc-cal-nav-prev-candy {\n  font-family: \"Fira Sans Light\";\n  font-size: 12px;\n}\n\n.fc-cal-date-selected-candy {\n  background-color: rgb(54, 134, 156);\n  color: rgb(255, 255, 255);\n  font-family: \"Fira Sans Regular\";\n}";
+var css = "@font-face {\n  font-family: \"Fira Sans Light\";\n  font-style: normal;\n  font-weight: 300;\n  src: local(\"Fira Sans Light\"), local(\"FiraSans-Light\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Fira Sans Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Fira Sans Regular\"), local(\"FiraSans-Regular\"),\n    url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}";
 styleInject(css);
 
 /*
@@ -2070,35 +2070,38 @@ var themeObject = {
         }
       },
       extensions: {
+        standardRangeSelector: {
+          style: {
+            "button-text": {
+              fill: "#999CA5",
+              "font-family": "Fira Sans Light"
+            },
+            "button-text:hover": {
+              fill: "#FFFFFF",
+              "font-family": "Fira Sans Light"
+            },
+            "button-text:active": {
+              fill: "#FFFFFF",
+              "font-family": "Fira Sans Regular"
+            },
+            separator: {
+              stroke: "#4B4B4B",
+              "stroke-width": 0.5
+            }
+          }
+        },
         customRangeSelector: {
           style: {
-            calendar: {
-              days: "fc-cal-day-candy",
-              normaldate: "fc-cal-date-normal-candy",
-              disableddate: "fc-cal-date-disabled-candy",
-              selecteddate: "fc-cal-date-selected-candy",
-              header: "fc-cal-month-header-candy",
-              weekend: "fc-cal-weekend-candy",
-              navprev: "fc-cal-nav-prev-candy",
-              navnext: "fc-cal-nav-next-candy"
+            "title-text": {
+              fill: "#FFFFFF",
+              "font-family": "Fira Sans Regular"
             },
-            button: {
-              apply: {
-                color: "#FFFFFF",
-                "background-color": "#36869C",
-                border: "none"
-              },
-              cancel: {
-                color: "#999CA5",
-                "background-color": "#262A33",
-                border: "none",
-                "font-family": "Fira Sans Regular"
-              }
+            "title-icon": {
+              fill: "#FFFFFF",
+              "font-family": "Fira Sans Regular"
             },
-            "button:hover": {
-              cancel: {
-                color: "#FFFFFF"
-              }
+            container: {
+              "background-color": "#262A33"
             },
             label: {
               color: "#FFFFFF",
@@ -2110,44 +2113,63 @@ var themeObject = {
               color: "#CCCCCC",
               "font-family": "Fira Sans Light"
             },
-            title: {
-              text: {
-                fill: "#FFFFFF",
-                "font-family": "Fira Sans Regular"
-              },
-              icon: {
-                fill: "#FFFFFF",
-                "font-family": "Fira Sans Regular"
-              }
+            "button-apply": {
+              color: "#FFFFFF",
+              "background-color": "#36869C",
+              border: "none"
             },
-            background: {
-              "background-color": "#262A33"
-            }
-          }
-        },
-        standardRangeSelector: {
-          style: {
-            button: {
-              text: {
-                fill: "#999CA5",
-                "font-family": "Fira Sans Light"
-              }
+            "button-cancel": {
+              color: "#999CA5",
+              "background-color": "#262A33",
+              border: "none",
+              "font-family": "Fira Sans Regular"
             },
-            "button:hover": {
-              text: {
-                fill: "#FFFFFF",
-                "font-family": "Fira Sans Light"
-              }
+            "button-cancel:hover": {
+              color: "#FFFFFF"
             },
-            "button:active": {
-              text: {
-                fill: "#FFFFFF",
-                "font-family": "Fira Sans Regular"
-              }
+            "cal-header": {
+              "background-color": "#36869C",
+              "font-family": "Fira Sans Light"
             },
-            separator: {
-              stroke: "#4B4B4B",
-              "stroke-width": 0.5
+            "cal-navprev": {
+              "font-family": "Fira Sans Light",
+              "font-size": "12px"
+            },
+            "cal-navnext": {
+              "font-family": "Fira Sans Light",
+              "font-size": "12px"
+            },
+            "cal-weekend": {
+              "background-color": "#35555D"
+            },
+            "cal-days": {
+              "background-color": "#343434",
+              color: "#CCCCCC",
+              "font-family": "Fira Sans Light",
+              border: "none"
+            },
+            "cal-date": {
+              "background-color": "#343434",
+              color: "#CCCCCC",
+              "font-family": "Fira Sans Light",
+              border: "none"
+            },
+            "cal-date:hover": {
+              "background-color": "#6E6E6E",
+              color: "#FFFFFF",
+              "font-family": "Fira Sans Light",
+              border: "none"
+            },
+            "cal-disableddate": {
+              "background-color": "#343434",
+              color: "#999CA5BF",
+              "font-family": "Fira Sans Light",
+              border: "none"
+            },
+            "cal-selecteddate": {
+              "background-color": "#36869C",
+              color: "#FFFFFF",
+              "font-family": "Fira Sans Regular"
             }
           }
         }
