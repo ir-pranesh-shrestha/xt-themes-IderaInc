@@ -29,7 +29,7 @@ var css = "@font-face {\n  font-family: \"Titillium Web Regular\";\n  font-style
 styleInject(css);
 
 /*
- Umber Theme v0.1
+ Umber Theme v0.2
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
@@ -37,7 +37,7 @@ styleInject(css);
 */
 /* jshint ignore:end */
 var themeObject = {
-  name: "umber",
+  name: 'umber',
   theme: {
     base: {
       chart: {
@@ -46,7 +46,7 @@ var themeObject = {
         showBorder: 0,
         showCanvasBorder: 0,
         // background
-        bgColor: "#FFF1E5",
+        bgColor: '#FFF1E5',
         bgAlpha: 100,
         canvasBgAlpha: 0,
         // other canvas customization's
@@ -55,61 +55,61 @@ var themeObject = {
 
         // text - font and font style customization
         // caption (title) and sub-caption (sub-title) customization
-        captionFont: "Titillium Web SemiBold",
+        captionFont: 'Titillium Web SemiBold',
         captionFontSize: 16,
         captionFontBold: 0,
-        captionFontColor: "#000000",
-        subcaptionFont: "Titillium Web Regular",
+        captionFontColor: '#000000',
+        subcaptionFont: 'Titillium Web Regular',
         subCaptionFontSize: 12,
         subCaptionFontBold: 0,
-        subcaptionFontColor: "#66605C",
-        captionAlignment: "left",
+        subcaptionFontColor: '#66605C',
+        captionAlignment: 'left',
         captionPadding: 20,
         // axis titles (x and y axis names) customization
-        xAxisNameFont: "Titillium Web Regular",
+        xAxisNameFont: 'Titillium Web Regular',
         xAxisNameFontSize: 12,
         xAxisNameFontBold: 0,
-        xAxisNameFontColor: "#33302E",
-        yAxisNameFont: "Titillium Web Regular",
+        xAxisNameFontColor: '#33302E',
+        yAxisNameFont: 'Titillium Web Regular',
         yAxisNameFontSize: 12,
         yAxisNameFontBold: 0,
-        yAxisNameFontColor: "#33302E",
-        sYAxisNameFont: "Titillium Web Regular",
+        yAxisNameFontColor: '#33302E',
+        sYAxisNameFont: 'Titillium Web Regular',
         sYAxisNameFontSize: 12,
         sYAxisNameFontBold: 0,
-        sYAxisNameFontColor: "#33302E",
+        sYAxisNameFontColor: '#33302E',
         // base font customization
-        baseFont: "Titillium Web Regular",
-        baseFontColor: "#606060",
+        baseFont: 'Titillium Web Regular',
+        baseFontColor: '#606060',
         baseFontSize: 11,
-        outCnvBaseFont: "Titillium Web Regular",
-        outCnvBaseFontColor: "#606060",
+        outCnvBaseFont: 'Titillium Web Regular',
+        outCnvBaseFontColor: '#606060',
         outCnvBaseFontSize: 11,
         // value customization
         showValues: 0,
         placeValuesInside: 0,
-        valueFont: "Titillium Web Regular",
+        valueFont: 'Titillium Web Regular',
         valueFontSize: 11,
-        valueFontColor: "#33302E",
+        valueFontColor: '#33302E',
         // legend font customization
-        legendItemFont: "Titillium Web Regular",
+        legendItemFont: 'Titillium Web Regular',
         legendItemFontSize: 12,
-        legendItemFontColor: "#33302E",
-        legendItemHiddenColor: "#D5CDBE",
+        legendItemFontColor: '#33302E',
+        legendItemHiddenColor: '#D5CDBE',
         // label customization
-        labelDisplay: "auto",
+        labelDisplay: 'auto',
 
         // grid lines (div lines customization)
-        divLineColor: "#D5CDBE",
+        divLineColor: '#D5CDBE',
         divLinealpha: 100,
         divLineThickness: 0.75,
-        vDivLineColor: "#D5CDBE",
+        vDivLineColor: '#D5CDBE',
         vDivLinealpha: 100,
         vDivLineThickness: 0.75,
 
         // plot customization
         paletteColors:
-          "#0f5499, #B5323E, #0a5e66, #EDB34A, #676668, #ED9CBD, #4CCBB8, #B9C36C, #749FC0, #FC6D6D",
+          '#0f5499, #B5323E, #0a5e66, #EDB34A, #676668, #ED9CBD, #4CCBB8, #B9C36C, #749FC0, #FC6D6D',
         usePlotGradientColor: 0,
         showPlotBorder: 0,
         showShadow: 0,
@@ -118,14 +118,14 @@ var themeObject = {
         // tooltip and crossline customization
         // tooltip customization
         tooltipPadding: 6,
-        tooltipBgColor: "#FFF9F5",
-        tooltipColor: "#33302E",
+        tooltipBgColor: '#FFF9F5',
+        tooltipColor: '#33302E',
         tooltipBorderRadius: 3,
-        tooltipBorderColor: "#D5CDBE",
+        tooltipBorderColor: '#D5CDBE',
         tooltipBorderThickness: 0.5,
         tooltipBgAlpha: 90,
         // crossline customization
-        crossLineColor: "#D5CDBE",
+        crossLineColor: '#D5CDBE',
         crossLineAlpha: 100,
         crossLineThickness: 1,
 
@@ -145,9 +145,9 @@ var themeObject = {
         plotBorderHoverAlpha: 0,
 
         // toolbar customization
-        toolbarButtonColor: "#FFF1E5",
-        toolbarButtonHoverColor: "#FFF9F5",
-        toolbarButtonBorderColor: "#D5CDBE",
+        toolbarButtonColor: '#FFF1E5',
+        toolbarButtonHoverColor: '#FFF9F5',
+        toolbarButtonBorderColor: '#D5CDBE',
         toolbarButtonBorderThickness: 0.5,
         toolbarButtonScale: 1.3,
 
@@ -161,14 +161,14 @@ var themeObject = {
     // column2d chart (1)
     column2d: {
       chart: {
-        paletteColors: "#0f5499"
+        paletteColors: '#0f5499'
       }
     },
 
     // column3d chart (2)
     column3d: {
       chart: {
-        paletteColors: "#0f5499",
+        paletteColors: '#0f5499',
         showCanvasBase: 0
       }
     },
@@ -176,8 +176,8 @@ var themeObject = {
     // line2d chart (3)
     line: {
       chart: {
-        paletteColors: "#0f5499",
-        anchorBgColor: "#FFF1E5",
+        paletteColors: '#0f5499',
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -189,12 +189,12 @@ var themeObject = {
     area2d: {
       chart: {
         drawAnchors: 0,
-        paletteColors: "#0f5499",
+        paletteColors: '#0f5499',
         plotFillAlpha: 85,
         legendIconBgAlpha: 85,
         legendIconBorderAlpha: 0,
         drawCrossLine: 1,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         anchorBorderThickness: 2,
         plotHoverEffect: 0
       }
@@ -203,14 +203,14 @@ var themeObject = {
     // bar2d chart (5)
     bar2d: {
       chart: {
-        paletteColors: "#0f5499"
+        paletteColors: '#0f5499'
       }
     },
 
     // bar3d chart (6)
     bar3d: {
       chart: {
-        paletteColors: "#0f5499",
+        paletteColors: '#0f5499',
         showCanvasBase: 0
       }
     },
@@ -218,11 +218,11 @@ var themeObject = {
     // pie2d chart (7)
     pie2d: {
       chart: {
-        showLegend: "1",
+        showLegend: '1',
         enableMultiSlicing: 0,
         legendIconSides: 2,
         isSmartLineSlanted: 0,
-        smartLineColor: "#D5CDBE",
+        smartLineColor: '#D5CDBE',
         smartLineThickness: 1,
         showValues: 1,
         showPercentValues: 1,
@@ -239,7 +239,7 @@ var themeObject = {
         pieYScale: 75,
         pieSliceDepth: 10,
         isSmartLineSlanted: 0,
-        smartLineColor: "#D5CDBE",
+        smartLineColor: '#D5CDBE',
         smartLineThickness: 1,
         showValues: 1,
         showPercentValues: 1,
@@ -254,14 +254,14 @@ var themeObject = {
         enableMultiSlicing: 0,
         legendIconSides: 2,
         isSmartLineSlanted: 0,
-        smartLineColor: "#D5CDBE",
+        smartLineColor: '#D5CDBE',
         smartLineThickness: 1,
         showValues: 1,
         showPercentValues: 1,
         showPercentInToolTip: 0,
-        centerLabelFont: "Titillium Web Regular",
+        centerLabelFont: 'Titillium Web Regular',
         centerLabelFontSize: 12,
-        centerLabelColor: "#33302E",
+        centerLabelColor: '#33302E',
         // setting default as null
         defaultCenterLabel: null,
         centerLabel: null
@@ -277,7 +277,7 @@ var themeObject = {
         pieYScale: 75,
         pieSliceDepth: 10,
         isSmartLineSlanted: 0,
-        smartLineColor: "#D5CDBE",
+        smartLineColor: '#D5CDBE',
         smartLineThickness: 1,
         showValues: 1,
         showPercentValues: 1,
@@ -288,9 +288,9 @@ var themeObject = {
     // pareto2d chart (11)
     pareto2d: {
       chart: {
-        paletteColors: "#0f5499",
-        lineColor: "#B5323E",
-        anchorBgColor: "#FFF1E5",
+        paletteColors: '#0f5499',
+        lineColor: '#B5323E',
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2
@@ -300,9 +300,9 @@ var themeObject = {
     // pareto3d chart (12)
     pareto3d: {
       chart: {
-        paletteColors: "#0f5499",
-        lineColor: "#B5323E",
-        anchorBgColor: "#FFF1E5",
+        paletteColors: '#0f5499',
+        lineColor: '#B5323E',
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         showCanvasBase: 0
@@ -326,7 +326,7 @@ var themeObject = {
     // multi-series line2d chart (15)
     msline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -354,12 +354,13 @@ var themeObject = {
     msarea: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
         drawCrossLine: 1,
+        anchorBgColor: '#FFF1E5',
         anchorBorderThickness: 2,
         plotHoverEffect: 0
       }
@@ -369,22 +370,22 @@ var themeObject = {
     marimekko: {
       chart: {
         showSum: 0,
-        valueBgColor: "FFF9F5",
-        valueFontColor: "#33302E",
+        valueBgColor: 'FFF9F5',
+        valueFontColor: '#33302E',
         valueFontSize: 12,
         valueBorderThickness: 0.5,
-        valueBorderColor: "#D5CDBE",
+        valueBorderColor: '#D5CDBE',
         valueBorderRadius: 3,
         showPlotBorder: 1,
         plotborderThickness: 0.5,
-        plotBorderColor: "#D5CDBE"
+        plotBorderColor: '#D5CDBE'
       }
     },
 
     // zoomline chart (20)
     zoomline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -392,14 +393,14 @@ var themeObject = {
         legendIconBorderThickness: 2,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: '#F2E5D9'
       }
     },
 
     // zoomline dual y-axis chart (21)
     zoomlinedy: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -407,7 +408,7 @@ var themeObject = {
         legendIconBorderThickness: 2,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: '#F2E5D9'
       }
     },
 
@@ -443,12 +444,13 @@ var themeObject = {
     stackedarea2d: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 85,
         legendIconBgAlpha: 85,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
         drawCrossLine: 1,
+        anchorBgColor: '#FFF1E5',
         anchorBorderThickness: 2,
         plotHoverEffect: 0
       }
@@ -464,7 +466,7 @@ var themeObject = {
     // multi-series 2D single y-axis combination chart (28)
     mscombi2d: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -477,7 +479,7 @@ var themeObject = {
     mscombi3d: {
       chart: {
         showCanvasBase: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -489,7 +491,7 @@ var themeObject = {
     mscolumnline3d: {
       chart: {
         showCanvasBase: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -500,7 +502,7 @@ var themeObject = {
     // stacked column 2D + line single y-axis chart (31)
     stackedcolumn2dline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -513,7 +515,7 @@ var themeObject = {
     stackedcolumn3dline: {
       chart: {
         showCanvasBase: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -524,7 +526,7 @@ var themeObject = {
     // multi-series 2D dual y-axis combination chart (33)
     mscombidy2d: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -537,7 +539,7 @@ var themeObject = {
     mscolumn3dlinedy: {
       chart: {
         showCanvasBase: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -549,7 +551,7 @@ var themeObject = {
     stackedcolumn3dlinedy: {
       chart: {
         showCanvasBase: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -560,7 +562,7 @@ var themeObject = {
     // multi-series stacked column 2D + line dual y-axis chart (36)
     msstackedcolumn2dlinedy: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -572,7 +574,7 @@ var themeObject = {
     // scatter chart (37)
     scatter: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCustomLegendIcon: 0,
         anchorBorderThickness: 2,
         legendIconBorderThickness: 2
@@ -587,15 +589,15 @@ var themeObject = {
         legendIconSides: 2,
         legendIconBorderThickness: 2,
         quadrantLineThickness: 1.5,
-        quadrantLineColor: "#33302E",
+        quadrantLineColor: '#33302E',
         quadrantLineDashed: 1,
         quadrantLineAlpha: 100,
         quadrantLineDashGap: 2,
         quadrantLineDashLen: 2,
-        quadrantLabelFont: "Titillium Web Regular",
+        quadrantLabelFont: 'Titillium Web Regular',
         quadrantLabelFontSize: 12,
         quadrantLabelFontBold: 0,
-        quadrantLabelFontColor: "#33302E",
+        quadrantLabelFontColor: '#33302E',
         plotFillHoverAlpha: 60
       }
     },
@@ -609,15 +611,15 @@ var themeObject = {
         legendIconSides: 2,
         legendIconBorderThickness: 2,
         quadrantLineThickness: 1.5,
-        quadrantLineColor: "#33302E",
+        quadrantLineColor: '#33302E',
         quadrantLineDashed: 1,
         quadrantLineAlpha: 100,
         quadrantLineDashGap: 2,
         quadrantLineDashLen: 2,
-        quadrantLabelFont: "Titillium Web Regular",
+        quadrantLabelFont: 'Titillium Web Regular',
         quadrantLabelFontSize: 12,
         quadrantLabelFontBold: 0,
-        quadrantLabelFontColor: "#33302E",
+        quadrantLabelFontColor: '#33302E',
         plotFillHoverAlpha: 60
       }
     },
@@ -628,14 +630,14 @@ var themeObject = {
         drawCrossLine: 1,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: '#F2E5D9'
       }
     },
 
     // scroll line2D chart (41)
     scrollline2d: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -643,7 +645,7 @@ var themeObject = {
         legendIconBorderThickness: 2,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9",
+        scrollColor: '#F2E5D9',
         plotHoverEffect: 0
       }
     },
@@ -652,7 +654,7 @@ var themeObject = {
     scrollarea2d: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
@@ -660,7 +662,7 @@ var themeObject = {
         drawCrossLine: 1,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9",
+        scrollColor: '#F2E5D9',
         plotHoverEffect: 0
       }
     },
@@ -671,14 +673,14 @@ var themeObject = {
         drawCrossLine: 1,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: '#F2E5D9'
       }
     },
 
     // scroll combination2D (single y-axis) chart (44)
     scrollcombi2d: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -686,14 +688,14 @@ var themeObject = {
         legendIconBorderThickness: 2,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: '#F2E5D9'
       }
     },
 
     // scroll combination2D (dual y-axis) chart (45)
     scrollcombidy2d: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -701,14 +703,14 @@ var themeObject = {
         drawCrossLine: 1,
         flatscrollbars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9"
+        scrollColor: '#F2E5D9'
       }
     },
 
     // real-time angular chart/gauge (46)
     angulargauge: {
       chart: {
-        captionAlignment: "center",
+        captionAlignment: 'center',
         setAdaptiveMin: 1,
         adjustTM: 1,
         tickvaluedistance: 5,
@@ -717,22 +719,22 @@ var themeObject = {
         showGaugeBorder: 0,
         minortmnumber: 0,
         majorTMHeight: 10,
-        majorTMColor: "D5CDBE",
-        gaugeFillMix: "{light-0}",
-        pivotbgcolor: "#33302E",
+        majorTMColor: 'D5CDBE',
+        gaugeFillMix: '{light-0}',
+        pivotbgcolor: '#33302E',
         pivotfillmix: 0,
         showpivotborder: 1,
-        pivotBorderColor: "#D5CDBE",
+        pivotBorderColor: '#D5CDBE',
         showValue: 0,
         valueBelowPivot: 1,
-        valueFont: "Titillium Web SemiBold",
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E"
+        valueFontColor: '#33302E'
       },
       dials: {
         dial: [
           {
-            bgColor: "#33302E",
+            bgColor: '#33302E',
             borderThickness: 0
           }
         ]
@@ -742,12 +744,12 @@ var themeObject = {
     // real-time bulb chart/gauge (47)
     bulb: {
       chart: {
-        captionAlignment: "center",
+        captionAlignment: 'center',
         is3D: 0,
         placeValuesInside: 1,
-        valueFont: "Titillium Web SemiBold",
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E"
+        valueFontColor: '#33302E'
       }
     },
 
@@ -756,43 +758,44 @@ var themeObject = {
       chart: {
         cylRadius: 50,
         cylYScale: 30,
-        cylFillColor: "#0f5499",
-        cylGlassColor: "#FFF9F5",
+        cylFillColor: '#0f5499',
+        cylGlassColor: '#FFF9F5',
         majorTMHeight: 10,
-        majorTMColor: "#D5CDBE",
+        majorTMColor: '#D5CDBE',
         minortmnumber: 0,
         showValue: 1,
-        valueFont: "Titillium Web SemiBold",
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E",
-        baseFontColor: "#33302E"
+        valueFontColor: '#33302E',
+        baseFontColor: '#33302E'
       }
     },
 
     // real-time horizontal led chart/gauge (49)
     hled: {
       chart: {
-        captionAlignment: "center",
+        captionAlignment: 'center',
         setAdaptiveMin: 1,
         showGaugeBorder: 0,
+        setAdaptiveMin: 1,
         adjustTM: 1,
         placeTicksInside: 0,
         autoAlignTickValues: 1,
         minortmnumber: 0,
         majorTMHeight: 10,
-        majorTMColor: "#D5CDBE",
+        majorTMColor: '#D5CDBE',
         ledGap: 0,
-        valueFont: "Titillium Web SemiBold",
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E",
-        baseFontColor: "#33302E"
+        valueFontColor: '#33302E',
+        baseFontColor: '#33302E'
       }
     },
 
     // real-time horizontal linear chart/gauge (50)
     hlineargauge: {
       chart: {
-        captionAlignment: "center",
+        captionAlignment: 'center',
         showGaugeBorder: 0,
         setAdaptiveMin: 1,
         adjustTM: 1,
@@ -800,12 +803,12 @@ var themeObject = {
         autoAlignTickValues: 1,
         minortmnumber: 0,
         majorTMHeight: 10,
-        majorTMColor: "#D5CDBE",
-        gaugeFillMix: "{light-0}",
-        valueFont: "Titillium Web SemiBold",
+        majorTMColor: '#D5CDBE',
+        gaugeFillMix: '{light-0}',
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E",
-        baseFontColor: "#33302E"
+        valueFontColor: '#33302E',
+        baseFontColor: '#33302E'
       }
     },
 
@@ -815,40 +818,41 @@ var themeObject = {
         manageResize: 1,
         autoScale: 1,
         showGaugeBorder: 1,
-        gaugeBorderColor: "#D5CDBE",
+        gaugeBorderColor: '#D5CDBE',
         gaugeBorderThickness: 2,
         gaugeBorderAlpha: 100,
-        thmFillColor: "#0f5499",
-        thmGlassColor: "#FFF9F5",
+        thmFillColor: '#0f5499',
+        thmGlassColor: '#FFF9F5',
         placeTicksInside: 0,
         autoAlignTickValues: 1,
         minortmnumber: 0,
         majorTMHeight: 10,
-        majorTMColor: "#D5CDBE",
-        valueFont: "Titillium Web SemiBold",
+        majorTMColor: '#D5CDBE',
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E",
-        baseFontColor: "#33302E"
+        valueFontColor: '#33302E',
+        baseFontColor: '#33302E'
       }
     },
 
     // real-time vertical led gauge (52)
     vled: {
       chart: {
-        captionAlignment: "center",
+        captionAlignment: 'center',
         setAdaptiveMin: 1,
         showGaugeBorder: 0,
+        setAdaptiveMin: 1,
         adjustTM: 1,
         placeTicksInside: 0,
         autoAlignTickValues: 1,
         minortmnumber: 0,
         majorTMHeight: 10,
-        majorTMColor: "#D5CDBE",
+        majorTMColor: '#D5CDBE',
         ledGap: 0,
-        valueFont: "Titillium Web SemiBold",
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E",
-        baseFontColor: "#33302E"
+        valueFontColor: '#33302E',
+        baseFontColor: '#33302E'
       }
     },
 
@@ -856,37 +860,37 @@ var themeObject = {
     realtimearea: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
-        realTimeValueFont: "Titillium Web SemiBold",
+        realTimeValueFont: 'Titillium Web SemiBold',
         realTimeValueFontSize: 12,
-        realTimeValueFontColor: "#33302E"
+        realTimeValueFontColor: '#33302E'
       }
     },
 
     // real-time column chart (54)
     realtimecolumn: {
       chart: {
-        realTimeValueFont: "Titillium Web SemiBold",
+        realTimeValueFont: 'Titillium Web SemiBold',
         realTimeValueFontSize: 12,
-        realTimeValueFontColor: "#33302E"
+        realTimeValueFontColor: '#33302E'
       }
     },
 
     // real-time line chart (55)
     realtimeline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
         legendIconBorderThickness: 2,
-        realTimeValueFont: "Titillium Web SemiBold",
+        realTimeValueFont: 'Titillium Web SemiBold',
         realTimeValueFontSize: 12,
-        realTimeValueFontColor: "#33302E"
+        realTimeValueFontColor: '#33302E'
       }
     },
 
@@ -894,58 +898,58 @@ var themeObject = {
     realtimestackedarea: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 85,
         legendIconBgAlpha: 85,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
-        realTimeValueFont: "Titillium Web SemiBold",
+        realTimeValueFont: 'Titillium Web SemiBold',
         realTimeValueFontSize: 12,
-        realTimeValueFontColor: "#33302E"
+        realTimeValueFontColor: '#33302E'
       }
     },
 
     // real-time stacked column chart (57)
     realtimestackedcolumn: {
       chart: {
-        realTimeValueFont: "Titillium Web SemiBold",
+        realTimeValueFont: 'Titillium Web SemiBold',
         realTimeValueFontSize: 12,
-        realTimeValueFontColor: "#33302E"
+        realTimeValueFontColor: '#33302E'
       }
     },
 
     // real-time line (dual y-axis) (58)
     realtimelinedy: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
         legendIconBorderThickness: 2,
-        realTimeValueFont: "Titillium Web SemiBold",
+        realTimeValueFont: 'Titillium Web SemiBold',
         realTimeValueFontSize: 12,
-        realTimeValueFontColor: "#33302E"
+        realTimeValueFontColor: '#33302E'
       }
     },
 
     // spark line chart (59)
     sparkline: {
       chart: {
-        captionPosition: "middle",
-        plotFillColor: "#0F5499",
+        captionPosition: 'middle',
+        plotFillColor: '#0F5499',
         lineAlpha: 85,
-        plotFillHoverColor: "#D5CDBE",
+        plotFillHoverColor: '#D5CDBE',
         lineThickness: 2,
         anchorRadius: 4,
         anchorBorderThickness: 2,
-        highColor: "#0A5E66",
-        lowColor: "#B5323E",
+        highColor: '#0A5E66',
+        lowColor: '#B5323E',
         showOpenAnchor: 0,
         showCloseAnchor: 0,
         showOpenValue: 0,
         showCloseValue: 0,
         showHighLowValue: 0,
-        periodColor: "#D5CDBE",
+        periodColor: '#D5CDBE',
         chartLeftMargin: 5,
         chartRightMargin: 5
       }
@@ -954,11 +958,11 @@ var themeObject = {
     // spark column chart (60)
     sparkcolumn: {
       chart: {
-        captionPosition: "middle",
-        plotFillColor: "#0F5499",
-        highColor: "#0A5E66",
-        lowColor: "#B5323E",
-        periodColor: "#D5CDBE",
+        captionPosition: 'middle',
+        plotFillColor: '#0F5499',
+        highColor: '#0A5E66',
+        lowColor: '#B5323E',
+        periodColor: '#D5CDBE',
         chartLeftMargin: 5
       }
     },
@@ -966,12 +970,12 @@ var themeObject = {
     // spark win/loss chart (61)
     sparkwinloss: {
       chart: {
-        captionPosition: "middle",
-        winColor: "#0A5E66",
-        lossColor: "#B5323E",
-        drawColor: "#EDB34A",
-        scoreLessColor: "#0F5499",
-        periodColor: "#D5CDBE",
+        captionPosition: 'middle',
+        winColor: '#0A5E66',
+        lossColor: '#B5323E',
+        drawColor: '#EDB34A',
+        scoreLessColor: '#0F5499',
+        periodColor: '#D5CDBE',
         chartLeftMargin: 5
       }
     },
@@ -979,36 +983,36 @@ var themeObject = {
     // horizontal bullet chart/graph (62)
     hbullet: {
       chart: {
-        plotFillColor: "#0F5499",
-        colorRangeFillMix: "{light-0}",
-        targetColor: "#000000",
-        targetThickness: "2",
-        targetCapStyle: "round",
+        plotFillColor: '#0F5499',
+        colorRangeFillMix: '{light-0}',
+        targetColor: '#000000',
+        targetThickness: '2',
+        targetCapStyle: 'round',
         showTickMarks: 0,
         showTickValues: 1,
         showLimits: 1,
-        valueFont: "Titillium Web SemiBold",
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E",
-        baseFontColor: "#33302E"
+        valueFontColor: '#33302E',
+        baseFontColor: '#33302E'
       }
     },
 
     // vertical bullet chart/graph (63)
     vbullet: {
       chart: {
-        plotFillColor: "#0F5499",
-        colorRangeFillMix: "{light-0}",
-        targetColor: "#000000",
-        targetThickness: "2",
-        targetCapStyle: "round",
+        plotFillColor: '#0F5499',
+        colorRangeFillMix: '{light-0}',
+        targetColor: '#000000',
+        targetThickness: '2',
+        targetCapStyle: 'round',
         showTickMarks: 0,
         showTickValues: 1,
         showLimits: 1,
-        valueFont: "Titillium Web SemiBold",
+        valueFont: 'Titillium Web SemiBold',
         valueFontSize: 12,
-        valueFontColor: "#33302E",
-        baseFontColor: "#33302E"
+        valueFontColor: '#33302E',
+        baseFontColor: '#33302E'
       }
     },
 
@@ -1017,12 +1021,12 @@ var themeObject = {
       chart: {
         is2D: 1,
         isSmartLineSlanted: 0,
-        smartLineColor: "#D5CDBE",
+        smartLineColor: '#D5CDBE',
         smartLineThickness: 1,
         streamlinedData: 1,
         useSameSlantAngle: 1,
         showLegend: 1,
-        legendPosition: "right",
+        legendPosition: 'right',
         showLabels: 0
       }
     },
@@ -1032,12 +1036,12 @@ var themeObject = {
       chart: {
         is2D: 1,
         isSmartLineSlanted: 0,
-        smartLineColor: "#D5CDBE",
+        smartLineColor: '#D5CDBE',
         smartLineThickness: 1,
         streamlinedData: 1,
         useSameSlantAngle: 1,
         showLegend: 1,
-        legendPosition: "right",
+        legendPosition: 'right',
         showLabels: 0,
         plotBorderThickness: 0
       }
@@ -1046,15 +1050,16 @@ var themeObject = {
     // gantt chart (66)
     gantt: {
       chart: {
-        taskBarFillMix: "{light+0}",
+        taskBarFillMix: '{light+0}',
         flatScrollBars: 1,
         scrollHeight: 17,
-        scrollColor: "#F2E5D9",
+        scrollColor: '#F2E5D9',
         gridBorderAlpha: 100,
-        gridBorderColor: "#D5CDBE",
-        ganttLineColor: "#D5CDBE",
+        gridBorderColor: '#D5CDBE',
+        ganttLineColor: '#D5CDBE',
         ganttLineAlpha: 100,
         taskBarRoundRadius: 3,
+        flatScrollBars: 1,
         showHoverEffect: 1,
         plotHoverEffect: 1,
         plotFillHoverAlpha: 85,
@@ -1071,23 +1076,23 @@ var themeObject = {
         slackHoverFillAlpha: 85,
         scrollShowButtons: 1,
         showCanvasBorder: 1,
-        canvasBorderColor: "#D5CDBE",
+        canvasBorderColor: '#D5CDBE',
         canvasBorderThickness: 0.75
       },
       categories: [
         {
-          fontcolor: "#33302E",
+          fontcolor: '#33302E',
           fontsize: 12,
-          bgcolor: "#FFF9F5",
+          bgcolor: '#FFF9F5',
           hoverBandAlpha: 85,
           showGanttPaneHoverBand: 1,
           showHoverBand: 1,
           category: [
             {
-              fontcolor: "#33302E",
+              fontcolor: '#33302E',
               fontsize: 11,
               bgAlpha: 85,
-              bgcolor: "#FFF9F5"
+              bgcolor: '#FFF9F5'
             }
           ]
         }
@@ -1097,30 +1102,30 @@ var themeObject = {
         showHoverEffect: 0,
         task: [
           {
-            color: "#0f5499"
+            color: '#0f5499'
           }
         ]
       },
       processes: {
-        fontcolor: "#33302E",
+        fontcolor: '#33302E',
         isanimated: 0,
-        bgcolor: "#FFF9F5",
+        bgcolor: '#FFF9F5',
         bgAlpha: 85,
-        headerbgcolor: "#FFF9F5",
-        headerfontcolor: "#33302E",
+        headerbgcolor: '#FFF9F5',
+        headerfontcolor: '#33302E',
         showGanttPaneHoverBand: 1,
         showHoverBand: 1
       },
       text: {
-        fontcolor: "#33302E",
-        bgcolor: "#FFF9F5"
+        fontcolor: '#33302E',
+        bgcolor: '#FFF9F5'
       },
       datatable: {
-        fontcolor: "#33302E",
-        bgcolor: "#FFF9F5",
+        fontcolor: '#33302E',
+        bgcolor: '#FFF9F5',
         datacolumn: [
           {
-            bgcolor: "#FFF9F5"
+            bgcolor: '#FFF9F5'
           }
         ]
       },
@@ -1132,7 +1137,7 @@ var themeObject = {
       milestones: {
         milestone: [
           {
-            color: "#33302E"
+            color: '#33302E'
           }
         ]
       }
@@ -1148,7 +1153,7 @@ var themeObject = {
     // logarithmic line2D chart (68)
     logmsline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -1160,8 +1165,8 @@ var themeObject = {
     // single-series spline2D chart (69)
     spline: {
       chart: {
-        paletteColors: "#0f5499",
-        anchorBgColor: "#FFF1E5",
+        paletteColors: '#0f5499',
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2
@@ -1172,12 +1177,12 @@ var themeObject = {
     splinearea: {
       chart: {
         drawAnchors: 0,
-        paletteColors: "#0f5499",
+        paletteColors: '#0f5499',
         plotFillAlpha: 85,
         legendIconBgAlpha: 85,
         legendIconBorderAlpha: 0,
         drawCrossLine: 1,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         anchorBorderThickness: 2,
         plotHoverEffect: 0
       }
@@ -1186,7 +1191,7 @@ var themeObject = {
     // multi-series spline2D chart (71)
     msspline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -1199,12 +1204,13 @@ var themeObject = {
     mssplinearea: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
         drawCrossLine: 1,
+        anchorBgColor: '#FFF1E5',
         anchorBorderThickness: 2,
         plotHoverEffect: 0
       }
@@ -1213,7 +1219,7 @@ var themeObject = {
     // error bar chart (73)
     errorbar2d: {
       chart: {
-        errorBarColor: "#33302E",
+        errorBarColor: '#33302E',
         errorBarThickness: 1
       }
     },
@@ -1221,12 +1227,12 @@ var themeObject = {
     // error line2D chart (74)
     errorline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
         legendIconBorderThickness: 2,
-        errorBarColor: "#33302E",
+        errorBarColor: '#33302E',
         errorBarThickness: 1
       }
     },
@@ -1234,11 +1240,11 @@ var themeObject = {
     // error scatter chart (75)
     errorscatter: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCustomLegendIcon: 0,
         anchorBorderThickness: 2,
         legendIconBorderThickness: 2,
-        errorBarColor: "#33302E",
+        errorBarColor: '#33302E',
         errorBarThickness: 1
       }
     },
@@ -1247,7 +1253,7 @@ var themeObject = {
     inversemsarea: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
@@ -1268,7 +1274,7 @@ var themeObject = {
     // inverse y-axis line2D chart (78)
     inversemsline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -1305,7 +1311,7 @@ var themeObject = {
     // drag-able line2D chart (80)
     dragline: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         lineThickness: 2,
         anchorBorderThickness: 2,
         legendIconSides: 2,
@@ -1338,7 +1344,7 @@ var themeObject = {
     dragarea: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
@@ -1377,24 +1383,24 @@ var themeObject = {
         showParent: 1,
         showNavigationBar: 0,
         plotBorderThickness: 0.5,
-        plotBorderColor: "#D5CDBE",
+        plotBorderColor: '#D5CDBE',
         labelGlow: 0,
-        btnBackChartTooltext: "Back",
-        btnResetChartTooltext: "Home",
+        btnBackChartTooltext: 'Back',
+        btnResetChartTooltext: 'Home',
         legendScaleLineThickness: 0,
         legendaxisborderalpha: 0,
-        legendPointerColor: "#FFF9F5",
-        legendpointerbordercolor: "#606060",
+        legendPointerColor: '#FFF9F5',
+        legendpointerbordercolor: '#606060',
         legendPointerAlpha: 85,
-        defaultParentBgColor: "#FFF9F5",
-        fontcolor: "#33302E"
+        defaultParentBgColor: '#FFF9F5',
+        fontcolor: '#33302E'
       },
       data: [
         {
-          fillcolor: "#FFF9F5",
+          fillcolor: '#FFF9F5',
           data: [
             {
-              fillcolor: "#FFF9F5"
+              fillcolor: '#FFF9F5'
             }
           ]
         }
@@ -1405,13 +1411,14 @@ var themeObject = {
     radar: {
       chart: {
         drawAnchors: 1,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
+        anchorBgColor: '#FFF1E5',
         anchorBorderThickness: 2,
-        radarFillColor: "#FFF9F5",
+        radarFillColor: '#FFF9F5',
         radarBorderThickness: 0
       }
     },
@@ -1421,27 +1428,27 @@ var themeObject = {
       chart: {
         showPlotBorder: 1,
         plotBorderThickness: 0.5,
-        plotBorderColor: "#D5CDBE",
-        tlFontColor: "#606060",
+        plotBorderColor: '#D5CDBE',
+        tlFontColor: '#606060',
         tlFontSize: 10,
-        trFontColor: "#606060",
+        trFontColor: '#606060',
         trFontSize: 10,
-        blFontColor: "#606060",
+        blFontColor: '#606060',
         blFontSize: 10,
-        brFontColor: "#606060",
+        brFontColor: '#606060',
         brFontSize: 10,
         legendScaleLineThickness: 0,
         legendaxisborderalpha: 0,
-        legendPointerColor: "#FFF9F5",
-        legendpointerbordercolor: "#606060",
+        legendPointerColor: '#FFF9F5',
+        legendpointerbordercolor: '#606060',
         legendPointerAlpha: 85,
         showCanvasBorder: 1,
         canvasBorderThickness: 0.5,
-        canvasBorderColor: "#D5CDBE"
+        canvasBorderColor: '#D5CDBE'
       },
       colorrange: {
         gradient: 1,
-        code: "#0f5499"
+        code: '#0f5499'
       }
     },
 
@@ -1458,15 +1465,15 @@ var themeObject = {
         lowerQuartileAlpha: 0,
         upperQuartileAlpha: 0,
         upperWhiskerThickness: 1,
-        upperWhiskerColor: "#33302E",
-        lowerWhiskerColor: "#33302E",
+        upperWhiskerColor: '#33302E',
+        lowerWhiskerColor: '#33302E',
         lowerWhiskerThickness: 1,
-        medianColor: "#000000",
+        medianColor: '#000000',
         medianThickness: 1,
-        outliericonshape: "circle",
+        outliericonshape: 'circle',
         outliericonsides: 4,
-        meaniconcolor: "#000000",
-        meanIconShape: "circle",
+        meaniconcolor: '#000000',
+        meanIconShape: 'circle',
         meaniconsides: 2,
         meaniconradius: 3
       }
@@ -1478,10 +1485,10 @@ var themeObject = {
         showVPlotBorder: 1,
         vplotborderThickness: 0.5,
         plotborderThickness: 0.5,
-        bearFillColor: "#B5323E",
-        bearBorderColor: "#B5323E",
-        bullFillColor: "#FFF9F5",
-        bullBorderColor: "#606060",
+        bearFillColor: '#B5323E',
+        bearBorderColor: '#B5323E',
+        bullFillColor: '#FFF9F5',
+        bullBorderColor: '#606060',
         plotLineThickness: 0.75,
         plotLineAlpha: 100,
         divLineDashed: 0,
@@ -1489,15 +1496,15 @@ var themeObject = {
         legendIconSides: 4,
         showHoverEffect: 1,
         plotHoverEffect: 1,
-        trendLineColor: "#000000",
+        trendLineColor: '#000000',
         trendLineThickness: 1,
         trendValueAlpha: 100,
         rollOverBandAlpha: 100,
-        rollOverBandColor: "#D5CDBE"
+        rollOverBandColor: '#D5CDBE'
       },
       categories: [
         {
-          verticalLineColor: "#D5CDBE",
+          verticalLineColor: '#D5CDBE',
           verticalLineThickness: 1
         }
       ]
@@ -1510,18 +1517,18 @@ var themeObject = {
         legendIconSides: 2,
         divLineAlpha: 0,
         numDivLines: 0,
-        valueFontColor: "#FFFFFF"
+        valueFontColor: '#FFFFFF'
       },
       dataset: [
         {
-          color: "#0F5499"
+          color: '#0F5499'
         }
       ],
       connectors: [
         {
           connector: [
             {
-              color: "#33302E"
+              color: '#33302E'
             }
           ]
         }
@@ -1531,7 +1538,7 @@ var themeObject = {
     // step line chart (88)
     msstepLine: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -1545,7 +1552,7 @@ var themeObject = {
     multiaxisline: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCrossLine: 1,
         lineThickness: 2,
         anchorBorderThickness: 2,
@@ -1556,9 +1563,9 @@ var themeObject = {
       },
       axis: [
         {
-          divLineColor: "#D5CDBE",
+          divLineColor: '#D5CDBE',
           divLineThickness: 0.75,
-          setAdaptiveYMin: "1"
+          setAdaptiveYMin: '1'
         }
       ]
     },
@@ -1567,25 +1574,25 @@ var themeObject = {
     multilevelpie: {
       chart: {
         useHoverColor: 0, // seems to be an issue plot hover alpha is not working
-        valueFontColor: "#FFFFFF",
+        valueFontColor: '#FFFFFF',
         showPlotBorder: 1,
         plotborderThickness: 0.5,
-        plotBorderColor: "#D5CDBE"
+        plotBorderColor: '#D5CDBE'
       },
       category: [
         {
-          color: "#33302E",
+          color: '#33302E',
           category: [
             {
-              color: "#0F5499",
+              color: '#0F5499',
               alpha: 85,
               category: [
                 {
-                  color: "#0F5499",
+                  color: '#0F5499',
                   alpha: 70,
                   category: [
                     {
-                      color: "#0F5499",
+                      color: '#0F5499',
                       alpha: 55
                     }
                   ]
@@ -1600,7 +1607,7 @@ var themeObject = {
     // select-scatter chart (91)
     selectscatter: {
       chart: {
-        anchorBgColor: "#FFF1E5",
+        anchorBgColor: '#FFF1E5',
         drawCustomLegendIcon: 0,
         anchorBorderThickness: 2,
         legendIconBorderThickness: 2
@@ -1610,11 +1617,11 @@ var themeObject = {
     // waterfall/cascade chart (92)
     waterfall2d: {
       chart: {
-        paletteColors: "#0F5499",
-        positiveColor: "#0A5E66",
-        negativeColor: "#B5323E",
+        paletteColors: '#0F5499',
+        positiveColor: '#0A5E66',
+        negativeColor: '#B5323E',
         showConnectors: 1,
-        connectorColor: "#33302E",
+        connectorColor: '#33302E',
         connectorThickness: 1
       }
     },
@@ -1626,8 +1633,8 @@ var themeObject = {
         declineThickness: 2,
         legendIconSides: 2,
         drawAnchors: 0,
-        rallyColor: "#0A5E66",
-        declineColor: "#B5323E"
+        rallyColor: '#0A5E66',
+        declineColor: '#B5323E'
       }
     },
 
@@ -1637,23 +1644,24 @@ var themeObject = {
         showLabels: 0,
         legendScaleLineThickness: 0,
         legendaxisborderalpha: 0,
-        legendPointerColor: "#FFF9F5",
-        legendpointerbordercolor: "#606060",
+        legendPointerColor: '#FFF9F5',
+        legendpointerbordercolor: '#606060',
         legendPointerAlpha: 85,
-        fillColor: "#0f5499",
+        fillColor: '#0f5499',
         showEntityHoverEffect: 1,
         entityFillHoverAlpha: 85,
         connectorHoverAlpha: 85,
         markerBorderHoverAlpha: 85,
         showBorder: 1,
-        borderColor: "#D5CDBE",
+        borderColor: '#D5CDBE',
         borderThickness: 0.5,
-        nullEntityColor: "FFF9F5",
-        entityFillHoverColor: "#606060"
+        nullEntityColor: 'FFF9F5',
+        entityFillHoverColor: '#606060',
+        entityFillHoverAlpha: 85
       },
       colorrange: {
         gradient: 1,
-        code: "#0f5499"
+        code: '#0f5499'
       }
     },
 
@@ -1671,45 +1679,129 @@ var themeObject = {
       }
     },
 
-    // timeseries (97)
+    // Scroll Bar2D Chart (97)
+    scrollbar2d: {
+      chart: {
+        drawCrossLine: 1,
+        flatscrollbars: 1,
+        scrollHeight: 17,
+        scrollColor: '#F2E5D9'
+      }
+    },
+
+    // Scroll Stacked Bar2D Chart (98)
+    scrollstackedbar2d: {
+      chart: {
+        drawCrossLine: 1,
+        flatscrollbars: 1,
+        scrollHeight: 17,
+        scrollColor: '#F2E5D9'
+      }
+    },
+
+    // Scroll Multi-series Stacked Column2D Chart (99)
+    scrollmsstackedcolumn2d: {
+      chart: {
+        drawCrossLine: 1,
+        flatscrollbars: 1,
+        scrollHeight: 17,
+        scrollColor: '#F2E5D9'
+      }
+    },
+
+    // Scroll Multi-series Stacked Column2D + Line Dual Y-Axis (100)
+    scrollmsstackedcolumn2dlinedy: {
+      chart: {
+        anchorBgColor: '#FFF1E5',
+        lineThickness: 2,
+        anchorBorderThickness: 2,
+        legendIconSides: 2,
+        legendIconBorderThickness: 2,
+        drawCrossLine: 1,
+        flatscrollbars: 1,
+        scrollHeight: 17,
+        scrollColor: '#F2E5D9'
+      }
+    },
+
+    // Stacked Column2D + Line Dual Y-Axis Chart (101)
+    stackedcolumn2dlinedy: {
+      chart: {
+        anchorBgColor: '#FFF1E5',
+        lineThickness: 2,
+        anchorBorderThickness: 2,
+        legendIconSides: 2,
+        legendIconBorderThickness: 2,
+        drawCrossLine: 1
+      }
+    },
+
+    // Stacked Area2D + Line Dual Y-Axis Chart (102)
+    stackedarea2dlinedy: {
+      chart: {
+        anchorBgColor: '#FFF1E5',
+        lineThickness: 2,
+        anchorBorderThickness: 2,
+        legendIconSides: 2,
+        legendIconBorderThickness: 2,
+        drawCrossLine: 1,
+        drawAnchors: 1,
+        plotFillAlpha: 85,
+        legendIconBgAlpha: 85
+      }
+    },
+
+    // Multi-series 3D Single Y Combination Chart (103)
+    mscombidy3d: {
+      chart: {
+        showCanvasBase: 0,
+        anchorBgColor: '#FFF1E5',
+        lineThickness: 2,
+        anchorBorderThickness: 2,
+        legendIconSides: 2,
+        legendIconBorderThickness: 2
+      }
+    },
+
+    // timeseries
     timeseries: {
       chart: {
-        baseFont: "Titillium Web Regular",
+        baseFont: 'Titillium Web Regular',
         style: {
           text: {
-            "font-family": "Titillium Web Regular"
+            'font-family': 'Titillium Web Regular'
           },
           background: {
-            fill: "#FFF1E5"
+            fill: '#FFF1E5'
           },
           canvas: {
-            fill: "#FFF1E5",
-            stroke: "#D5CDBE",
-            "stroke-width": 0.75
+            fill: '#FFF1E5',
+            stroke: '#D5CDBE',
+            'stroke-width': 0.75
           }
         }
       },
       tooltip: {
         style: {
           container: {
-            "background-color": "#FFF9F5",
+            'background-color': '#FFF9F5',
             opacity: 0.9,
-            "border": "0.5px solid #D5CDBE",
-            "border-radius": "3px",
-            padding: "6px"
+            border: '0.5px solid #D5CDBE',
+            'border-radius': '3px',
+            padding: '6px'
           },
           text: {
-            "font-size": "11px",
-            color: "#606060"
+            'font-size': '11px',
+            color: '#606060'
           },
           header: {
-            "font-family": "Titillium Web SemiBold",
-            "font-size": "12px",
-            color: "#33302E",
-            padding: "0px"
+            'font-family': 'Titillium Web SemiBold',
+            'font-size': '12px',
+            color: '#33302E',
+            padding: '0px'
           },
           body: {
-            padding: "0px"
+            padding: '0px'
           }
         }
       },
@@ -1717,25 +1809,25 @@ var themeObject = {
         scrollbar: {
           style: {
             button: {
-              fill: "#D5CDBE"
+              fill: '#D5CDBE'
             },
             track: {
-              fill: "#F2E5D9"
+              fill: '#F2E5D9'
             },
             scroller: {
-              fill: "#D5CDBE"
+              fill: '#D5CDBE'
             }
           }
         },
         window: {
           style: {
             handle: {
-              fill: "#D5CDBE"
+              fill: '#D5CDBE'
             },
             mask: {
               opacity: 0.5,
-              stroke: "#D5CDBE",
-              "stroke-width": 0.75
+              stroke: '#D5CDBE',
+              'stroke-width': 0.75
             }
           }
         }
@@ -1743,36 +1835,36 @@ var themeObject = {
       crossline: {
         style: {
           line: {
-            stroke: "#D5CDBE",
-            "stroke-width": 1
+            stroke: '#D5CDBE',
+            'stroke-width': 1
           }
         }
       },
       caption: {
         style: {
           text: {
-            "font-size": 16,
-            "font-family": "Titillium Web SemiBold",
-            fill: "#000000"
+            'font-size': 16,
+            'font-family': 'Titillium Web SemiBold',
+            fill: '#000000'
           }
         }
       },
       subcaption: {
         style: {
           text: {
-            "font-size": 12,
-            "font-family": "Titillium Web Regular",
-            fill: "#66605C"
+            'font-size': 12,
+            'font-family': 'Titillium Web Regular',
+            fill: '#66605C'
           }
         }
       },
       plotconfig: {
         column: {
           style: {
-            "plot:hover": {
+            'plot:hover': {
               opacity: 0.85
             },
-            "plot:highlight": {
+            'plot:highlight': {
               opacity: 0.85
             }
           }
@@ -1780,30 +1872,30 @@ var themeObject = {
         line: {
           style: {
             plot: {
-              "stroke-width": 2
+              'stroke-width': 2
             }
           }
         },
         candlestick: {
           style: {
             bear: {
-              stroke: "#B5323E",
-              fill: "#B5323E"
+              stroke: '#B5323E',
+              fill: '#B5323E'
             },
-            "bear:hover": {
+            'bear:hover': {
               opacity: 0.85
             },
-            "bear:highlight": {
+            'bear:highlight': {
               opacity: 0.85
             },
             bull: {
-              stroke: "#606060",
-              fill: "#FFF9F5"
+              stroke: '#606060',
+              fill: '#FFF9F5'
             },
-            "bull:hover": {
+            'bull:hover': {
               opacity: 0.85
             },
-            "bull:highlight": {
+            'bull:highlight': {
               opacity: 0.85
             }
           }
@@ -1811,23 +1903,23 @@ var themeObject = {
         ohlc: {
           style: {
             bear: {
-              stroke: "#B5323E",
-              fill: "#B5323E"
+              stroke: '#B5323E',
+              fill: '#B5323E'
             },
-            "bear:hover": {
+            'bear:hover': {
               opacity: 0.85
             },
-            "bear:highlight": {
+            'bear:highlight': {
               opacity: 0.85
             },
             bull: {
-              stroke: "#606060",
-              fill: "#FFF9F5"
+              stroke: '#606060',
+              fill: '#FFF9F5'
             },
-            "bull:hover": {
+            'bull:hover': {
               opacity: 0.85
             },
-            "bull:highlight": {
+            'bull:highlight': {
               opacity: 0.85
             }
           }
@@ -1839,28 +1931,28 @@ var themeObject = {
             {
               style: {
                 marker: {
-                  fill: "#33302E",
-                  stroke: "#33302E",
-                  "stroke-width": 1.5
+                  fill: '#33302E',
+                  stroke: '#33302E',
+                  'stroke-width': 1.5
                 }
               }
             }
           ],
           style: {
             title: {
-              "font-size": 12,
-              fill: "#33302E"
+              'font-size': 12,
+              fill: '#33302E'
             },
-            "tick-mark": {
-              stroke: "#D5CDBE",
-              "stroke-width": 0.75
+            'tick-mark': {
+              stroke: '#D5CDBE',
+              'stroke-width': 0.75
             },
-            "grid-line": {
-              stroke: "#D5CDBE",
-              "stroke-width": 0.75
+            'grid-line': {
+              stroke: '#D5CDBE',
+              'stroke-width': 0.75
             },
             label: {
-              color: "#606060"
+              color: '#606060'
             }
           }
         }
@@ -1868,29 +1960,29 @@ var themeObject = {
       xaxis: {
         style: {
           title: {
-            "font-size": 12,
-            fill: "#33302E"
+            'font-size': 12,
+            fill: '#33302E'
           },
-          "tick-mark-major": {
-            stroke: "#D5CDBE",
-            "stroke-width": 0.75
+          'tick-mark-major': {
+            stroke: '#D5CDBE',
+            'stroke-width': 0.75
           },
-          "tick-mark-minor": {
-            stroke: "#D5CDBE",
-            "stroke-width": 0.5
+          'tick-mark-minor': {
+            stroke: '#D5CDBE',
+            'stroke-width': 0.5
           },
-          "label-major": {
-            color: "#606060"
+          'label-major': {
+            color: '#606060'
           },
-          "label-minor": {
-            color: "#606060"
+          'label-minor': {
+            color: '#606060'
           },
-          "label-context": {
-            color: "#000000"
+          'label-context': {
+            color: '#000000'
           },
-          "grid-line": {
-            stroke: "#D5CDBE",
-            "stroke-width": 0.75
+          'grid-line': {
+            stroke: '#D5CDBE',
+            'stroke-width': 0.75
           }
         }
       },
@@ -1898,8 +1990,8 @@ var themeObject = {
         item: {
           style: {
             text: {
-              fill: "#33302E",
-              "font-size": 12
+              fill: '#33302E',
+              'font-size': 12
             }
           }
         }
@@ -1907,119 +1999,91 @@ var themeObject = {
       extensions: {
         standardRangeSelector: {
           style: {
-            "button-text": {
-              fill: "#66605C",
-              "font-family": "Titillium Web Regular"
+            button: {
+              text: {
+                fill: '#66605C',
+                'font-family': 'Titillium Web Regular'
+              }
             },
-            "button-text:hover": {
-              fill: "#33302E",
-              "font-family": "Titillium Web SemiBold"
+            'button:hover': {
+              text: {
+                fill: '#33302E',
+                'font-family': 'Titillium Web SemiBold'
+              }
             },
-            "button-text:active": {
-              fill: "#33302E",
-              "font-family": "Titillium Web SemiBold"
+            'button:active': {
+              text: {
+                fill: '#33302E',
+                'font-family': 'Titillium Web SemiBold'
+              }
             },
             separator: {
-              stroke: "#D5CDBE",
-              "stroke-width": 0.75
+              stroke: '#D5CDBE',
+              'stroke-width': 0.75
             }
           }
         },
         customRangeSelector: {
           style: {
-            "title-text": {
-              fill: "#33302E",
-              "font-family": "Titillium Web SemiBold"
+            calendar: {
+              days: 'fc-cal-day-umber',
+              normaldate: 'fc-cal-date-normal-umber',
+              disableddate: 'fc-cal-date-disabled-umber',
+              selecteddate: 'fc-cal-date-selected-umber',
+              header: 'fc-cal-month-header-umber',
+              weekend: 'fc-cal-weekend-umber',
+              navprev: 'fc-cal-nav-prev-umber',
+              navnext: 'fc-cal-nav-next-umber'
             },
-            "title-icon": {
-              fill: "#33302E",
-              "font-family": "Titillium Web SemiBold"
+            title: {
+              text: {
+                fill: '#33302E',
+                'font-family': 'Titillium Web SemiBold'
+              },
+              icon: {
+                fill: '#33302E',
+                'font-family': 'Titillium Web SemiBold'
+              }
             },
-            container: {
-              "background-color": "#FFF1E5"
+            background: {
+              'background-color': '#FFF1E5'
+            },
+            button: {
+              apply: {
+                color: '#FFFFFF',
+                'background-color': '#33302E',
+                border: 'none'
+              },
+              cancel: {
+                color: '#33302E',
+                'background-color': '#FFF1E5',
+                border: 'none'
+              }
+            },
+            'button:hover': {
+              apply: {
+                'font-family': 'Titillium Web SemiBold'
+              },
+              cancel: {
+                'font-family': 'Titillium Web SemiBold'
+              }
             },
             label: {
-              color: "#33302E",
-              "font-family": "Titillium Web SemiBold"
+              color: '#33302E',
+              'font-family': 'Titillium Web SemiBold'
             },
             input: {
-              "background-color": "#FFF9F5",
-              border: "0.5px solid #D5CDBE",
-              "border-radius": "3px",
-              color: "#33302E",
-              "font-family": "Titillium Web Regular"
+              'background-color': '#FFF9F5',
+              border: '0.5px solid #D5CDBE',
+              'border-radius': '3px',
+              color: '#33302E',
+              'font-family': 'Titillium Web Regular'
             },
             select: {
-              "background-color": "#FFF9F5",
-              border: "0.5px solid #D5CDBE",
-              "border-radius": "3px",
-              color: "#33302E"
-            },
-            "button-apply": {
-              color: "#FFFFFF",
-              "background-color": "#33302E",
-              border: "none"
-            },
-            "button-cancel": {
-              color: "#33302E",
-              "background-color": "#FFF1E5",
-              border: "none"
-            },
-            "button-apply:hover": {
-              "font-family": "Titillium Web SemiBold"
-            },
-            "button-cancel:hover": {
-              "font-family": "Titillium Web SemiBold"
-            },
-            "cal-header": {
-              "background-color": "#000000",
-              "font-family": "Titillium Web Regular"
-            },
-            "cal-navprev": {
-              "font-family": "Titillium Web Regular",
-              "font-size": "12px"
-            },
-            "cal-navnext": {
-              "font-family": "Titillium Web Regular",
-              "font-size": "12px"
-            },
-            "cal-weekend": {
-              "background-color": "#00000040"
-            },
-            "cal-days": {
-              "background-color": "#fff1e5",
-              color: "#33302e",
-              "font-family": "Titillium Web Regular",
-              border: "none"
-            },
-            "cal-date": {
-              "background-color": "#fff1e5",
-              color: "#33302e",
-              "font-family": "Titillium Web Regular",
-              border: "none"
-            },
-            "cal-date:hover": {
-              "background-color": "#000000",
-              color: "#ffffff",
-              "font-family": "Titillium Web Regular",
-              border: "none"
-            },
-            "cal-disableddate": {
-              "background-color": "#fff1e5",
-              color: "#33302e80",
-              "font-family": "Titillium Web Regular",
-              border: "none"
-            },
-            "cal-disableddate:hover": {
-              "background-color": "#fff1e5",
-              color: "#33302e80",
-              "font-family": "Titillium Web Regular",
-              border: "none"
-            },
-            "cal-selecteddate": {
-              "background-color": "#000000",
-              color: "#ffffff",
-              "font-family": "Titillium Web Regular"
+              'background-color': '#FFF9F5',
+              border: '0.5px solid #D5CDBE',
+              'border-radius': '3px',
+              color: '#33302E'
             }
           }
         }

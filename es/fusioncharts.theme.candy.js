@@ -29,7 +29,7 @@ var css = "@font-face {\n  font-family: \"Fira Sans Light\";\n  font-style: norm
 styleInject(css);
 
 /*
- Candy Theme v0.3
+ Candy Theme v0.4
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
@@ -1967,7 +1967,120 @@ var themeObject = {
       }
     },
 
-    // 97. timeseries
+    // 97. Scroll Bar2D Chart
+    scrollbar2d: {
+      chart: {
+        drawCrossLine: "1",
+        showLegend: "1",
+        legendIconSides: "4",
+        flatScrollBars: "1",
+        scrollShowButtons: "0",
+        scrollColor: "#ABABAB",
+        scrollheight: "10"
+      }
+    },
+
+    // 98. Scroll Stacked Bar2D Chart
+    scrollstackedbar2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4",
+        drawCrossLine: "1",
+        flatScrollBars: "1",
+        scrollShowButtons: "0",
+        scrollColor: "#ABABAB",
+        scrollheight: "10"
+      }
+    },
+
+    // 99. Scroll Multi-series Stacked Column2D Chart
+    scrollmsstackedcolumn2d: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4",
+        flatScrollBars: "1",
+        scrollShowButtons: "0",
+        scrollColor: "#ABABAB",
+        scrollheight: "10"
+      }
+    },
+
+    // 100. Scroll Multi-series Stacked Column2D + Line Dual Y-Axis
+    scrollmsstackedcolumn2dlinedy: {
+      chart: {
+        lineThickness: "3",
+        showLegend: "1",
+        drawCrossLine: "1",
+        drawAnchors: "1",
+        legendIconBorderThickness: "2",
+        anchorBgColor: "#262A33",
+        anchorRadius: "4",
+        anchorHoverRadius: "7",
+        anchorBorderHoverThickness: "1",
+        anchorBorderHoverColor: "#ECEBE4",
+        anchorBgHoverAlpha: "100",
+        flatScrollBars: "1",
+        scrollShowButtons: "0",
+        scrollColor: "#ABABAB",
+        scrollheight: "10"
+      }
+    },
+
+    // 101. Stacked Column2D + Line Dual Y-Axis Chart
+    stackedcolumn2dlinedy: {
+      chart: {
+        lineThickness: "3",
+        showLegend: "1",
+        drawCrossLine: "1",
+        drawAnchors: "1",
+        legendIconBorderThickness: "2",
+        anchorBgColor: "#262A33",
+        anchorRadius: "4",
+        anchorHoverRadius: "7",
+        anchorBorderHoverThickness: "1",
+        anchorBorderHoverColor: "#ECEBE4",
+        anchorBgHoverAlpha: "100"
+      }
+    },
+
+    // 102. Stacked Area2D + Line Dual Y-Axis Chart
+    stackedarea2dlinedy: {
+      chart: {
+        showLegend: "1",
+        legendIconSides: "4",
+        plotFillAlpha: "85",
+        drawCrossLine: "1",
+        lineThickness: "3",
+        drawAnchors: "1",
+        legendIconBorderThickness: "2",
+        anchorBgColor: "#262A33",
+        anchorRadius: "4",
+        anchorHoverRadius: "7",
+        anchorBorderHoverThickness: "1",
+        anchorBorderHoverColor: "#ECEBE4",
+        anchorBgHoverAlpha: "100"
+      }
+    },
+
+    // 103. Multi-series 3D Single Y Combination Chart
+    mscombidy3d: {
+      chart: {
+        lineThickness: "3",
+        showLegend: "1",
+        drawAnchors: "1",
+        legendIconBorderThickness: "2",
+        anchorBgColor: "#262A33",
+        anchorRadius: "4",
+        anchorHoverRadius: "7",
+        anchorBorderHoverThickness: "1",
+        anchorBorderHoverColor: "#ECEBE4",
+        anchorBgHoverAlpha: "100",
+        canvasBaseDepth: "2",
+        canvasBaseColor: "#4D5058"
+      }
+    },
+
+    // timeseries
     timeseries: {
       // caption styling
       caption: {
@@ -2070,38 +2183,35 @@ var themeObject = {
         }
       },
       extensions: {
-        standardRangeSelector: {
-          style: {
-            "button-text": {
-              fill: "#999CA5",
-              "font-family": "Fira Sans Light"
-            },
-            "button-text:hover": {
-              fill: "#FFFFFF",
-              "font-family": "Fira Sans Light"
-            },
-            "button-text:active": {
-              fill: "#FFFFFF",
-              "font-family": "Fira Sans Regular"
-            },
-            separator: {
-              stroke: "#4B4B4B",
-              "stroke-width": 0.5
-            }
-          }
-        },
         customRangeSelector: {
           style: {
-            "title-text": {
-              fill: "#FFFFFF",
-              "font-family": "Fira Sans Regular"
+            calendar: {
+              days: "fc-cal-day-candy",
+              normaldate: "fc-cal-date-normal-candy",
+              disableddate: "fc-cal-date-disabled-candy",
+              selecteddate: "fc-cal-date-selected-candy",
+              header: "fc-cal-month-header-candy",
+              weekend: "fc-cal-weekend-candy",
+              navprev: "fc-cal-nav-prev-candy",
+              navnext: "fc-cal-nav-next-candy"
             },
-            "title-icon": {
-              fill: "#FFFFFF",
-              "font-family": "Fira Sans Regular"
+            button: {
+              apply: {
+                color: "#FFFFFF",
+                "background-color": "#36869C",
+                border: "none"
+              },
+              cancel: {
+                color: "#999CA5",
+                "background-color": "#262A33",
+                border: "none",
+                "font-family": "Fira Sans Regular"
+              }
             },
-            container: {
-              "background-color": "#262A33"
+            "button:hover": {
+              cancel: {
+                color: "#FFFFFF"
+              }
             },
             label: {
               color: "#FFFFFF",
@@ -2113,63 +2223,44 @@ var themeObject = {
               color: "#CCCCCC",
               "font-family": "Fira Sans Light"
             },
-            "button-apply": {
-              color: "#FFFFFF",
-              "background-color": "#36869C",
-              border: "none"
+            title: {
+              text: {
+                fill: "#FFFFFF",
+                "font-family": "Fira Sans Regular"
+              },
+              icon: {
+                fill: "#FFFFFF",
+                "font-family": "Fira Sans Regular"
+              }
             },
-            "button-cancel": {
-              color: "#999CA5",
-              "background-color": "#262A33",
-              border: "none",
-              "font-family": "Fira Sans Regular"
+            background: {
+              "background-color": "#262A33"
+            }
+          }
+        },
+        standardRangeSelector: {
+          style: {
+            button: {
+              text: {
+                fill: "#999CA5",
+                "font-family": "Fira Sans Light"
+              }
             },
-            "button-cancel:hover": {
-              color: "#FFFFFF"
+            "button:hover": {
+              text: {
+                fill: "#FFFFFF",
+                "font-family": "Fira Sans Light"
+              }
             },
-            "cal-header": {
-              "background-color": "#36869C",
-              "font-family": "Fira Sans Light"
+            "button:active": {
+              text: {
+                fill: "#FFFFFF",
+                "font-family": "Fira Sans Regular"
+              }
             },
-            "cal-navprev": {
-              "font-family": "Fira Sans Light",
-              "font-size": "12px"
-            },
-            "cal-navnext": {
-              "font-family": "Fira Sans Light",
-              "font-size": "12px"
-            },
-            "cal-weekend": {
-              "background-color": "#35555D"
-            },
-            "cal-days": {
-              "background-color": "#343434",
-              color: "#CCCCCC",
-              "font-family": "Fira Sans Light",
-              border: "none"
-            },
-            "cal-date": {
-              "background-color": "#343434",
-              color: "#CCCCCC",
-              "font-family": "Fira Sans Light",
-              border: "none"
-            },
-            "cal-date:hover": {
-              "background-color": "#6E6E6E",
-              color: "#FFFFFF",
-              "font-family": "Fira Sans Light",
-              border: "none"
-            },
-            "cal-disableddate": {
-              "background-color": "#343434",
-              color: "#999CA5BF",
-              "font-family": "Fira Sans Light",
-              border: "none"
-            },
-            "cal-selecteddate": {
-              "background-color": "#36869C",
-              color: "#FFFFFF",
-              "font-family": "Fira Sans Regular"
+            separator: {
+              stroke: "#4B4B4B",
+              "stroke-width": 0.5
             }
           }
         }
@@ -2322,8 +2413,8 @@ var themeObject = {
 
 var index = {
   extension: themeObject,
-  name: 'candyTheme',
-  type: 'theme'
+  name: "candyTheme",
+  type: "theme"
 };
 
 export default index;
