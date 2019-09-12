@@ -1684,7 +1684,7 @@ var themeObject = {
       chart: {
         drawCrossLine: 1,
         flatscrollbars: 1,
-        scrollHeight: 17,
+        scrollWidth: 17,
         scrollColor: '#F2E5D9'
       }
     },
@@ -1694,7 +1694,7 @@ var themeObject = {
       chart: {
         drawCrossLine: 1,
         flatscrollbars: 1,
-        scrollHeight: 17,
+        scrollWidth: 17,
         scrollColor: '#F2E5D9'
       }
     },

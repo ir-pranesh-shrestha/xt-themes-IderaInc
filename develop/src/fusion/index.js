@@ -379,7 +379,7 @@ var themeObject = {
         flatScrollBars: '1',
         scrollShowButtons: '0',
         scrollColor: '#FFF',
-        scrollheight: '10',
+        scrollHeight: '10',
         crossLineThickness: '1',
         crossLineColor: '#DFDFDF',
         showLegend: '1',
@@ -410,8 +410,7 @@ var themeObject = {
         placeValuesInside: '0',
         showShadow: '0',
         chartTopMargin: '35',
-        adjustDiv: '1',
-        showAlternateVGridColor: '0'
+        adjustDiv: '1'
       }
     },
 
@@ -1691,8 +1690,9 @@ var themeObject = {
         adjustDiv: '1',
         flatScrollBars: '1',
         scrollShowButtons: '0',
-        scrollheight: '10',
-        scrollColor: '#EBEBEB'
+        scrollWidth: '10',
+        scrollColor: '#EBEBEB',
+        showAlternateVGridColor: 0
       }
     },
 
@@ -1703,8 +1703,9 @@ var themeObject = {
         legendIconSides: '4',
         flatScrollBars: '1',
         scrollShowButtons: '0',
-        scrollheight: '10',
-        scrollColor: '#EBEBEB'
+        scrollWidth: '10',
+        scrollColor: '#EBEBEB',
+        showAlternateVGridColor: 0
       }
     },
 

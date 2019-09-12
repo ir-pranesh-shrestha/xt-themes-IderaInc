@@ -1712,7 +1712,7 @@ var themeObject = {
         adjustDiv: '1',
         flatScrollBars: '1',
         scrollShowButtons: '1',
-        scrollHeight: '15',
+        scrollWidth: '15',
         scrollColor: '#F3F3F3'
       }
     },
@@ -1727,7 +1727,7 @@ var themeObject = {
         adjustDiv: '1',
         flatScrollBars: '1',
         scrollShowButtons: '1',
-        scrollHeight: '15',
+        scrollWidth: '15',
         scrollColor: '#F3F3F3'
       }
     },
@@ -1736,14 +1736,7 @@ var themeObject = {
     scrollmsstackedcolumn2d: {
       chart: {
         showShadow: '0',
-        drawAnchors: '1',
-        anchorRadius: '4',
-        anchorHoverRadius: '6',
         showValues: '0',
-        anchorBorderHoverColor: '#D8D8D8',
-        anchorHoverEffect: '1',
-        anchorBgHoverAlpha: '95',
-        anchorBorderHoverThickness: '2',
         drawCrossLine: '1',
         legendIconBorderThickness: '1',
         adjustDiv: '1',
