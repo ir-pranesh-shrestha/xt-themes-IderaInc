@@ -354,7 +354,6 @@ var themeObject = {
     msarea: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
@@ -444,7 +443,6 @@ var themeObject = {
     stackedarea2d: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 85,
         legendIconBgAlpha: 85,
         legendIconBorderAlpha: 0,
@@ -775,7 +773,6 @@ var themeObject = {
     hled: {
       chart: {
         captionAlignment: 'center',
-        setAdaptiveMin: 1,
         showGaugeBorder: 0,
         setAdaptiveMin: 1,
         adjustTM: 1,
@@ -839,7 +836,6 @@ var themeObject = {
     vled: {
       chart: {
         captionAlignment: 'center',
-        setAdaptiveMin: 1,
         showGaugeBorder: 0,
         setAdaptiveMin: 1,
         adjustTM: 1,
@@ -1051,7 +1047,6 @@ var themeObject = {
     gantt: {
       chart: {
         taskBarFillMix: '{light+0}',
-        flatScrollBars: 1,
         scrollHeight: 17,
         scrollColor: '#F2E5D9',
         gridBorderAlpha: 100,
@@ -1204,7 +1199,6 @@ var themeObject = {
     mssplinearea: {
       chart: {
         drawAnchors: 0,
-        anchorBgColor: '#FFF1E5',
         plotFillAlpha: 50,
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
@@ -1416,7 +1410,6 @@ var themeObject = {
         legendIconBgAlpha: 50,
         legendIconBorderAlpha: 0,
         legendIconSides: 2,
-        anchorBgColor: '#FFF1E5',
         anchorBorderThickness: 2,
         radarFillColor: '#FFF9F5',
         radarBorderThickness: 0
@@ -1649,7 +1642,6 @@ var themeObject = {
         legendPointerAlpha: 85,
         fillColor: '#0f5499',
         showEntityHoverEffect: 1,
-        entityFillHoverAlpha: 85,
         connectorHoverAlpha: 85,
         markerBorderHoverAlpha: 85,
         showBorder: 1,
