@@ -1727,8 +1727,6 @@ var themeObject = {
     scrollmsstackedcolumn2dlinedy: {
       chart: {
         placeValuesInside: '0',
-        showShadow: '0',
-        adjustDiv: '1',
         lineThickness: '2',
         anchorRadius: '4',
         showLegend: '1',
