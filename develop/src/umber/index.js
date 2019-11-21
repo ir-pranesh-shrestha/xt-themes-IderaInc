@@ -1,5 +1,5 @@
 /*
- Umber Theme v0.2
+ Umber Theme v0.5
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
@@ -1727,6 +1727,53 @@ var themeObject = {
       }
     },
 
+    // Sankey Diagram (104)
+    sankey: {
+      chart: {
+        nodeLabelFontColor: "#606060",
+        nodeLabelFontSize: 11,
+        nodeLabelPosition: "end",
+        nodeAlpha: 80,
+        linkAlpha: 40,
+        nodeHoverAlpha: 100,
+        linkHoverAlpha: 75,
+        enableDrag: 0,
+        plothighlighteffect: "fadeout",
+        linkColor: "source"
+      }
+    },
+
+    // Sunburst Chart (105)
+    sunburst: {
+      chart: {
+        useHoverColor: 0,
+        valueFontColor: "#FFFFFF",
+        showPlotBorder: 1,
+        plotborderThickness: 0.5,
+        plotBorderColor: "#D5CDBE"
+      }
+    },
+
+    // Chord Diagram (106)
+    chord: {
+      chart: {
+        drawCustomLegendIcon: 0,
+        legendPosition: "right",
+        nodeThickness: 10,
+        nodeLabelColor: "#606060",
+        nodeLabelFontSize: 11,
+        nodeLabelPosition: "outside",
+        nodeHoverAlpha: 100,
+        nodeLinkPadding: 0,
+        nodeSpacing: 3,
+        nodeBorderThickness: 0,
+        nodeAlpha: 80,
+        linkAlpha: 40,
+        linkBorderAlpha: 40,
+        linkHoverAlpha: 75
+      }
+    },
+
     // timeseries
     timeseries: {
       chart: {
@@ -1922,6 +1969,42 @@ var themeObject = {
         }
       ],
       xaxis: {
+        timemarker: [
+          {
+            style: {
+              marker: {
+                fill: "#262932",
+                stroke: "#a8aaad",
+                "stroke-width": 1
+              },
+              "marker-notch": {
+                fill: "#262932",
+                stroke: "#262932"
+              },
+              "marker:hover": {
+                fill: "#101115",
+                stroke: "#666666",
+                "stroke-width": 1
+              },
+              "marker-notch:hover": {
+                fill: "#101115",
+                stroke: "#101115"
+              },
+              "marker-line": {
+                stroke: "#262932"
+              },
+              "marker-line:hover": {
+                stroke: "#101115"
+              },
+              text: {
+                fill: "#a8aaad"
+              },
+              "text:hover": {
+                fill: "#FFFFFF"
+              }
+            }
+          }
+        ],
         style: {
           title: {
             "font-size": 12,

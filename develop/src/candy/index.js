@@ -1,5 +1,5 @@
 /*
- Candy Theme v0.4
+ Candy Theme v0.5
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
@@ -1828,7 +1828,11 @@ var themeObject = {
         useHoverColor: "1",
         hoverFillColor: "#4B4B4B",
         showHoverEffect: "1",
-        plotHoverEffect: "1"
+        plotHoverEffect: "1",
+        showPlotBorder: "1",
+        plotBorderColor: "#262A33",
+        plotBorderThickness: "0.75",
+        plotBorderAlpha: "100"
       },
 
       category: [
@@ -2052,6 +2056,57 @@ var themeObject = {
       }
     },
 
+    // 104. Sankey Diagram
+    sankey: {
+      chart: {
+        nodeLabelFontSize: 13,
+        nodeLabelFontColor: "#999CA5",
+        nodeLabelPosition: "end",
+        nodeAlpha: 100,
+        linkAlpha: 50,
+        nodeHoverAlpha: 100,
+        linkHoverAlpha: 100,
+        enableDrag: 0,
+        plothighlighteffect: "fadeout",
+        linkColor: "blend"
+      }
+    },
+
+    // 105. Sunburst Chart
+    sunburst: {
+      chart: {
+        valueFontColor: "#F6F6F6",
+        valueFontBold: "1",
+        valueFontSize: "12.5",
+        valueFont: "Fira Sans Light",
+        useHoverColor: "0",
+        showPlotBorder: "1",
+        plotBorderColor: "#262A33",
+        plotBorderThickness: "0.75",
+        plotBorderAlpha: "100"
+      }
+    },
+
+    // 106. Chord Diagram
+    chord: {
+      chart: {
+        drawCustomLegendIcon: 0,
+        legendPosition: "right",
+        nodeThickness: 15,
+        nodeLabelColor: "#999CA5",
+        nodeLabelFontSize: 13,
+        nodeLabelPosition: "outside",
+        nodeHoverAlpha: 100,
+        nodeLinkPadding: 5,
+        nodeBorderColor: "#262A33",
+        nodeBorderThickness: 0.75,
+        nodeAlpha: 100,
+        linkAlpha: 50,
+        linkBorderAlpha: 50,
+        linkHoverAlpha: 100
+      }
+    },
+
     // timeseries
     timeseries: {
       // caption styling
@@ -2272,6 +2327,42 @@ var themeObject = {
         }
       },
       xaxis: {
+        timemarker: [
+          {
+            style: {
+              marker: {
+                fill: "#e64141",
+                stroke: "#4B4B4B",
+                "stroke-width": 1
+              },
+              "marker-notch": {
+                fill: "#e64141",
+                stroke: "#e64141"
+              },
+              "marker:hover": {
+                fill: "#d81c1c",
+                stroke: "#FFFFFF",
+                "stroke-width": 1
+              },
+              "marker-notch:hover": {
+                fill: "#d81c1c",
+                stroke: "#d81c1c"
+              },
+              "marker-line": {
+                stroke: "#e64141"
+              },
+              "marker-line:hover": {
+                stroke: "#d81c1c"
+              },
+              text: {
+                fill: "#999ca5"
+              },
+              "text:hover": {
+                fill: "#FFFFFF"
+              }
+            }
+          }
+        ],
         style: {
           title: {
             "font-size": 14,
