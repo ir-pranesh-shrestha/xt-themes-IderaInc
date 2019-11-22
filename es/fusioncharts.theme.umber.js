@@ -25,11 +25,11 @@ function styleInject(css, ref) {
   }
 }
 
-var css = "@font-face {\n  font-family: \"Titillium Web Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Titillium Web Regular\"), local(\"TitilliumWeb-Regular\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Titillium Web SemiBold\";\n  font-style: normal;\n  font-weight: 600;\n  src: local(\"Titillium Web SemiBold\"), local(\"TitilliumWeb-SemiBold\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}";
+var css = "@font-face {\n  font-family: \"Titillium Web Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Titillium Web Regular\"), local(\"TitilliumWeb-Regular\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Titillium Web SemiBold\";\n  font-style: normal;\n  font-weight: 600;\n  src: local(\"Titillium Web SemiBold\"), local(\"TitilliumWeb-SemiBold\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n/* ft calendar customiztion */\n.fc-cal-day-umber {\n  background-color: #fff1e5;\n  color: #33302e;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-normal-umber {\n  background-color: #fff1e5;\n  color: #33302e;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-normal-umber:hover {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-disabled-umber {\n  background-color: #fff1e5;\n  color: rgba(51, 48, 46, 0.5);\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-month-header-umber {\n  background-color: #000000;\n  font-family: \"Titillium Web Regular\";\n}\n\n.fc-cal-weekend-umber {\n  background-color: rgba(0, 0, 0, 0.25);\n}\n\n.fc-cal-container-umber {\n  border: none;\n}\n\n.fc-cal-nav-next-umber,\n.fc-cal-nav-prev-umber {\n  font-family: \"Titillium Web Regular\";\n  font-size: 12px;\n}\n\n.fc-cal-date-selected-umber {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n}\n\n.fc-cal-date-selected-umber:hover {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n}\n";
 styleInject(css);
 
 /*
- Umber Theme v0.2
+ Umber Theme v0.5
  FusionCharts JavaScript Library
 
  Copyright FusionCharts Technologies LLP
@@ -1755,6 +1755,53 @@ var themeObject = {
       }
     },
 
+    // Sankey Diagram (104)
+    sankey: {
+      chart: {
+        nodeLabelFontColor: "#606060",
+        nodeLabelFontSize: 11,
+        nodeLabelPosition: "end",
+        nodeAlpha: 80,
+        linkAlpha: 40,
+        nodeHoverAlpha: 100,
+        linkHoverAlpha: 75,
+        enableDrag: 0,
+        plothighlighteffect: "fadeout",
+        linkColor: "source"
+      }
+    },
+
+    // Sunburst Chart (105)
+    sunburst: {
+      chart: {
+        useHoverColor: 0,
+        valueFontColor: "#FFFFFF",
+        showPlotBorder: 1,
+        plotborderThickness: 0.5,
+        plotBorderColor: "#D5CDBE"
+      }
+    },
+
+    // Chord Diagram (106)
+    chord: {
+      chart: {
+        drawCustomLegendIcon: 0,
+        legendPosition: "right",
+        nodeThickness: 10,
+        nodeLabelColor: "#606060",
+        nodeLabelFontSize: 11,
+        nodeLabelPosition: "outside",
+        nodeHoverAlpha: 100,
+        nodeLinkPadding: 0,
+        nodeSpacing: 3,
+        nodeBorderThickness: 0,
+        nodeAlpha: 80,
+        linkAlpha: 40,
+        linkBorderAlpha: 40,
+        linkHoverAlpha: 75
+      }
+    },
+
     // timeseries
     timeseries: {
       chart: {
@@ -1950,6 +1997,42 @@ var themeObject = {
         }
       ],
       xaxis: {
+        timemarker: [
+          {
+            style: {
+              marker: {
+                fill: "#262932",
+                stroke: "#a8aaad",
+                "stroke-width": 1
+              },
+              "marker-notch": {
+                fill: "#262932",
+                stroke: "#262932"
+              },
+              "marker:hover": {
+                fill: "#101115",
+                stroke: "#666666",
+                "stroke-width": 1
+              },
+              "marker-notch:hover": {
+                fill: "#101115",
+                stroke: "#101115"
+              },
+              "marker-line": {
+                stroke: "#262932"
+              },
+              "marker-line:hover": {
+                stroke: "#101115"
+              },
+              text: {
+                fill: "#a8aaad"
+              },
+              "text:hover": {
+                fill: "#FFFFFF"
+              }
+            }
+          }
+        ],
         style: {
           title: {
             "font-size": 12,
