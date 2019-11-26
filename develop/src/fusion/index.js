@@ -2016,18 +2016,27 @@ var themeObject = {
           {
             style: {
               marker: {
+                fill: "#62b58f",
+                stroke: "#62b58f"
+              },
+              "marker:hover": {
+                fill: "#3e8464",
+                stroke: "#3e8464",
+                "stroke-width": 0
+              },
+              "marker-box": {
                 fill: "#F8B8B7",
-                stroke: "#666666",
-                "stroke-width": 1
+                stroke: "#F8B8B7",
+                "stroke-width": 0
+              },
+              "marker-box:hover": {
+                fill: "#F2726F",
+                stroke: "#F2726F",
+                "stroke-width": 0
               },
               "marker-notch": {
                 fill: "#F8B8B7",
                 stroke: "#F8B8B7"
-              },
-              "marker:hover": {
-                fill: "#F2726F",
-                stroke: "#666666",
-                "stroke-width": 1
               },
               "marker-notch:hover": {
                 fill: "#F2726F",
@@ -2040,7 +2049,7 @@ var themeObject = {
                 stroke: "#F2726F"
               },
               text: {
-                fill: "#FFFFFF"
+                fill: "#5F5F5F"
               },
               "text:hover": {
                 fill: "#5F5F5F"
