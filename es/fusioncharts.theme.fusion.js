@@ -2029,13 +2029,11 @@ var themeObject = {
         }
       },
       legend: {
-        item: {
-          style: {
-            text: {
-              fill: "#7C7C7C",
-              "font-size": 15,
-              "font-family": "Source Sans Pro"
-            }
+        style: {
+          text: {
+            fill: "#7C7C7C",
+            "font-size": 15,
+            "font-family": "Source Sans Pro"
           }
         }
       },

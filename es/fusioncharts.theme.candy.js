@@ -2343,14 +2343,12 @@ var themeObject = {
         }
       },
       legend: {
-        item: {
-          style: {
-            text: {
-              fill: "#999CA5",
-              "font-size": 14,
-              "font-family": "Fira Sans Regular",
-              "font-weight": "bold"
-            }
+        style: {
+          text: {
+            fill: "#999CA5",
+            "font-size": 14,
+            "font-family": "Fira Sans Regular",
+            "font-weight": "bold"
           }
         }
       },

@@ -2062,12 +2062,10 @@ var themeObject = {
         }
       },
       legend: {
-        item: {
-          style: {
-            text: {
-              fill: "#33302E",
-              "font-size": 12
-            }
+        style: {
+          text: {
+            fill: "#33302E",
+            "font-size": 12
           }
         }
       },
