@@ -2020,17 +2020,17 @@ var themeObject = {
               "marker:hover": {
                 fill: "#3e8464",
                 stroke: "#3e8464",
-                "stroke-width": 0
+                "stroke-width": 1
               },
               "marker-box": {
                 fill: "#F8B8B7",
                 stroke: "#F8B8B7",
-                "stroke-width": 0
+                "stroke-width": 1
               },
               "marker-box:hover": {
                 fill: "#F2726F",
                 stroke: "#F2726F",
-                "stroke-width": 0
+                "stroke-width": 1
               },
               "marker-notch": {
                 fill: "#F8B8B7",
