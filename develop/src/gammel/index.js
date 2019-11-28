@@ -2099,15 +2099,13 @@ var themeObject = {
         }
       },
       legend: {
-        item: {
-          style: {
-            text: {
-              fill: "#333333",
-              "font-size": 12,
-              "font-family":
-                "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
-              "font-weight": 600
-            }
+        style: {
+          text: {
+            fill: "#333333",
+            "font-size": 12,
+            "font-family":
+              "Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",
+            "font-weight": 600
           }
         }
       },
