@@ -32,7 +32,7 @@ styleInject(css);
  Fusion Theme v0.1
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright InfoSoft Global Pvt. Ltd.
  License Information at <http://www.fusioncharts.com/license>
 */
 /* jshint ignore:end */

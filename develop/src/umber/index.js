@@ -2,7 +2,7 @@
  Umber Theme v0.5
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright InfoSoft Global Pvt. Ltd.
  License Information at <http://www.fusioncharts.com/license>
 */
 /* jshint ignore:start */

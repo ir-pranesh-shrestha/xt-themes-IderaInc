@@ -659,7 +659,7 @@ FusionCharts.addDep(__WEBPACK_IMPORTED_MODULE_0__src_umber__["a" /* default */])
  Umber Theme v0.5
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright InfoSoft Global Pvt. Ltd.
  License Information at <http://www.fusioncharts.com/license>
 *//* jshint ignore:start *//* jshint ignore:end */var themeObject={name:"umber",theme:{base:{chart:{// chart body and canvas customization
 // border
