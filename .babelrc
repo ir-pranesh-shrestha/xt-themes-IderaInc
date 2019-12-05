@@ -1,0 +1,15 @@
+{
+  "minified":true,
+  "env":{
+    "PROD":{
+      "presets": [["env", {
+        "targets": { "browsers": ["> 0.1%"] },
+        "loose": true
+      }]],
+      "plugins": [
+        ["syntax-dynamic-import"],
+        ["transform-proto-to-assign"]
+      ]
+    }
+  }
+}

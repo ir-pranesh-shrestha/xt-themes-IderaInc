@@ -4,6 +4,10 @@ This is the themes repository for FusionCharts.
 
 ## List of themes
 
+ - fusion
+ - candy
+ - gammel
+ - umber
  - carbon
  - fint
  - ocean
