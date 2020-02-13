@@ -1,8 +1,8 @@
 /*
- Umber Theme v0.5
+ Umber Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright InfoSoft Global Pvt. Ltd.
+ Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 */
 /* jshint ignore:start */
@@ -1363,12 +1363,7 @@ var themeObject = {
       },
       data: [
         {
-          fillcolor: "#FFF9F5",
-          data: [
-            {
-              fillcolor: "#FFF9F5"
-            }
-          ]
+          fillcolor: "#FFF9F5"
         }
       ]
     },
@@ -1746,11 +1741,12 @@ var themeObject = {
     // Sunburst Chart (105)
     sunburst: {
       chart: {
-        useHoverColor: 0,
         valueFontColor: "#FFFFFF",
         showPlotBorder: 1,
         plotborderThickness: 0.5,
-        plotBorderColor: "#D5CDBE"
+        plotBorderColor: "#D5CDBE",
+        unfocussedAlpha: 40,
+        hoverFillAlpha: 100
       }
     },
 
