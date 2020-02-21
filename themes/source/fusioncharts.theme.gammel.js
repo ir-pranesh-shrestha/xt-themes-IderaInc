@@ -88,10 +88,10 @@ FusionCharts.addDep(__WEBPACK_IMPORTED_MODULE_0__src_gammel___["a" /* default */
 
 "use strict";
 /*
- Gammel Theme v0.5
+ Gammel Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright InfoSoft Global Pvt. Ltd.
+ Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 */var themeObject={name:"gammel",theme:{base:{chart:{// plot customization
 paletteColors:"#7CB5EC, #434348, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1",usePlotGradientColor:"0",showPlotBorder:"0",showShadow:"0",// chart and canvas background and padding customization
@@ -186,7 +186,7 @@ inversemsline:{chart:{drawAnchors:"1",anchorRadius:"4",anchorHoverRadius:"6",sho
 dragcolumn2d:{chart:{showValues:"0",showLegend:"1"},categories:[{category:[{fontItalic:"1"}]}],dataset:[{data:[{allowDrag:"1",alpha:"70"}]}]},// 80 Drag-able Line 2D Chart
 dragline:{chart:{drawAnchors:"1",anchorRadius:"4",anchorHoverRadius:"6",showValues:"0",anchorBorderHoverColor:"#D8D8D8",anchorHoverEffect:"1",anchorBgHoverAlpha:"95",anchorBorderHoverThickness:"2",legendIconBorderThickness:"1"},categories:[{category:[{fontItalic:"1"}]}],dataset:[{data:[{allowDrag:"1",alpha:"70",dashed:"1"}]}]},// 81 Drag-able Area 2D Chart
 dragarea:{chart:{showValues:"0",showLegend:"1",drawAnchors:"0",plotFillAlpha:"70"},categories:[{category:[{fontItalic:"1"}]}],dataset:[{data:[{allowDrag:"1",dashed:"1"}]}]},// 82 Treemap Chart
-treemap:{chart:{parentLabelLineHeight:"13",baseFontSize:"11",labelFontSize:"11",showParent:"1",showNavigationBar:"0",plotBorderThickness:"0.5",plotBorderColor:"#FFFFFF",labelGlow:"0",labelGlowIntensity:"100",btnBackChartTooltext:"Back",btnResetChartTooltext:"Home",legendScaleLineThickness:"0",legendaxisborderalpha:"0",legendShadow:"0",toolbarButtonScale:"1.50",plotToolText:"$label, $dataValue, $sValue"},data:[{fillColor:"#F4F4F4",data:[{fillColor:"#F4F4F4"}]}]},// 83 Radar Chart
+treemap:{chart:{parentLabelLineHeight:"13",baseFontSize:"11",labelFontSize:"11",showParent:"1",showNavigationBar:"0",plotBorderThickness:"0.5",plotBorderColor:"#FFFFFF",labelGlow:"0",labelGlowIntensity:"100",btnBackChartTooltext:"Back",btnResetChartTooltext:"Home",legendScaleLineThickness:"0",legendaxisborderalpha:"0",legendShadow:"0",toolbarButtonScale:"1.50",plotToolText:"$label, $dataValue, $sValue"},data:[{fillColor:"#F4F4F4"}]},// 83 Radar Chart
 radar:{chart:{showLegend:"1",plotFillAlpha:"40",anchorBgAlpha:"40",drawAnchors:"1",anchorRadius:"4",anchorHoverRadius:"6",showValues:"0",anchorBorderHoverColor:"#D8D8D8",anchorHoverEffect:"1",anchorBgHoverAlpha:"95",anchorBorderHoverThickness:"2",legendIconBorderThickness:"1"}},// 84 Heat Map Chart
 heatmap:{chart:{baseFontSize:"11",labelFontSize:"11",showPlotBorder:"1",plotBorderAlpha:"100",plotBorderThickness:"0.5",plotBorderColor:"#FFFFFF",tlFontColor:"#FDFDFD",tlFont:"Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",tlFontSize:"10",trFontColor:"#FDFDFD",trFont:"Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",trFontSize:"10",blFontColor:"#FDFDFD",blFont:"Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",blFontSize:"10",brFontColor:"#FDFDFD",brFont:"Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",brFontSize:"10",captionPadding:"20",legendScaleLineThickness:"0",legendaxisborderalpha:"0",legendShadow:"0"},colorrange:{gradient:"1",code:"#7CB5EC"}},// 85 Box and Whisker Chart
 boxandwhisker2d:{chart:{drawCustomLegendIcon:"0",showLegend:"1",showDetailedLegend:"1",showValues:"0",showPlotBorder:"1",plotBorderColor:"#7CB5EC",plotBorderAlpha:"100",plotBorderThickness:"1.5",upperBoxBorderAlpha:"0",lowerBoxBorderAlpha:"0",lowerQuartileAlpha:"0",upperQuartileAlpha:"0",upperWhiskerColor:"#7CB5EC",upperWhiskerThickness:"1.5",lowerWhiskerColor:"#7CB5EC",lowerWhiskerThickness:"1.5",medianColor:"#7CB5EC",medianThickness:"0.7",medianAlpha:"100",outliericonshape:"spoke",outliericonsides:"9",meaniconcolor:"#7CB5EC",meanIconShape:"spoke",meaniconsides:"9",meaniconradius:"5"}},// 86 Candle-Stick Chart
@@ -209,7 +209,7 @@ stackedcolumn2dlinedy:{chart:{drawAnchors:"1",anchorRadius:"4",anchorHoverRadius
 stackedarea2dlinedy:{chart:{drawAnchors:"1",anchorRadius:"4",anchorHoverRadius:"6",showValues:"0",anchorBorderHoverColor:"#D8D8D8",anchorHoverEffect:"1",anchorBgHoverAlpha:"95",anchorBorderHoverThickness:"2",drawCrossLine:"1",legendIconBorderThickness:"1",plotFillAlpha:"70"}},// 103 Multi-series 3D Single Y Combination Chart
 mscombidy3d:{chart:{drawAnchors:"1",anchorRadius:"4",anchorHoverRadius:"6",showValues:"0",anchorBorderHoverColor:"#D8D8D8",anchorHoverEffect:"1",anchorBgHoverAlpha:"95",anchorBorderHoverThickness:"2",legendIconBorderThickness:"1"}},// 104 Sankey Diagram
 sankey:{chart:{showLegend:0,nodeLabelFontColor:"#000000",nodeLabelFontBold:1,nodeLabelFontSize:11,nodeAlpha:100,linkAlpha:50,nodeLabelPosition:"inside",nodeHoverAlpha:100,linkHoverAlpha:100,enableDrag:0}},// 105 Sunburst Chart
-sunburst:{chart:{showPlotBorder:1,plotBorderColor:"#FFFFFF",plotBorderAlpha:"100",plotBorderThickness:"1",useHoverColor:"0"}},//106 Chord Diagram
+sunburst:{chart:{showPlotBorder:1,plotBorderColor:"#FFFFFF",plotBorderAlpha:100,plotBorderThickness:1,textOutline:1,unfocussedAlpha:50,hoverFillAlpha:100}},//106 Chord Diagram
 chord:{chart:{drawCustomLegendIcon:0,showLegend:0,nodeLabelColor:"#000000",nodeLabelFontBold:1,nodeLabelFontSize:11,nodeLabelPosition:"outside",nodeAlpha:100,nodeHoverAlpha:100,linkAlpha:50,linkBorderAlpha:50,linkHoverAlpha:100,nodeBorderThickness:0,nodeSpacing:2,nodeThickness:11,nodeLinkPadding:4}},// timeseries
 timeseries:{// caption styling
 caption:{style:{text:{"font-size":18,"font-family":"Lucida Grande, Lucida Sans Unicode, Arial, Helvetica, sans-serif",fill:"#333333","font-weight":500}}},// subcaption styling

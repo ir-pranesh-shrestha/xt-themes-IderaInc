@@ -1,8 +1,8 @@
 /*
- Fusion Theme v0.5
+ Fusion Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright InfoSoft Global Pvt. Ltd.
+ Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 */
 /* jshint ignore:start */
@@ -1392,12 +1392,7 @@ var themeObject = {
       },
       data: [
         {
-          fillColor: "#FAFAFA",
-          data: [
-            {
-              fillColor: "#FAFAFA"
-            }
-          ]
+          fillColor: "#FAFAFA"
         }
       ]
     },
@@ -1819,7 +1814,9 @@ var themeObject = {
     // 105 Sunburst Chart
     sunburst: {
       chart: {
-        useHoverColor: "0"
+        textOutline: 1,
+        unfocussedAlpha: 30,
+        hoverFillAlpha: 100
       }
     },
 
