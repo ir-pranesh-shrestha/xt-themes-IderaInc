@@ -2,7 +2,7 @@
  Fusion Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright FusionCharts, Inc.
  License Information at <http://www.fusioncharts.com/license>
 */
 /* jshint ignore:start */

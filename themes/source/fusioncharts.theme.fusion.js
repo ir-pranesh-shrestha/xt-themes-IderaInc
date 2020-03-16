@@ -664,7 +664,7 @@ FusionCharts.addDep(__WEBPACK_IMPORTED_MODULE_0__src_fusion___["a" /* default */
  Fusion Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright FusionCharts, Inc.
  License Information at <http://www.fusioncharts.com/license>
 *//* jshint ignore:start *//* jshint ignore:end */var themeObject={name:"fusion",theme:{base:{chart:{// plot customization
 paletteColors:"#5D62B5, #29C3BE, #F2726F, #FFC533, #62B58F, #BC95DF, #67CDF2",showShadow:"0",showPlotBorder:"0",usePlotGradientColor:"0",showValues:"0",// chart and canvas background customization

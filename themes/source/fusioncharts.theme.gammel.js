@@ -91,7 +91,7 @@ FusionCharts.addDep(__WEBPACK_IMPORTED_MODULE_0__src_gammel___["a" /* default */
  Gammel Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright FusionCharts, Inc.
  License Information at <http://www.fusioncharts.com/license>
 */var themeObject={name:"gammel",theme:{base:{chart:{// plot customization
 paletteColors:"#7CB5EC, #434348, #8EED7D, #F7A35C, #8085E9, #F15C80, #E4D354, #2B908F, #F45B5B, #91E8E1",usePlotGradientColor:"0",showPlotBorder:"0",showShadow:"0",// chart and canvas background and padding customization
