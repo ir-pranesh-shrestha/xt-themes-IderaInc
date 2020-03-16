@@ -38254,7 +38254,7 @@ var _symbol2 = _interopRequireDefault(_symbol);
 
 var _typeof = typeof _symbol2["default"] === "function" && typeof _iterator2["default"] === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof _symbol2["default"] === "function" && obj.constructor === _symbol2["default"] && obj !== _symbol2["default"].prototype ? "symbol" : typeof obj; }; /**!
                                                                                                                                                                                                                                                                                                                                          * RedRaphael 1.0.0 - JavaScript Vector Library
-                                                                                                                                                                                                                                                                                                                                         * Copyright (c) 2012-2013 InfoSoft Global Pvt. Ltd. <http://www.fusioncharts.com>
+                                                                                                                                                                                                                                                                                                                                         * Copyright (c) 2012-2013 FusionCharts, Inc. <http://www.fusioncharts.com>
                                                                                                                                                                                                                                                                                                                                          *
                                                                                                                                                                                                                                                                                                                                          * Raphael 2.1.0
                                                                                                                                                                                                                                                                                                                                          * Copyright (c) 2008-2012 Dmitry Baranovskiy <http://raphaeljs.com>
@@ -46424,7 +46424,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 /** !
  * @license FusionCharts JavaScript Library - KDtree
- * Copyright InfoSoft Global Pvt. Ltd.
+ * Copyright FusionCharts, Inc.
  * License Information at <http://www.fusioncharts.com/license>
  *
  * @version //? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
@@ -58086,7 +58086,7 @@ module.exports = {
 		"> 0.2%"
 	],
 	"license": "MIT",
-	"author": "InfoSoft Global Pvt. Ltd.  <support@fusioncharts.com>",
+	"author": "FusionCharts, Inc.  <support@fusioncharts.com>",
 	"main": "./lib/fusioncharts.js",
 	"src": "./develop/src",
 	"build": {
@@ -66646,7 +66646,7 @@ exports.__esModule = true;
 /* eslint require-jsdoc: 'error', valid-jsdoc: 'error' */
 /** !
  * @license FusionCharts JavaScript Library
- * Copyright InfoSoft Global Pvt. Ltd.
+ * Copyright FusionCharts, Inc.
  * License Information at <http://www.fusioncharts.com/license>
  */
 /**
@@ -71071,7 +71071,7 @@ if (_raphael2["default"].svg) {
     }
 } /**!
   * RedRaphael 1.0.0 - JavaScript Vector Library SVG Module
-  * Copyright (c) 2012-2013 InfoSoft Global Pvt. Ltd. <http://www.fusioncharts.com>
+  * Copyright (c) 2012-2013 FusionCharts, Inc. <http://www.fusioncharts.com>
   *
   * Raphael 2.1.0 - JavaScript Vector Library SVG Module
   * Copyright (c) 2008-2012 Dmitry Baranovskiy <http://raphaeljs.com>
@@ -72414,7 +72414,7 @@ if (_raphael2["default"].vml) {
     }
 } /**!
   * RedRaphael 1.0.0 - JavaScript Vector Library VML Module
-  * Copyright (c) 2012-2013 InfoSoft Global Pvt. Ltd. <http://www.fusioncharts.com>
+  * Copyright (c) 2012-2013 FusionCharts, Inc. <http://www.fusioncharts.com>
   *
   * Raphael 2.1.0 - JavaScript Vector Library VML Module
   * Copyright (c) 2008-2012 Dmitry Baranovskiy <http://raphaeljs.com>

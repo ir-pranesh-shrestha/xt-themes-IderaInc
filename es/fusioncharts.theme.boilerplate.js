@@ -6,7 +6,7 @@
  * - boilerplate-basic
  * - boilerplate-extended
  *
- * Copyright InfoSoft Global Pvt. Ltd.
+ * Copyright FusionCharts, Inc.
  * License Information at <http://www.fusioncharts.com/license>
  */
 /* jshint unused:false */

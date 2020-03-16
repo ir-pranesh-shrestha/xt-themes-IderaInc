@@ -661,10 +661,10 @@ FusionCharts.addDep(__WEBPACK_IMPORTED_MODULE_0__src_fusion___["a" /* default */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fusioncharts_theme_fusion_css__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fusioncharts_theme_fusion_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fusioncharts_theme_fusion_css__);
 /*
- Fusion Theme v0.5
+ Fusion Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright InfoSoft Global Pvt. Ltd.
+ Copyright FusionCharts Technologies LLP
  License Information at <http://www.fusioncharts.com/license>
 *//* jshint ignore:start *//* jshint ignore:end */var themeObject={name:"fusion",theme:{base:{chart:{// plot customization
 paletteColors:"#5D62B5, #29C3BE, #F2726F, #FFC533, #62B58F, #BC95DF, #67CDF2",showShadow:"0",showPlotBorder:"0",usePlotGradientColor:"0",showValues:"0",// chart and canvas background customization
@@ -756,7 +756,7 @@ inversemsline:{chart:{lineThickness:"2",anchorRadius:"4",anchorHoverEffect:"1",a
 dragcolumn2d:{chart:{showLegend:"1",legendIconSides:"4"},categories:[{category:[{fontItalic:"1"}]}],dataset:[{data:[{allowDrag:"1",alpha:"80"}]}]},// 80 Drag-able Line 2D Chart
 dragline:{chart:{lineThickness:"2",anchorRadius:"4",anchorHoverEffect:"1",anchorHoverRadius:"4",anchorBorderHoverThickness:"1.5",anchorBgHoverColor:"#FFFFFF",legendIconBorderThickness:"1",showLegend:"1",legendIconSides:"2"},categories:[{category:[{fontItalic:"1"}]}],dataset:[{data:[{allowDrag:"1",alpha:"80",dashed:"1"}]}]},// 81 Drag-able Area 2D Chart
 dragarea:{chart:{showLegend:"1",legendIconSides:"2",drawAnchors:"0"},categories:[{category:[{fontItalic:"1"}]}],dataset:[{data:[{allowDrag:"1",alpha:"80",dashed:"1"}]}]},// 82 Treemap Chart
-treemap:{chart:{parentLabelLineHeight:"16",baseFontSize:"14",labelFontSize:"14",showParent:"1",showNavigationBar:"0",plotBorderThickness:"0.5",plotBorderColor:"#EAEAEA",labelGlow:"1",labelGlowIntensity:"100",btnBackChartTooltext:"Back",btnResetChartTooltext:"Home",legendScaleLineThickness:"0",legendaxisborderalpha:"0",legendShadow:"0",toolbarButtonScale:"1.55",plotToolText:"$label, $dataValue, $sValue"},data:[{fillColor:"#FAFAFA",data:[{fillColor:"#FAFAFA"}]}]},// 83 Radar Chart
+treemap:{chart:{parentLabelLineHeight:"16",baseFontSize:"14",labelFontSize:"14",showParent:"1",showNavigationBar:"0",plotBorderThickness:"0.5",plotBorderColor:"#EAEAEA",labelGlow:"1",labelGlowIntensity:"100",btnBackChartTooltext:"Back",btnResetChartTooltext:"Home",legendScaleLineThickness:"0",legendaxisborderalpha:"0",legendShadow:"0",toolbarButtonScale:"1.55",plotToolText:"$label, $dataValue, $sValue"},data:[{fillColor:"#FAFAFA"}]},// 83 Radar Chart
 radar:{chart:{showLegend:"1",legendIconSides:"2",plotFillAlpha:"20",drawAnchors:"0"}},// 84 Heat Map Chart
 heatmap:{chart:{baseFontSize:"14",labelFontSize:"14",showPlotBorder:"1",plotBorderAlpha:"100",plotBorderThickness:"0.5",plotBorderColor:"#EAEAEA",tlFontColor:"#FDFDFD",tlFont:"Source Sans Pro Light",tlFontSize:"13",trFontColor:"#FDFDFD",trFont:"Source Sans Pro Light",trFontSize:"13",blFontColor:"#FDFDFD",blFont:"Source Sans Pro Light",blFontSize:"13",brFontColor:"#FDFDFD",brFont:"Source Sans Pro Light",brFontSize:"13",captionPadding:"20",legendScaleLineThickness:"0",legendaxisborderalpha:"0",legendShadow:"0"},colorrange:{gradient:"1",code:"#FFC533"}},// 85 Box and Whisker Chart
 boxandwhisker2d:{chart:{drawCustomLegendIcon:"0",showLegend:"1",showDetailedLegend:"1",legendIconSides:"2",showPlotBorder:"0",upperBoxBorderAlpha:"0",lowerBoxBorderAlpha:"0",lowerQuartileAlpha:"0",upperQuartileAlpha:"0",upperWhiskerColor:"#5D5D5D",upperWhiskerThickness:"0.7",upperWhiskerAlpha:"80",lowerWhiskerColor:"#5D5D5D",lowerWhiskerThickness:"0.7",lowerWhiskerAlpha:"80",medianColor:"#5D5D5",medianThickness:"0.7",medianAlpha:"100",outliericonshape:"spoke",outliericonsides:"9",meaniconcolor:"#5D5D5D",meanIconShape:"spoke",meaniconsides:"9",meaniconradius:"5"}},// 86 Candle-Stick Chart
@@ -779,7 +779,7 @@ stackedcolumn2dlinedy:{chart:{lineThickness:"2",anchorRadius:"4",drawCrossLine:"
 stackedarea2dlinedy:{chart:{lineThickness:"2",anchorRadius:"4",drawCrossLine:"1",drawCustomLegendIcon:"0",anchorHoverEffect:"1",anchorHoverRadius:"4",anchorBorderHoverThickness:"1.5",anchorBgHoverColor:"#FFFFFF",legendIconBorderThickness:"1"}},// 103 Multi-series 3D Single Y Combination
 mscombidy3d:{chart:{showCanvasBase:"0",canvasBaseDepth:"0",placeValuesInside:"0",showShadow:"0",chartTopMargin:"35",adjustDiv:"1",lineThickness:"2",anchorRadius:"4",showLegend:"1",drawCustomLegendIcon:"0",anchorHoverEffect:"1",anchorHoverRadius:"4",anchorBorderHoverThickness:"1.5",anchorBgHoverColor:"#FFFFFF",legendIconBorderThickness:"1"}},// 104 Sankey Diagram
 sankey:{chart:{nodeLabelFontColor:"#666",nodeLabelFontSize:14,nodeLabelPosition:"inside",nodeHoverAlpha:75,legendPosition:"bottom",plothighlighteffect:"fadeout",linkColor:"source",textOutline:1,linkHoverAlpha:75,linkAlpha:30,enableDrag:0}},// 105 Sunburst Chart
-sunburst:{chart:{useHoverColor:"0"}},// 106 Chord Diagram
+sunburst:{chart:{textOutline:1,unfocussedAlpha:30,hoverFillAlpha:100}},// 106 Chord Diagram
 chord:{chart:{drawCustomLegendIcon:0,legendPosition:"right",nodeThickness:8,nodeLabelColor:"#666",nodeLabelFontSize:14,nodeLabelPosition:"outside",nodeHoverAlpha:100,nodeLinkPadding:5,nodeBorderThickness:0.5,nodeAlpha:100,linkAlpha:40,linkBorderAlpha:40,linkHoverAlpha:75}},// timeseries
 timeseries:{// caption styling
 caption:{style:{text:{"font-size":18,"font-family":"Source Sans Pro SemiBold",fill:"#5A5A5A"}}},// sub-caption styling
