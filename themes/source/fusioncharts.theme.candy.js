@@ -656,7 +656,7 @@ FusionCharts.addDep(__WEBPACK_IMPORTED_MODULE_0__src_candy___["a" /* default */]
  Candy Theme v0.6
  FusionCharts JavaScript Library
 
- Copyright FusionCharts Technologies LLP
+ Copyright FusionCharts, Inc.
  License Information at <http://www.fusioncharts.com/license>
 *//* jshint ignore:start *//* jshint ignore:end */var themeObject={name:"candy",theme:{base:{chart:{// plot customization
 usePlotGradientColor:"0",showPlotBorder:"0",paletteColors:"#36B5D8, #F0DC46, #F066AC, #6EC85A, #6E80CA, #E09653, #E1D7AD, #61C8C8, #EBE4F4, #E64141",showShadow:"0",// hover effects
