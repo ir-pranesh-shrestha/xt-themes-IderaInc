@@ -1,5 +1,5 @@
 /*
- Accessibility Theme v0.6
+ Accessibility Theme
  FusionCharts JavaScript Library
 
  Copyright FusionCharts, Inc.
