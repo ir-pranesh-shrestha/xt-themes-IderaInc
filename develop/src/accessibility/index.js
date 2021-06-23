@@ -5,9 +5,8 @@
  Copyright FusionCharts, Inc.
  License Information at <http://www.fusioncharts.com/license>
 */
-/* jshint ignore:start */
+
 import "./fusioncharts.theme.accessibility.css"
-/* jshint ignore:end */
 
 var themeObject = {
   name: 'accessibility',

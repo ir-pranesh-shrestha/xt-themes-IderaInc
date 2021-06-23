@@ -35,7 +35,6 @@ styleInject(css);
  Copyright FusionCharts, Inc.
  License Information at <http://www.fusioncharts.com/license>
 */
-/* jshint ignore:end */
 
 var themeObject = {
   name: 'accessibility',
