@@ -43,7 +43,6 @@ var themeObject = {
       chart: {
         showBorder: 0,
         showCanvasBorder: 0,
-        patternType: "circle",
         bgColor: "#ffffff",
         canvasBgcolor: "#ffffff",
         showPlotBorder: 0,
@@ -86,7 +85,6 @@ var themeObject = {
         legendItemFontSize: "1rem",
         legendItemFontColor: "#545454",
         drawCustomLegendIcon: 1,
-        legendIconBgAlpha: "inherit",
         legendShadow: 0,
         legendBorderAlpha: 0,
         legendBorderThickness: 0,
@@ -106,7 +104,9 @@ var themeObject = {
         showToolTipShadow: 0,
         tooltipBorderColor: "#545454",
         showShadow: 0,
-        plotFillAlpha: 100
+        plotFillAlpha: 100,
+        legendIconBgAlpha: "inherit",
+        legendIconAlpha :"inherit"
       }
     },
 
