@@ -1775,6 +1775,12 @@ var themeObject = {
         labelPadding: "6px 10px 6px 10px"
       }
     },
+    // multi-series stacked Bar2D chart (108)
+    msstackedbar2d: {
+      chart: {
+        drawCrossLine: 1
+      }
+    },
 
     // timeseries
     timeseries: {
