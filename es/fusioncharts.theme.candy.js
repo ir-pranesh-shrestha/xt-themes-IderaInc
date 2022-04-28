@@ -2139,6 +2139,7 @@ var themeObject = {
       }
     },
 
+
     // 27. Multi-series Stacked Bar2D Chart
     msstackedbar2d: {
       chart: {

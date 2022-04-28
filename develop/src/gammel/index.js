@@ -1872,7 +1872,6 @@ var themeObject = {
         labelPadding: "6px 10px 6px 10px"
       }
     },
-
     // 108. Multi-series Stacked Bar2D Chart
     msstackedbar2d: {
       chart: {
