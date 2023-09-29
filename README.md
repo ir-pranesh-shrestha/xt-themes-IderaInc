@@ -12,6 +12,7 @@ This is the themes repository for FusionCharts.
  - fint
  - ocean
  - zune
+ - accessibility
 
 ## Repository organization
 
