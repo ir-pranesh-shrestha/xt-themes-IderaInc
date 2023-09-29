@@ -206,6 +206,11 @@ var themeObject = {
         showValues: '0'
       }
     },
+    msstackedbar2d: {
+      chart: {
+        showValues: '0'
+      }
+    },
     mscombi3d: {
       chart: {
         showValues: '0'
@@ -421,7 +426,12 @@ var themeObject = {
         plotFillColor: '#444444',
         targetColor: '#666666'
       }
-    }
+    },
+    radialBar: {
+      chart: {
+        labelPadding: "6px 10px 6px 10px"
+      }
+    },
   }
 };
 
