@@ -31,7 +31,12 @@ let debServerConfig = {
       loader: 'babel-loader'
     }, {
       test:/\.css$/,
-      use:[ devMode ? 'style-loader': MiniCssExtractPlugin.loader,'css-loader']
+      use:[ {
+        loader: "style-loader",
+        options: {
+          insert: require.resolve("./insert-function"),
+        },
+      },'css-loader']
     }]
   };
 
