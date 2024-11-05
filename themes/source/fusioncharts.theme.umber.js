@@ -6,75 +6,35 @@
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 21);
-/******/ })
-/************************************************************************/
-/******/ ({
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
 
-/***/ 0:
-/***/ (function(module, exports) {
+/***/ 660:
+/***/ ((module) => {
+
+function insertAtTop(element){var parent=document.querySelector('head');// eslint-disable-next-line no-underscore-dangle
+const metaTag=document.querySelector(`meta[http-equiv="Content-Security-Policy"]`);if(metaTag){const content=metaTag.getAttribute('content');if(content){const match=content.match(/'nonce-([^']+)'/);if(match){element.setAttribute('nonce',match[1])}}}var lastInsertedElement=window._lastElementInsertedByStyleLoader;if(!lastInsertedElement){parent.insertBefore(element,parent.firstChild)}else if(lastInsertedElement.nextSibling){parent.insertBefore(element,lastInsertedElement.nextSibling)}else{parent.appendChild(element)}// eslint-disable-next-line no-underscore-dangle
+window._lastElementInsertedByStyleLoader=element}module.exports=insertAtTop;
+
+/***/ }),
+
+/***/ 646:
+/***/ ((module, exports, __webpack_require__) => {
+
+exports = module.exports = __webpack_require__(765)(false);
+// imports
+
+
+// module
+exports.push([module.id, "@font-face {\n  font-family: \"Titillium Web Regular\";\n  font-style: normal;\n  font-weight: 400;\n  src: local(\"Titillium Web Regular\"), local(\"TitilliumWeb-Regular\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n@font-face {\n  font-family: \"Titillium Web SemiBold\";\n  font-style: normal;\n  font-weight: 600;\n  src: local(\"Titillium Web SemiBold\"), local(\"TitilliumWeb-SemiBold\"),\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2)\n      format(\"woff2\");\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\n    U+FEFF, U+FFFD;\n}\n\n/* ft calendar customiztion */\n.fc-cal-day-umber {\n  background-color: #fff1e5;\n  color: #33302e;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-normal-umber {\n  background-color: #fff1e5;\n  color: #33302e;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-normal-umber:hover {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-date-disabled-umber {\n  background-color: #fff1e5;\n  color: rgba(51, 48, 46, 0.5);\n  font-family: \"Titillium Web Regular\";\n  border: none;\n}\n\n.fc-cal-month-header-umber {\n  background-color: #000000;\n  font-family: \"Titillium Web Regular\";\n}\n\n.fc-cal-weekend-umber {\n  background-color: rgba(0, 0, 0, 0.25);\n}\n\n.fc-cal-container-umber {\n  border: none;\n}\n\n.fc-cal-nav-next-umber,\n.fc-cal-nav-prev-umber {\n  font-family: \"Titillium Web Regular\";\n  font-size: 12px;\n}\n\n.fc-cal-date-selected-umber {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n}\n\n.fc-cal-date-selected-umber:hover {\n  background-color: #000000;\n  color: #ffffff;\n  font-family: \"Titillium Web Regular\";\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 765:
+/***/ ((module) => {
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -156,522 +116,336 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 1:
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-
-var stylesInDom = {};
-
-var	memoize = function (fn) {
-	var memo;
-
-	return function () {
-		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-		return memo;
-	};
-};
-
-var isOldIE = memoize(function () {
-	// Test for IE <= 9 as proposed by Browserhacks
-	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-	// Tests for existence of standard globals is to allow style-loader
-	// to operate correctly into non-standard environments
-	// @see https://github.com/webpack-contrib/style-loader/issues/177
-	return window && document && document.all && !window.atob;
-});
-
-var getTarget = function (target) {
-  return document.querySelector(target);
-};
-
-var getElement = (function (fn) {
-	var memo = {};
-
-	return function(target) {
-                // If passing function in options, then use it for resolve "head" element.
-                // Useful for Shadow Root style i.e
-                // {
-                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
-                // }
-                if (typeof target === 'function') {
-                        return target();
-                }
-                if (typeof memo[target] === "undefined") {
-			var styleTarget = getTarget.call(this, target);
-			// Special case to return head of iframe instead of iframe itself
-			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
-				try {
-					// This will throw an exception if access to iframe is blocked
-					// due to cross-origin restrictions
-					styleTarget = styleTarget.contentDocument.head;
-				} catch(e) {
-					styleTarget = null;
-				}
-			}
-			memo[target] = styleTarget;
-		}
-		return memo[target]
-	};
-})();
-
-var singleton = null;
-var	singletonCounter = 0;
-var	stylesInsertedAtTop = [];
-
-var	fixUrls = __webpack_require__(2);
-
-module.exports = function(list, options) {
-	if (typeof DEBUG !== "undefined" && DEBUG) {
-		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-	}
-
-	options = options || {};
-
-	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
-
-	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-	// tags it will allow on a page
-	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
-
-	// By default, add <style> tags to the <head> element
-        if (!options.insertInto) options.insertInto = "head";
-
-	// By default, add <style> tags to the bottom of the target
-	if (!options.insertAt) options.insertAt = "bottom";
-
-	var styles = listToStyles(list, options);
-
-	addStylesToDom(styles, options);
-
-	return function update (newList) {
-		var mayRemove = [];
-
-		for (var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-
-			domStyle.refs--;
-			mayRemove.push(domStyle);
-		}
-
-		if(newList) {
-			var newStyles = listToStyles(newList, options);
-			addStylesToDom(newStyles, options);
-		}
-
-		for (var i = 0; i < mayRemove.length; i++) {
-			var domStyle = mayRemove[i];
-
-			if(domStyle.refs === 0) {
-				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
-
-				delete stylesInDom[domStyle.id];
-			}
-		}
-	};
-};
-
-function addStylesToDom (styles, options) {
-	for (var i = 0; i < styles.length; i++) {
-		var item = styles[i];
-		var domStyle = stylesInDom[item.id];
-
-		if(domStyle) {
-			domStyle.refs++;
-
-			for(var j = 0; j < domStyle.parts.length; j++) {
-				domStyle.parts[j](item.parts[j]);
-			}
-
-			for(; j < item.parts.length; j++) {
-				domStyle.parts.push(addStyle(item.parts[j], options));
-			}
-		} else {
-			var parts = [];
-
-			for(var j = 0; j < item.parts.length; j++) {
-				parts.push(addStyle(item.parts[j], options));
-			}
-
-			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-		}
-	}
-}
-
-function listToStyles (list, options) {
-	var styles = [];
-	var newStyles = {};
-
-	for (var i = 0; i < list.length; i++) {
-		var item = list[i];
-		var id = options.base ? item[0] + options.base : item[0];
-		var css = item[1];
-		var media = item[2];
-		var sourceMap = item[3];
-		var part = {css: css, media: media, sourceMap: sourceMap};
-
-		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
-		else newStyles[id].parts.push(part);
-	}
-
-	return styles;
-}
-
-function getNonceFromMetaTag() {
-	const metaTag = document.querySelector(`meta[http-equiv="Content-Security-Policy"]`);
-	if (metaTag) {
-		const content = metaTag.getAttribute('content');
-		if (content) {
-			const match = content.match(/'nonce-([^']+)'/);
-			if (match) {
-				return match[1];
-			}
-		}
-	}
-	return null;
-}
-
-function insertStyleElement (options, style) {
-  const chartNonce = getNonceFromMetaTag();
-
-	style.setAttribute('nonce', chartNonce);
-	var target = getElement(options.insertInto);
-
-	if (!target) {
-		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
-	}
-
-	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
-
-	if (options.insertAt === "top") {
-		if (!lastStyleElementInsertedAtTop) {
-			target.insertBefore(style, target.firstChild);
-		} else if (lastStyleElementInsertedAtTop.nextSibling) {
-			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
-		} else {
-			target.appendChild(style);
-		}
-		stylesInsertedAtTop.push(style);
-	} else if (options.insertAt === "bottom") {
-		target.appendChild(style);
-	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
-		var nextSibling = getElement(options.insertInto + " " + options.insertAt.before);
-		target.insertBefore(style, nextSibling);
-	} else {
-		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
-	}
-}
-
-function removeStyleElement (style) {
-	if (style.parentNode === null) return false;
-	style.parentNode.removeChild(style);
-
-	var idx = stylesInsertedAtTop.indexOf(style);
-	if(idx >= 0) {
-		stylesInsertedAtTop.splice(idx, 1);
-	}
-}
-
-function createStyleElement (options) {
-	var style = document.createElement("style");
-
-	if(options.attrs.type === undefined) {
-		options.attrs.type = "text/css";
-	}
-
-	addAttrs(style, options.attrs);
-	insertStyleElement(options, style);
-
-	return style;
-}
-
-function createLinkElement (options) {
-	var link = document.createElement("link");
-
-	if(options.attrs.type === undefined) {
-		options.attrs.type = "text/css";
-	}
-	options.attrs.rel = "stylesheet";
-
-	addAttrs(link, options.attrs);
-	insertStyleElement(options, link);
-
-	return link;
-}
-
-function addAttrs (el, attrs) {
-	Object.keys(attrs).forEach(function (key) {
-		el.setAttribute(key, attrs[key]);
-	});
-}
-
-function addStyle (obj, options) {
-	var style, update, remove, result;
-
-	// If a transform function was defined, run it on the css
-	if (options.transform && obj.css) {
-	    result = options.transform(obj.css);
-
-	    if (result) {
-	    	// If transform returns a value, use that instead of the original css.
-	    	// This allows running runtime transformations on the css.
-	    	obj.css = result;
-	    } else {
-	    	// If the transform function returns a falsy value, don't add this css.
-	    	// This allows conditional loading of css
-	    	return function() {
-	    		// noop
-	    	};
-	    }
-	}
-
-	if (options.singleton) {
-		var styleIndex = singletonCounter++;
-
-		style = singleton || (singleton = createStyleElement(options));
-
-		update = applyToSingletonTag.bind(null, style, styleIndex, false);
-		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
-
-	} else if (
-		obj.sourceMap &&
-		typeof URL === "function" &&
-		typeof URL.createObjectURL === "function" &&
-		typeof URL.revokeObjectURL === "function" &&
-		typeof Blob === "function" &&
-		typeof btoa === "function"
-	) {
-		style = createLinkElement(options);
-		update = updateLink.bind(null, style, options);
-		remove = function () {
-			removeStyleElement(style);
-
-			if(style.href) URL.revokeObjectURL(style.href);
-		};
-	} else {
-		style = createStyleElement(options);
-		update = applyToTag.bind(null, style);
-		remove = function () {
-			removeStyleElement(style);
-		};
-	}
-
-	update(obj);
-
-	return function updateStyle (newObj) {
-		if (newObj) {
-			if (
-				newObj.css === obj.css &&
-				newObj.media === obj.media &&
-				newObj.sourceMap === obj.sourceMap
-			) {
-				return;
-			}
-
-			update(obj = newObj);
-		} else {
-			remove();
-		}
-	};
-}
-
-var replaceText = (function () {
-	var textStore = [];
-
-	return function (index, replacement) {
-		textStore[index] = replacement;
-
-		return textStore.filter(Boolean).join('\n');
-	};
-})();
-
-function applyToSingletonTag (style, index, remove, obj) {
-	var css = remove ? "" : obj.css;
-
-	if (style.styleSheet) {
-		style.styleSheet.cssText = replaceText(index, css);
-	} else {
-		var cssNode = document.createTextNode(css);
-		var childNodes = style.childNodes;
-
-		if (childNodes[index]) style.removeChild(childNodes[index]);
-
-		if (childNodes.length) {
-			style.insertBefore(cssNode, childNodes[index]);
-		} else {
-			style.appendChild(cssNode);
-		}
-	}
-}
-
-function applyToTag (style, obj) {
-	var css = obj.css;
-	var media = obj.media;
-
-	if(media) {
-		style.setAttribute("media", media)
-	}
-
-	if(style.styleSheet) {
-		style.styleSheet.cssText = css;
-	} else {
-		while(style.firstChild) {
-			style.removeChild(style.firstChild);
-		}
-
-		style.appendChild(document.createTextNode(css));
-	}
-}
-
-function updateLink (link, options, obj) {
-	var css = obj.css;
-	var sourceMap = obj.sourceMap;
-
-	/*
-		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
-		and there is no publicPath defined then lets turn convertToAbsoluteUrls
-		on by default.  Otherwise default to the convertToAbsoluteUrls option
-		directly
-	*/
-	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
-
-	if (options.convertToAbsoluteUrls || autoFixUrls) {
-		css = fixUrls(css);
-	}
-
-	if (sourceMap) {
-		// http://stackoverflow.com/a/26603875
-		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-	}
-
-	var blob = new Blob([css], { type: "text/css" });
-
-	var oldSrc = link.href;
-
-	link.href = URL.createObjectURL(blob);
-
-	if(oldSrc) URL.revokeObjectURL(oldSrc);
-}
-
-
-/***/ }),
-
-/***/ 2:
-/***/ (function(module, exports) {
-
-
-/**
- * When source maps are enabled, `style-loader` uses a link element with a data-uri to
- * embed the css on the page. This breaks all relative urls because now they are relative to a
- * bundle instead of the current page.
- *
- * One solution is to only use full urls, but that may be impossible.
- *
- * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
- *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
- *
- */
-
-module.exports = function (css) {
-  // get current location
-  var location = typeof window !== "undefined" && window.location;
-
-  if (!location) {
-    throw new Error("fixUrls requires window.location");
-  }
-
-	// blank or null?
-	if (!css || typeof css !== "string") {
-	  return css;
-  }
-
-  var baseUrl = location.protocol + "//" + location.host;
-  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
-	This regular expression is just a way to recursively match brackets within
-	a string.
-
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-	 \)  = Match a close parens
-
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl
-			.trim()
-			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
-			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
-		  return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-		  	//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
-};
-
-
-/***/ }),
-
-/***/ 21:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 72:
+/***/ ((module) => {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_umber__ = __webpack_require__(22);
-FusionCharts.addDep(__WEBPACK_IMPORTED_MODULE_0__src_umber__["a" /* default */]);
+
+
+var stylesInDOM = [];
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+  for (var i = 0; i < stylesInDOM.length; i++) {
+    if (stylesInDOM[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+  return result;
+}
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var indexByIdentifier = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3],
+      supports: item[4],
+      layer: item[5]
+    };
+    if (indexByIdentifier !== -1) {
+      stylesInDOM[indexByIdentifier].references++;
+      stylesInDOM[indexByIdentifier].updater(obj);
+    } else {
+      var updater = addElementStyle(obj, options);
+      options.byIndex = i;
+      stylesInDOM.splice(i, 0, {
+        identifier: identifier,
+        updater: updater,
+        references: 1
+      });
+    }
+    identifiers.push(identifier);
+  }
+  return identifiers;
+}
+function addElementStyle(obj, options) {
+  var api = options.domAPI(options);
+  api.update(obj);
+  var updater = function updater(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {
+        return;
+      }
+      api.update(obj = newObj);
+    } else {
+      api.remove();
+    }
+  };
+  return updater;
+}
+module.exports = function (list, options) {
+  options = options || {};
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDOM[index].references--;
+    }
+    var newLastIdentifiers = modulesToDom(newList, options);
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+      var _index = getIndexByIdentifier(_identifier);
+      if (stylesInDOM[_index].references === 0) {
+        stylesInDOM[_index].updater();
+        stylesInDOM.splice(_index, 1);
+      }
+    }
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
 
 /***/ }),
 
-/***/ 22:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 540:
+/***/ ((module) => {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fusioncharts_theme_umber_css__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fusioncharts_theme_umber_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fusioncharts_theme_umber_css__);
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+module.exports = insertStyleElement;
+
+/***/ }),
+
+/***/ 56:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
+}
+module.exports = setAttributesWithoutAttributes;
+
+/***/ }),
+
+/***/ 825:
+/***/ ((module) => {
+
+"use strict";
+
+
+/* istanbul ignore next  */
+function apply(styleElement, options, obj) {
+  var css = "";
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
+  }
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+  var needLayer = typeof obj.layer !== "undefined";
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+  css += obj.css;
+  if (needLayer) {
+    css += "}";
+  }
+  if (obj.media) {
+    css += "}";
+  }
+  if (obj.supports) {
+    css += "}";
+  }
+  var sourceMap = obj.sourceMap;
+  if (sourceMap && typeof btoa !== "undefined") {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  }
+
+  // For old IE
+  /* istanbul ignore if  */
+  options.styleTagTransform(css, styleElement, options.options);
+}
+function removeStyleElement(styleElement) {
+  // istanbul ignore if
+  if (styleElement.parentNode === null) {
+    return false;
+  }
+  styleElement.parentNode.removeChild(styleElement);
+}
+
+/* istanbul ignore next  */
+function domAPI(options) {
+  if (typeof document === "undefined") {
+    return {
+      update: function update() {},
+      remove: function remove() {}
+    };
+  }
+  var styleElement = options.insertStyleElement(options);
+  return {
+    update: function update(obj) {
+      apply(styleElement, options, obj);
+    },
+    remove: function remove() {
+      removeStyleElement(styleElement);
+    }
+  };
+}
+module.exports = domAPI;
+
+/***/ }),
+
+/***/ 113:
+/***/ ((module) => {
+
+"use strict";
+
+
+/* istanbul ignore next  */
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
+    }
+    styleElement.appendChild(document.createTextNode(css));
+  }
+}
+module.exports = styleTagTransform;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+(() => {
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+var injectStylesIntoStyleTag = __webpack_require__(72);
+var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleDomAPI.js
+var styleDomAPI = __webpack_require__(825);
+var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
+// EXTERNAL MODULE: ./insert-function.js
+var insert_function = __webpack_require__(660);
+var insert_function_default = /*#__PURE__*/__webpack_require__.n(insert_function);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+var setAttributesWithoutAttributes = __webpack_require__(56);
+var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertStyleElement.js
+var insertStyleElement = __webpack_require__(540);
+var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
+var styleTagTransform = __webpack_require__(113);
+var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
+// EXTERNAL MODULE: ./node_modules/css-loader/index.js!./develop/src/umber/fusioncharts.theme.umber.css
+var fusioncharts_theme_umber = __webpack_require__(646);
+var fusioncharts_theme_umber_default = /*#__PURE__*/__webpack_require__.n(fusioncharts_theme_umber);
+;// ./develop/src/umber/fusioncharts.theme.umber.css
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (styleTagTransform_default());
+options.setAttributes = (setAttributesWithoutAttributes_default());
+options.insert = (insert_function_default());
+options.domAPI = (styleDomAPI_default());
+options.insertStyleElement = (insertStyleElement_default());
+
+var update = injectStylesIntoStyleTag_default()((fusioncharts_theme_umber_default()), options);
+
+
+
+
+       /* harmony default export */ const umber_fusioncharts_theme_umber = ((fusioncharts_theme_umber_default()) && (fusioncharts_theme_umber_default()).locals ? (fusioncharts_theme_umber_default()).locals : undefined);
+
+;// ./develop/src/umber/index.js
 /*
  Umber Theme v0.6
  FusionCharts JavaScript Library
@@ -806,76 +580,13 @@ stackedarea2dlinedy:{chart:{anchorBgColor:"#FFF1E5",lineThickness:2,anchorBorder
 mscombidy3d:{chart:{showCanvasBase:0,anchorBgColor:"#FFF1E5",lineThickness:2,anchorBorderThickness:2,legendIconSides:2,legendIconBorderThickness:2}},// Sankey Diagram (104)
 sankey:{chart:{nodeLabelFontColor:"#606060",nodeLabelFontSize:11,nodeLabelPosition:"end",nodeAlpha:80,linkAlpha:40,nodeHoverAlpha:100,linkHoverAlpha:75,enableDrag:0,plothighlighteffect:"fadeout",linkColor:"source"}},// Sunburst Chart (105)
 sunburst:{chart:{valueFontColor:"#FFFFFF",showPlotBorder:1,plotborderThickness:0.5,plotBorderColor:"#D5CDBE",unfocussedAlpha:40,hoverFillAlpha:100}},// Chord Diagram (106)
-chord:{chart:{drawCustomLegendIcon:0,legendPosition:"right",nodeThickness:10,nodeLabelColor:"#606060",nodeLabelFontSize:11,nodeLabelPosition:"outside",nodeHoverAlpha:100,nodeLinkPadding:0,nodeSpacing:3,nodeBorderThickness:0,nodeAlpha:80,linkAlpha:40,linkBorderAlpha:40,linkHoverAlpha:75}},radialBar:{chart:{legendIconSides:"2",labelPadding:"6px 10px 6px 10px"}},// timeseries
-timeseries:{chart:{baseFont:"Titillium Web Regular",style:{text:{"font-family":"Titillium Web Regular"},background:{fill:"#FFF1E5"},canvas:{fill:"#FFF1E5",stroke:"#D5CDBE","stroke-width":0.75}}},tooltip:{style:{container:{"background-color":"#FFF9F5",opacity:0.9,border:"0.5px solid #D5CDBE","border-radius":"3px",padding:"6px"},text:{"font-size":"11px",color:"#606060"},header:{"font-family":"Titillium Web SemiBold","font-size":"12px",color:"#33302E",padding:"0px"},body:{padding:"0px"}}},navigator:{scrollbar:{style:{button:{fill:"#D5CDBE"},track:{fill:"#F2E5D9"},scroller:{fill:"#D5CDBE"}}},window:{style:{handle:{fill:"#D5CDBE"},mask:{opacity:0.5,stroke:"#D5CDBE","stroke-width":0.75}}}},crossline:{style:{line:{stroke:"#D5CDBE","stroke-width":1}}},caption:{style:{text:{"font-size":16,"font-family":"Titillium Web SemiBold",fill:"#000000"}}},subcaption:{style:{text:{"font-size":12,"font-family":"Titillium Web Regular",fill:"#66605C"}}},plotconfig:{column:{style:{"plot:hover":{opacity:0.85},"plot:highlight":{opacity:0.85}}},line:{style:{plot:{"stroke-width":2}}},candlestick:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}},ohlc:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}}},yaxis:[{referenceline:[{style:{marker:{fill:"#33302E",stroke:"#33302E","stroke-width":1.5}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark":{stroke:"#D5CDBE","stroke-width":0.75},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75},label:{color:"#606060"}}}],xaxis:{timemarker:[{style:{marker:{fill:"#262932",stroke:"#a8aaad","stroke-width":1},"marker-notch":{fill:"#262932",stroke:"#262932"},"marker:hover":{fill:"#101115",stroke:"#666666","stroke-width":1},"marker-notch:hover":{fill:"#101115",stroke:"#101115"},"marker-line":{stroke:"#262932"},"marker-line:hover":{stroke:"#101115"},text:{fill:"#a8aaad"},"text:hover":{fill:"#FFFFFF"}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark-major":{stroke:"#D5CDBE","stroke-width":0.75},"tick-mark-minor":{stroke:"#D5CDBE","stroke-width":0.5},"label-major":{color:"#606060"},"label-minor":{color:"#606060"},"label-context":{color:"#000000"},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75}}},legend:{style:{text:{fill:"#33302E","font-size":12}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#66605C","font-family":"Titillium Web Regular"},"button-text:hover":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"button-text:active":{fill:"#33302E","font-family":"Titillium Web SemiBold"},separator:{stroke:"#D5CDBE","stroke-width":0.75}}},customRangeSelector:{style:{"title-text":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"title-icon":{fill:"#33302E","font-family":"Titillium Web SemiBold"},container:{"background-color":"#FFF1E5"},label:{color:"#33302E","font-family":"Titillium Web SemiBold"},input:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E","font-family":"Titillium Web Regular"},select:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E"},"button-apply":{color:"#FFFFFF","background-color":"#33302E",border:"none"},"button-cancel":{color:"#33302E","background-color":"#FFF1E5",border:"none"},"button-apply:hover":{"font-family":"Titillium Web SemiBold"},"button-cancel:hover":{"font-family":"Titillium Web SemiBold"},"cal-header":{"background-color":"#000000","font-family":"Titillium Web Regular"},"cal-navprev":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-navnext":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-weekend":{"background-color":"#00000040"},"cal-days":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date:hover":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate:hover":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-selecteddate":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular"}}}}}}};/* harmony default export */ __webpack_exports__["a"] = ({extension:themeObject,name:"umberTheme",type:"theme"});
+chord:{chart:{drawCustomLegendIcon:0,legendPosition:"right",nodeThickness:10,nodeLabelColor:"#606060",nodeLabelFontSize:11,nodeLabelPosition:"outside",nodeHoverAlpha:100,nodeLinkPadding:0,nodeSpacing:3,nodeBorderThickness:0,nodeAlpha:80,linkAlpha:40,linkBorderAlpha:40,linkHoverAlpha:75}},radialBar:{chart:{legendIconSides:"2",labelPadding:"6px 10px 6px 10px"}},// multi-series stacked Bar2D chart (108)
+msstackedbar2d:{chart:{drawCrossLine:1}},// timeseries
+timeseries:{chart:{baseFont:"Titillium Web Regular",style:{text:{"font-family":"Titillium Web Regular"},background:{fill:"#FFF1E5"},canvas:{fill:"#FFF1E5",stroke:"#D5CDBE","stroke-width":0.75}}},tooltip:{style:{container:{"background-color":"#FFF9F5",opacity:0.9,border:"0.5px solid #D5CDBE","border-radius":"3px",padding:"6px"},text:{"font-size":"11px",color:"#606060"},header:{"font-family":"Titillium Web SemiBold","font-size":"12px",color:"#33302E",padding:"0px"},body:{padding:"0px"}}},navigator:{scrollbar:{style:{button:{fill:"#D5CDBE"},track:{fill:"#F2E5D9"},scroller:{fill:"#D5CDBE"}}},window:{style:{handle:{fill:"#D5CDBE"},mask:{opacity:0.5,stroke:"#D5CDBE","stroke-width":0.75}}}},crossline:{style:{line:{stroke:"#D5CDBE","stroke-width":1}}},caption:{style:{text:{"font-size":16,"font-family":"Titillium Web SemiBold",fill:"#000000"}}},subcaption:{style:{text:{"font-size":12,"font-family":"Titillium Web Regular",fill:"#66605C"}}},plotconfig:{column:{style:{"plot:hover":{opacity:0.85},"plot:highlight":{opacity:0.85}}},line:{style:{plot:{"stroke-width":2}}},candlestick:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}},ohlc:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}}},yaxis:[{referenceline:[{style:{marker:{fill:"#33302E",stroke:"#33302E","stroke-width":1.5}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark":{stroke:"#D5CDBE","stroke-width":0.75},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75},label:{color:"#606060"}}}],xaxis:{timemarker:[{style:{marker:{fill:"#262932",stroke:"#a8aaad","stroke-width":1},"marker-notch":{fill:"#262932",stroke:"#262932"},"marker:hover":{fill:"#101115",stroke:"#666666","stroke-width":1},"marker-notch:hover":{fill:"#101115",stroke:"#101115"},"marker-line":{stroke:"#262932"},"marker-line:hover":{stroke:"#101115"},text:{fill:"#a8aaad"},"text:hover":{fill:"#FFFFFF"}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark-major":{stroke:"#D5CDBE","stroke-width":0.75},"tick-mark-minor":{stroke:"#D5CDBE","stroke-width":0.5},"label-major":{color:"#606060"},"label-minor":{color:"#606060"},"label-context":{color:"#000000"},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75}}},legend:{style:{text:{fill:"#33302E","font-size":12}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#66605C","font-family":"Titillium Web Regular"},"button-text:hover":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"button-text:active":{fill:"#33302E","font-family":"Titillium Web SemiBold"},separator:{stroke:"#D5CDBE","stroke-width":0.75}}},customRangeSelector:{style:{"title-text":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"title-icon":{fill:"#33302E","font-family":"Titillium Web SemiBold"},container:{"background-color":"#FFF1E5"},label:{color:"#33302E","font-family":"Titillium Web SemiBold"},input:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E","font-family":"Titillium Web Regular"},select:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E"},"button-apply":{color:"#FFFFFF","background-color":"#33302E",border:"none"},"button-cancel":{color:"#33302E","background-color":"#FFF1E5",border:"none"},"button-apply:hover":{"font-family":"Titillium Web SemiBold"},"button-cancel:hover":{"font-family":"Titillium Web SemiBold"},"cal-header":{"background-color":"#000000","font-family":"Titillium Web Regular"},"cal-navprev":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-navnext":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-weekend":{"background-color":"#00000040"},"cal-days":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date:hover":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate:hover":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-selecteddate":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular"}}}}}}};/* harmony default export */ const umber = ({extension:themeObject,name:"umberTheme",type:"theme"});
+;// ./develop/wrappers/fusioncharts.theme.umber.js
+FusionCharts.addDep(umber);
+})();
 
-/***/ }),
-
-/***/ 23:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(24);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(1)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {
-	module.hot.accept("!!../../../node_modules/css-loader/index.js!./fusioncharts.theme.umber.css", function() {
-		var newContent = require("!!../../../node_modules/css-loader/index.js!./fusioncharts.theme.umber.css");
-
-		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-
-		var locals = (function(a, b) {
-			var key, idx = 0;
-
-			for(key in a) {
-				if(!b || a[key] !== b[key]) return false;
-				idx++;
-			}
-
-			for(key in b) idx--;
-
-			return idx === 0;
-		}(content.locals, newContent.locals));
-
-		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
-
-		update(newContent);
-	});
-
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 24:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(false);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\r\n  font-family: \"Titillium Web Regular\";\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: local(\"Titillium Web Regular\"), local(\"TitilliumWeb-Regular\"),\r\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2)\r\n      format(\"woff2\");\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\r\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\r\n    U+FEFF, U+FFFD;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Titillium Web SemiBold\";\r\n  font-style: normal;\r\n  font-weight: 600;\r\n  src: local(\"Titillium Web SemiBold\"), local(\"TitilliumWeb-SemiBold\"),\r\n    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2)\r\n      format(\"woff2\");\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\r\n    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,\r\n    U+FEFF, U+FFFD;\r\n}\r\n\r\n/* ft calendar customiztion */\r\n.fc-cal-day-umber {\r\n  background-color: #fff1e5;\r\n  color: #33302e;\r\n  font-family: \"Titillium Web Regular\";\r\n  border: none;\r\n}\r\n\r\n.fc-cal-date-normal-umber {\r\n  background-color: #fff1e5;\r\n  color: #33302e;\r\n  font-family: \"Titillium Web Regular\";\r\n  border: none;\r\n}\r\n\r\n.fc-cal-date-normal-umber:hover {\r\n  background-color: #000000;\r\n  color: #ffffff;\r\n  font-family: \"Titillium Web Regular\";\r\n  border: none;\r\n}\r\n\r\n.fc-cal-date-disabled-umber {\r\n  background-color: #fff1e5;\r\n  color: rgba(51, 48, 46, 0.5);\r\n  font-family: \"Titillium Web Regular\";\r\n  border: none;\r\n}\r\n\r\n.fc-cal-month-header-umber {\r\n  background-color: #000000;\r\n  font-family: \"Titillium Web Regular\";\r\n}\r\n\r\n.fc-cal-weekend-umber {\r\n  background-color: rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.fc-cal-container-umber {\r\n  border: none;\r\n}\r\n\r\n.fc-cal-nav-next-umber,\r\n.fc-cal-nav-prev-umber {\r\n  font-family: \"Titillium Web Regular\";\r\n  font-size: 12px;\r\n}\r\n\r\n.fc-cal-date-selected-umber {\r\n  background-color: #000000;\r\n  color: #ffffff;\r\n  font-family: \"Titillium Web Regular\";\r\n}\r\n\r\n.fc-cal-date-selected-umber:hover {\r\n  background-color: #000000;\r\n  color: #ffffff;\r\n  font-family: \"Titillium Web Regular\";\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ })
-
-/******/ });
+/******/ })()
+;
 }));

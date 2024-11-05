@@ -4,9 +4,7 @@ const path = require('path'),
   UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
   fs = require('fs-extra'),
   BASE_PATH = './develop/wrappers';
-  const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-  const devMode = process.env.development ? true : false;
 let moduleWrapperHeader = `
 (function (factory) {
   if (typeof module === 'object' && typeof module.exports !== "undefined") {
@@ -31,7 +29,15 @@ let debServerConfig = {
       loader: 'babel-loader'
     }, {
       test:/\.css$/,
-      use:[ devMode ? 'style-loader': MiniCssExtractPlugin.loader,'css-loader']
+      use:[ 
+      {
+        loader: "style-loader",
+        options: {
+          insert: require.resolve("./insert-function"),
+        },
+      },
+      'css-loader'
+      ]
     }]
   };
 
@@ -42,9 +48,6 @@ function getPlugins (isSource) {
     header: moduleWrapperHeader,
     footer: moduleWrapperFooter
   })];
-  if(!devMode){
-    plugins.push(new MiniCssExtractPlugin())
-  }
   if (!isSource){
     plugins.push(
       new UglifyJsPlugin({
@@ -99,6 +102,9 @@ module.exports = [
   },
   devServer: debServerConfig,
   module: moduleConfig,
-  plugins: getPlugins(true)
+  plugins: getPlugins(true),
+  optimization: {
+    minimize: false
+  }
 }
 ];
