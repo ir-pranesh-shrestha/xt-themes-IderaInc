@@ -6,11 +6,11 @@
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 660:
-/***/ (function(module) {
+/***/ ((module) => {
 
 function insertAtTop(element){var parent=document.querySelector('head');// eslint-disable-next-line no-underscore-dangle
 const metaTag=document.querySelector(`meta[http-equiv="Content-Security-Policy"]`);if(metaTag){const content=metaTag.getAttribute('content');if(content){const match=content.match(/'nonce-([^']+)'/);if(match){element.setAttribute('nonce',match[1])}}}var lastInsertedElement=window._lastElementInsertedByStyleLoader;if(!lastInsertedElement){parent.insertBefore(element,parent.firstChild)}else if(lastInsertedElement.nextSibling){parent.insertBefore(element,lastInsertedElement.nextSibling)}else{parent.appendChild(element)}// eslint-disable-next-line no-underscore-dangle
@@ -19,7 +19,7 @@ window._lastElementInsertedByStyleLoader=element}module.exports=insertAtTop;
 /***/ }),
 
 /***/ 265:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((module, exports, __webpack_require__) => {
 
 exports = module.exports = __webpack_require__(765)(false);
 // imports
@@ -34,7 +34,7 @@ exports.push([module.id, "@font-face {\n  font-family: \"Fira Sans Light\";\n  f
 /***/ }),
 
 /***/ 765:
-/***/ (function(module) {
+/***/ ((module) => {
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -117,7 +117,7 @@ function toComment(sourceMap) {
 /***/ }),
 
 /***/ 72:
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -208,7 +208,7 @@ module.exports = function (list, options) {
 /***/ }),
 
 /***/ 540:
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -225,7 +225,7 @@ module.exports = insertStyleElement;
 /***/ }),
 
 /***/ 56:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -242,7 +242,7 @@ module.exports = setAttributesWithoutAttributes;
 /***/ }),
 
 /***/ 825:
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -310,7 +310,7 @@ module.exports = domAPI;
 /***/ }),
 
 /***/ 113:
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -358,43 +358,43 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
+/******/ 		__webpack_require__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 		__webpack_require__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-!function() {
+(() => {
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
@@ -443,7 +443,7 @@ var update = injectStylesIntoStyleTag_default()((fusioncharts_theme_candy_defaul
 
 
 
-       /* harmony default export */ var candy_fusioncharts_theme_candy = ((fusioncharts_theme_candy_default()) && (fusioncharts_theme_candy_default()).locals ? (fusioncharts_theme_candy_default()).locals : undefined);
+       /* harmony default export */ const candy_fusioncharts_theme_candy = ((fusioncharts_theme_candy_default()) && (fusioncharts_theme_candy_default()).locals ? (fusioncharts_theme_candy_default()).locals : undefined);
 
 ;// ./develop/src/candy/index.js
 /*
@@ -574,10 +574,11 @@ radialBar:{chart:{legendIconSides:"2",labelPadding:"6px 10px 6px 10px"}},// 108.
 msstackedbar2d:{chart:{showLegend:"1",legendIconSides:"4"}},// timeseries
 timeseries:{// caption styling
 caption:{style:{text:{"font-size":18,"font-family":"Fira Sans Regular",fill:"#F6F6F6"}}},// subcaption styling
-subcaption:{style:{text:{"font-family":"Fira Sans Light","font-size":15,fill:"#999CA5"}}},chart:{paletteColors:"#36B5D8, #F066AC, #6EC85A, #6E80CA, #E09653, #F0DC46, #E1D7AD, #61C8C8, #EBE4F4, #E64141",multiCanvasTooltip:1,baseFont:"Fira Sans Light",style:{text:{"font-family":"Fira Sans Light"},background:{fill:"#262A33"},canvas:{fill:"#262A33",stroke:"#4B4B4B","stroke-width":0.5}}},tooltip:{style:{container:{"background-color":"#000000",opacity:0.7,border:"2px solid #000000","border-radius":"2px",padding:"7px"},text:{"font-family":"Fira Sans Light","font-size":"13px",color:"#999CA5"},header:{"font-family":"Fira Sans Regular","font-size":"14px",color:"#FFFFFF",padding:"0px"},body:{padding:"0px"}}},navigator:{scrollbar:{style:{button:{fill:"#ABABAB"},track:{fill:"#C4C4C4"},scroller:{fill:"#ABABAB"}}},window:{style:{handle:{fill:"#ABABAB"},mask:{opacity:0.15,stroke:"#4B4B4B","stroke-width":0.55}}}},crossline:{style:{line:{stroke:"#4B4B4B","stroke-width":1,opacity:0.6}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#999CA5","font-family":"Fira Sans Light"},"button-text:hover":{fill:"#FFFFFF","font-family":"Fira Sans Light"},"button-text:active":{fill:"#FFFFFF","font-family":"Fira Sans Regular"},separator:{stroke:"#4B4B4B","stroke-width":0.5}}},customRangeSelector:{style:{"title-text":{fill:"#FFFFFF","font-family":"Fira Sans Regular"},"title-icon":{fill:"#FFFFFF","font-family":"Fira Sans Regular"},container:{"background-color":"#262A33"},label:{color:"#FFFFFF","font-family":"Fira Sans Light"},input:{"background-color":"#343434",border:"0.5px solid #4B4B4B",color:"#CCCCCC","font-family":"Fira Sans Light"},"button-apply":{color:"#FFFFFF","background-color":"#36869C",border:"none"},"button-cancel":{color:"#999CA5","background-color":"#262A33",border:"none","font-family":"Fira Sans Regular"},"button-cancel:hover":{color:"#FFFFFF"},"cal-header":{"background-color":"#36869C","font-family":"Fira Sans Light"},"cal-navprev":{"font-family":"Fira Sans Light","font-size":"12px"},"cal-navnext":{"font-family":"Fira Sans Light","font-size":"12px"},"cal-weekend":{"background-color":"#35555D"},"cal-days":{"background-color":"#343434",color:"#CCCCCC","font-family":"Fira Sans Light",border:"none"},"cal-date":{"background-color":"#343434",color:"#CCCCCC","font-family":"Fira Sans Light",border:"none"},"cal-date:hover":{"background-color":"#6E6E6E",color:"#FFFFFF","font-family":"Fira Sans Light",border:"none"},"cal-disableddate":{"background-color":"#343434",color:"#999CA5BF","font-family":"Fira Sans Light",border:"none"},"cal-selecteddate":{"background-color":"#36869C",color:"#FFFFFF","font-family":"Fira Sans Regular"}}}},legend:{style:{text:{fill:"#999CA5","font-size":14,"font-family":"Fira Sans Regular","font-weight":"bold"}}},xaxis:{timemarker:[{style:{marker:{fill:"#e64141",stroke:"#4B4B4B","stroke-width":1},"marker-notch":{fill:"#e64141",stroke:"#e64141"},"marker:hover":{fill:"#d81c1c",stroke:"#FFFFFF","stroke-width":1},"marker-notch:hover":{fill:"#d81c1c",stroke:"#d81c1c"},"marker-line":{stroke:"#e64141"},"marker-line:hover":{stroke:"#d81c1c"},text:{fill:"#999ca5"},"text:hover":{fill:"#FFFFFF"}}}],style:{title:{"font-size":14,"font-family":"Fira Sans Regular",fill:"#999CA5"},"grid-line":{stroke:"#4B4B4B","stroke-width":0.55},"tick-mark-major":{stroke:"#4B4B4B","stroke-width":0.5},"tick-mark-minor":{stroke:"#4B4B4B","stroke-width":0.25},"label-major":{color:"#F6F6F6"},"label-minor":{color:"#DDDDDD"},"label-context":{color:"#F6F6F6","font-family":"Fira Sans Regular"}}},plotconfig:{column:{style:{"plot:hover":{opacity:0.5},"plot:highlight":{opacity:0.75}}},line:{style:{plot:{"stroke-width":2},anchor:{"stroke-width":0}}},area:{style:{anchor:{"stroke-width":0}}},candlestick:{style:{bear:{stroke:"#E64141",fill:"#E64141"},bull:{stroke:"#6EC85A",fill:"#6EC85A"},"bear:hover":{opacity:0.5},"bear:highlight":{opacity:0.75},"bull:hover":{opacity:0.5},"bull:highlight":{opacity:0.75}}},ohlc:{style:{bear:{stroke:"#E64141",fill:"#E64141"},bull:{stroke:"#6EC85A",fill:"#6EC85A"},"bear:hover":{opacity:0.5},"bear:highlight":{opacity:0.75},"bull:hover":{opacity:0.5},"bull:highlight":{opacity:0.75}}}},yaxis:[{style:{title:{"font-size":14,"font-family":"Fira Sans Regular",fill:"#999CA5"},"tick-mark":{stroke:"#4B4B4B","stroke-width":0.5},"grid-line":{stroke:"#4B4B4B","stroke-width":0.5},label:{color:"#999CA5"}}}]}}};/* harmony default export */ var candy = ({extension:themeObject,name:"candyTheme",type:"theme"});
+subcaption:{style:{text:{"font-family":"Fira Sans Light","font-size":15,fill:"#999CA5"}}},chart:{paletteColors:"#36B5D8, #F066AC, #6EC85A, #6E80CA, #E09653, #F0DC46, #E1D7AD, #61C8C8, #EBE4F4, #E64141",multiCanvasTooltip:1,baseFont:"Fira Sans Light",style:{text:{"font-family":"Fira Sans Light"},background:{fill:"#262A33"},canvas:{fill:"#262A33",stroke:"#4B4B4B","stroke-width":0.5}}},tooltip:{style:{container:{"background-color":"#000000",opacity:0.7,border:"2px solid #000000","border-radius":"2px",padding:"7px"},text:{"font-family":"Fira Sans Light","font-size":"13px",color:"#999CA5"},header:{"font-family":"Fira Sans Regular","font-size":"14px",color:"#FFFFFF",padding:"0px"},body:{padding:"0px"}}},navigator:{scrollbar:{style:{button:{fill:"#ABABAB"},track:{fill:"#C4C4C4"},scroller:{fill:"#ABABAB"}}},window:{style:{handle:{fill:"#ABABAB"},mask:{opacity:0.15,stroke:"#4B4B4B","stroke-width":0.55}}}},crossline:{style:{line:{stroke:"#4B4B4B","stroke-width":1,opacity:0.6}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#999CA5","font-family":"Fira Sans Light"},"button-text:hover":{fill:"#FFFFFF","font-family":"Fira Sans Light"},"button-text:active":{fill:"#FFFFFF","font-family":"Fira Sans Regular"},separator:{stroke:"#4B4B4B","stroke-width":0.5}}},customRangeSelector:{style:{"title-text":{fill:"#FFFFFF","font-family":"Fira Sans Regular"},"title-icon":{fill:"#FFFFFF","font-family":"Fira Sans Regular"},container:{"background-color":"#262A33"},label:{color:"#FFFFFF","font-family":"Fira Sans Light"},input:{"background-color":"#343434",border:"0.5px solid #4B4B4B",color:"#CCCCCC","font-family":"Fira Sans Light"},"button-apply":{color:"#FFFFFF","background-color":"#36869C",border:"none"},"button-cancel":{color:"#999CA5","background-color":"#262A33",border:"none","font-family":"Fira Sans Regular"},"button-cancel:hover":{color:"#FFFFFF"},"cal-header":{"background-color":"#36869C","font-family":"Fira Sans Light"},"cal-navprev":{"font-family":"Fira Sans Light","font-size":"12px"},"cal-navnext":{"font-family":"Fira Sans Light","font-size":"12px"},"cal-weekend":{"background-color":"#35555D"},"cal-days":{"background-color":"#343434",color:"#CCCCCC","font-family":"Fira Sans Light",border:"none"},"cal-date":{"background-color":"#343434",color:"#CCCCCC","font-family":"Fira Sans Light",border:"none"},"cal-date:hover":{"background-color":"#6E6E6E",color:"#FFFFFF","font-family":"Fira Sans Light",border:"none"},"cal-disableddate":{"background-color":"#343434",color:"#999CA5BF","font-family":"Fira Sans Light",border:"none"},"cal-selecteddate":{"background-color":"#36869C",color:"#FFFFFF","font-family":"Fira Sans Regular"}}}},legend:{style:{text:{fill:"#999CA5","font-size":14,"font-family":"Fira Sans Regular","font-weight":"bold"}}},xaxis:{timemarker:[{style:{marker:{fill:"#e64141",stroke:"#4B4B4B","stroke-width":1},"marker-notch":{fill:"#e64141",stroke:"#e64141"},"marker:hover":{fill:"#d81c1c",stroke:"#FFFFFF","stroke-width":1},"marker-notch:hover":{fill:"#d81c1c",stroke:"#d81c1c"},"marker-line":{stroke:"#e64141"},"marker-line:hover":{stroke:"#d81c1c"},text:{fill:"#999ca5"},"text:hover":{fill:"#FFFFFF"}}}],style:{title:{"font-size":14,"font-family":"Fira Sans Regular",fill:"#999CA5"},"grid-line":{stroke:"#4B4B4B","stroke-width":0.55},"tick-mark-major":{stroke:"#4B4B4B","stroke-width":0.5},"tick-mark-minor":{stroke:"#4B4B4B","stroke-width":0.25},"label-major":{color:"#F6F6F6"},"label-minor":{color:"#DDDDDD"},"label-context":{color:"#F6F6F6","font-family":"Fira Sans Regular"}}},plotconfig:{column:{style:{"plot:hover":{opacity:0.5},"plot:highlight":{opacity:0.75}}},line:{style:{plot:{"stroke-width":2},anchor:{"stroke-width":0}}},area:{style:{anchor:{"stroke-width":0}}},candlestick:{style:{bear:{stroke:"#E64141",fill:"#E64141"},bull:{stroke:"#6EC85A",fill:"#6EC85A"},"bear:hover":{opacity:0.5},"bear:highlight":{opacity:0.75},"bull:hover":{opacity:0.5},"bull:highlight":{opacity:0.75}}},ohlc:{style:{bear:{stroke:"#E64141",fill:"#E64141"},bull:{stroke:"#6EC85A",fill:"#6EC85A"},"bear:hover":{opacity:0.5},"bear:highlight":{opacity:0.75},"bull:hover":{opacity:0.5},"bull:highlight":{opacity:0.75}}}},yaxis:[{style:{title:{"font-size":14,"font-family":"Fira Sans Regular",fill:"#999CA5"},"tick-mark":{stroke:"#4B4B4B","stroke-width":0.5},"grid-line":{stroke:"#4B4B4B","stroke-width":0.5},label:{color:"#999CA5"}}}]}}};/* harmony default export */ const candy = ({extension:themeObject,name:"candyTheme",type:"theme"});
 ;// ./develop/wrappers/fusioncharts.theme.candy.js
 FusionCharts.addDep(candy);
-}();
+})();
+
 /******/ })()
 ;
 }));

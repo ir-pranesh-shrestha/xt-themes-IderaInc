@@ -29,12 +29,15 @@ let debServerConfig = {
       loader: 'babel-loader'
     }, {
       test:/\.css$/,
-      use:[ {
+      use:[ 
+      {
         loader: "style-loader",
         options: {
           insert: require.resolve("./insert-function"),
         },
-      },'css-loader']
+      },
+      'css-loader'
+      ]
     }]
   };
 
