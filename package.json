@@ -51,7 +51,7 @@
     "start": "webpack-dev-server",
     "test": "develop/ci/test/test",
     "lint": "develop/ci/lint/lint",
-    "build": "npx webpack && npx rollup -c",
+    "build": "npx webpack",
     "drone": "develop/ci/drone/drone",
     "release": "develop/ci/release/release"
   },
