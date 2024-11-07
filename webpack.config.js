@@ -1,7 +1,7 @@
 const path = require('path'),
   webpack = require('webpack'),
   WrapperPlugin = require('wrapper-webpack-plugin'),
-  UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
+  TerserPlugin = require('terser-webpack-plugin'),
   fs = require('fs-extra'),
   BASE_PATH = './develop/wrappers';
 
@@ -47,18 +47,21 @@ function getPlugins (isSource) {
   })];
   if (!isSource){
     plugins.push(
-      new UglifyJsPlugin({
-        cache: true,
+      new TerserPlugin({
         parallel: true,
-        sourceMap: true,
-        uglifyOptions: {
+        terserOptions: {
           ecma: 5,
           ie8: true,
           mangle: false,
           compress: false,
           keep_classnames: true,
-          keep_fnames: true
-        }
+          keep_fnames: true,
+          output: {
+            // Retain license and copyright comments
+            comments: /(?:^!|@(?:license|preserve|cc_on)|copyright)/i
+          }
+        },
+        extractComments: false,
       })
     );
   }
