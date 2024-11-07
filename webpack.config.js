@@ -109,5 +109,18 @@ module.exports = [
   optimization: {
     minimize: false
   }
-}
+},
+{
+  entry: entryObject,
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'themes/es')
+  },
+  devServer: debServerConfig,
+  module: moduleConfig,
+  plugins: getPlugins(true),
+  optimization: {
+    minimize: false
+  }
+},
 ];
