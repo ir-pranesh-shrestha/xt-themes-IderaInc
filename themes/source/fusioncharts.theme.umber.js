@@ -6,11 +6,11 @@
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 660:
-/***/ ((module) => {
+/***/ (function(module) {
 
 function insertAtTop(element){var parent=document.querySelector('head');// eslint-disable-next-line no-underscore-dangle
 const metaTag=document.querySelector(`meta[http-equiv="Content-Security-Policy"]`);if(metaTag){const content=metaTag.getAttribute('content');if(content){const match=content.match(/'nonce-([^']+)'/);if(match){element.setAttribute('nonce',match[1])}}}var lastInsertedElement=window._lastElementInsertedByStyleLoader;if(!lastInsertedElement){parent.insertBefore(element,parent.firstChild)}else if(lastInsertedElement.nextSibling){parent.insertBefore(element,lastInsertedElement.nextSibling)}else{parent.appendChild(element)}// eslint-disable-next-line no-underscore-dangle
@@ -19,7 +19,7 @@ window._lastElementInsertedByStyleLoader=element}module.exports=insertAtTop;
 /***/ }),
 
 /***/ 646:
-/***/ ((module, exports, __webpack_require__) => {
+/***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(765)(false);
 // imports
@@ -34,7 +34,7 @@ exports.push([module.id, "@font-face {\n  font-family: \"Titillium Web Regular\"
 /***/ }),
 
 /***/ 765:
-/***/ ((module) => {
+/***/ (function(module) {
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -117,7 +117,7 @@ function toComment(sourceMap) {
 /***/ }),
 
 /***/ 72:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 
@@ -208,7 +208,7 @@ module.exports = function (list, options) {
 /***/ }),
 
 /***/ 540:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 
@@ -225,7 +225,7 @@ module.exports = insertStyleElement;
 /***/ }),
 
 /***/ 56:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 
@@ -242,7 +242,7 @@ module.exports = setAttributesWithoutAttributes;
 /***/ }),
 
 /***/ 825:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 
@@ -310,7 +310,7 @@ module.exports = domAPI;
 /***/ }),
 
 /***/ 113:
-/***/ ((module) => {
+/***/ (function(module) {
 
 "use strict";
 
@@ -358,43 +358,43 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__webpack_require__.n = function(module) {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.nc = undefined;
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-(() => {
+!function() {
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
@@ -443,7 +443,7 @@ var update = injectStylesIntoStyleTag_default()((fusioncharts_theme_umber_defaul
 
 
 
-       /* harmony default export */ const umber_fusioncharts_theme_umber = ((fusioncharts_theme_umber_default()) && (fusioncharts_theme_umber_default()).locals ? (fusioncharts_theme_umber_default()).locals : undefined);
+       /* harmony default export */ var umber_fusioncharts_theme_umber = ((fusioncharts_theme_umber_default()) && (fusioncharts_theme_umber_default()).locals ? (fusioncharts_theme_umber_default()).locals : undefined);
 
 ;// ./develop/src/umber/index.js
 /*
@@ -582,11 +582,10 @@ sankey:{chart:{nodeLabelFontColor:"#606060",nodeLabelFontSize:11,nodeLabelPositi
 sunburst:{chart:{valueFontColor:"#FFFFFF",showPlotBorder:1,plotborderThickness:0.5,plotBorderColor:"#D5CDBE",unfocussedAlpha:40,hoverFillAlpha:100}},// Chord Diagram (106)
 chord:{chart:{drawCustomLegendIcon:0,legendPosition:"right",nodeThickness:10,nodeLabelColor:"#606060",nodeLabelFontSize:11,nodeLabelPosition:"outside",nodeHoverAlpha:100,nodeLinkPadding:0,nodeSpacing:3,nodeBorderThickness:0,nodeAlpha:80,linkAlpha:40,linkBorderAlpha:40,linkHoverAlpha:75}},radialBar:{chart:{legendIconSides:"2",labelPadding:"6px 10px 6px 10px"}},// multi-series stacked Bar2D chart (108)
 msstackedbar2d:{chart:{drawCrossLine:1}},// timeseries
-timeseries:{chart:{baseFont:"Titillium Web Regular",style:{text:{"font-family":"Titillium Web Regular"},background:{fill:"#FFF1E5"},canvas:{fill:"#FFF1E5",stroke:"#D5CDBE","stroke-width":0.75}}},tooltip:{style:{container:{"background-color":"#FFF9F5",opacity:0.9,border:"0.5px solid #D5CDBE","border-radius":"3px",padding:"6px"},text:{"font-size":"11px",color:"#606060"},header:{"font-family":"Titillium Web SemiBold","font-size":"12px",color:"#33302E",padding:"0px"},body:{padding:"0px"}}},navigator:{scrollbar:{style:{button:{fill:"#D5CDBE"},track:{fill:"#F2E5D9"},scroller:{fill:"#D5CDBE"}}},window:{style:{handle:{fill:"#D5CDBE"},mask:{opacity:0.5,stroke:"#D5CDBE","stroke-width":0.75}}}},crossline:{style:{line:{stroke:"#D5CDBE","stroke-width":1}}},caption:{style:{text:{"font-size":16,"font-family":"Titillium Web SemiBold",fill:"#000000"}}},subcaption:{style:{text:{"font-size":12,"font-family":"Titillium Web Regular",fill:"#66605C"}}},plotconfig:{column:{style:{"plot:hover":{opacity:0.85},"plot:highlight":{opacity:0.85}}},line:{style:{plot:{"stroke-width":2}}},candlestick:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}},ohlc:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}}},yaxis:[{referenceline:[{style:{marker:{fill:"#33302E",stroke:"#33302E","stroke-width":1.5}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark":{stroke:"#D5CDBE","stroke-width":0.75},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75},label:{color:"#606060"}}}],xaxis:{timemarker:[{style:{marker:{fill:"#262932",stroke:"#a8aaad","stroke-width":1},"marker-notch":{fill:"#262932",stroke:"#262932"},"marker:hover":{fill:"#101115",stroke:"#666666","stroke-width":1},"marker-notch:hover":{fill:"#101115",stroke:"#101115"},"marker-line":{stroke:"#262932"},"marker-line:hover":{stroke:"#101115"},text:{fill:"#a8aaad"},"text:hover":{fill:"#FFFFFF"}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark-major":{stroke:"#D5CDBE","stroke-width":0.75},"tick-mark-minor":{stroke:"#D5CDBE","stroke-width":0.5},"label-major":{color:"#606060"},"label-minor":{color:"#606060"},"label-context":{color:"#000000"},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75}}},legend:{style:{text:{fill:"#33302E","font-size":12}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#66605C","font-family":"Titillium Web Regular"},"button-text:hover":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"button-text:active":{fill:"#33302E","font-family":"Titillium Web SemiBold"},separator:{stroke:"#D5CDBE","stroke-width":0.75}}},customRangeSelector:{style:{"title-text":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"title-icon":{fill:"#33302E","font-family":"Titillium Web SemiBold"},container:{"background-color":"#FFF1E5"},label:{color:"#33302E","font-family":"Titillium Web SemiBold"},input:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E","font-family":"Titillium Web Regular"},select:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E"},"button-apply":{color:"#FFFFFF","background-color":"#33302E",border:"none"},"button-cancel":{color:"#33302E","background-color":"#FFF1E5",border:"none"},"button-apply:hover":{"font-family":"Titillium Web SemiBold"},"button-cancel:hover":{"font-family":"Titillium Web SemiBold"},"cal-header":{"background-color":"#000000","font-family":"Titillium Web Regular"},"cal-navprev":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-navnext":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-weekend":{"background-color":"#00000040"},"cal-days":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date:hover":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate:hover":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-selecteddate":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular"}}}}}}};/* harmony default export */ const umber = ({extension:themeObject,name:"umberTheme",type:"theme"});
+timeseries:{chart:{baseFont:"Titillium Web Regular",style:{text:{"font-family":"Titillium Web Regular"},background:{fill:"#FFF1E5"},canvas:{fill:"#FFF1E5",stroke:"#D5CDBE","stroke-width":0.75}}},tooltip:{style:{container:{"background-color":"#FFF9F5",opacity:0.9,border:"0.5px solid #D5CDBE","border-radius":"3px",padding:"6px"},text:{"font-size":"11px",color:"#606060"},header:{"font-family":"Titillium Web SemiBold","font-size":"12px",color:"#33302E",padding:"0px"},body:{padding:"0px"}}},navigator:{scrollbar:{style:{button:{fill:"#D5CDBE"},track:{fill:"#F2E5D9"},scroller:{fill:"#D5CDBE"}}},window:{style:{handle:{fill:"#D5CDBE"},mask:{opacity:0.5,stroke:"#D5CDBE","stroke-width":0.75}}}},crossline:{style:{line:{stroke:"#D5CDBE","stroke-width":1}}},caption:{style:{text:{"font-size":16,"font-family":"Titillium Web SemiBold",fill:"#000000"}}},subcaption:{style:{text:{"font-size":12,"font-family":"Titillium Web Regular",fill:"#66605C"}}},plotconfig:{column:{style:{"plot:hover":{opacity:0.85},"plot:highlight":{opacity:0.85}}},line:{style:{plot:{"stroke-width":2}}},candlestick:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}},ohlc:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}}},yaxis:[{referenceline:[{style:{marker:{fill:"#33302E",stroke:"#33302E","stroke-width":1.5}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark":{stroke:"#D5CDBE","stroke-width":0.75},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75},label:{color:"#606060"}}}],xaxis:{timemarker:[{style:{marker:{fill:"#262932",stroke:"#a8aaad","stroke-width":1},"marker-notch":{fill:"#262932",stroke:"#262932"},"marker:hover":{fill:"#101115",stroke:"#666666","stroke-width":1},"marker-notch:hover":{fill:"#101115",stroke:"#101115"},"marker-line":{stroke:"#262932"},"marker-line:hover":{stroke:"#101115"},text:{fill:"#a8aaad"},"text:hover":{fill:"#FFFFFF"}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark-major":{stroke:"#D5CDBE","stroke-width":0.75},"tick-mark-minor":{stroke:"#D5CDBE","stroke-width":0.5},"label-major":{color:"#606060"},"label-minor":{color:"#606060"},"label-context":{color:"#000000"},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75}}},legend:{style:{text:{fill:"#33302E","font-size":12}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#66605C","font-family":"Titillium Web Regular"},"button-text:hover":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"button-text:active":{fill:"#33302E","font-family":"Titillium Web SemiBold"},separator:{stroke:"#D5CDBE","stroke-width":0.75}}},customRangeSelector:{style:{"title-text":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"title-icon":{fill:"#33302E","font-family":"Titillium Web SemiBold"},container:{"background-color":"#FFF1E5"},label:{color:"#33302E","font-family":"Titillium Web SemiBold"},input:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E","font-family":"Titillium Web Regular"},select:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E"},"button-apply":{color:"#FFFFFF","background-color":"#33302E",border:"none"},"button-cancel":{color:"#33302E","background-color":"#FFF1E5",border:"none"},"button-apply:hover":{"font-family":"Titillium Web SemiBold"},"button-cancel:hover":{"font-family":"Titillium Web SemiBold"},"cal-header":{"background-color":"#000000","font-family":"Titillium Web Regular"},"cal-navprev":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-navnext":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-weekend":{"background-color":"#00000040"},"cal-days":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date:hover":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate:hover":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-selecteddate":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular"}}}}}}};/* harmony default export */ var umber = ({extension:themeObject,name:"umberTheme",type:"theme"});
 ;// ./develop/wrappers/fusioncharts.theme.umber.js
 FusionCharts.addDep(umber);
-})();
-
+}();
 /******/ })()
 ;
 }));
