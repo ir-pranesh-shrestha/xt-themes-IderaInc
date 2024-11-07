@@ -115,13 +115,13 @@ module.exports = [
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'es'),
-    module: true, // Set module to true to output ES modules
-    libraryTarget: 'module', // Use the "module" format to support ES modules
+    module: true, 
+    libraryTarget: 'module',
   },
   devServer: debServerConfig,
   module: moduleConfig,
   experiments: {
-    outputModule: true, // Enable ES module output (WebPack 5)
+    outputModule: true, 
   },
   plugins: getPlugins(true),
   optimization: {
