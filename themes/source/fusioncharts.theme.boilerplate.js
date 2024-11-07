@@ -6,7 +6,7 @@
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 
 ;// ./develop/src/boilerplate/index.js
