@@ -114,7 +114,7 @@ module.exports = [
   entry: entryObject,
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'themes/es')
+    path: path.resolve(__dirname, 'es')
   },
   devServer: debServerConfig,
   module: moduleConfig,
