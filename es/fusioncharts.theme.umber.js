@@ -6,8 +6,7 @@
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-/******/ (function() { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+/******/ var __webpack_modules__ = ({
 
 /***/ 660:
 /***/ (function(module) {
@@ -119,7 +118,6 @@ function toComment(sourceMap) {
 /***/ 72:
 /***/ (function(module) {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -210,7 +208,6 @@ module.exports = function (list, options) {
 /***/ 540:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -227,7 +224,6 @@ module.exports = insertStyleElement;
 /***/ 56:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -244,7 +240,6 @@ module.exports = setAttributesWithoutAttributes;
 /***/ 825:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -312,7 +307,6 @@ module.exports = domAPI;
 /***/ 113:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -330,72 +324,69 @@ module.exports = styleTagTransform;
 
 /***/ })
 
-/******/ 	});
+/******/ });
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
 /******/ 	}
-/******/ 	
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		id: moduleId,
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
+/******/ /* webpack/runtime/compat get default export */
+/******/ !function() {
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function() { return module['default']; } :
+/******/ 			function() { return module; };
+/******/ 		__webpack_require__.d(getter, { a: getter });
+/******/ 		return getter;
+/******/ 	};
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/define property getters */
+/******/ !function() {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = function(exports, definition) {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	!function() {
-/******/ 		__webpack_require__.nc = undefined;
-/******/ 	}();
-/******/ 	
+/******/ 		}
+/******/ 	};
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ !function() {
+/******/ 	__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/nonce */
+/******/ !function() {
+/******/ 	__webpack_require__.nc = undefined;
+/******/ }();
+/******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-!function() {
-"use strict";
 
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(72);
@@ -585,7 +576,5 @@ msstackedbar2d:{chart:{drawCrossLine:1}},// timeseries
 timeseries:{chart:{baseFont:"Titillium Web Regular",style:{text:{"font-family":"Titillium Web Regular"},background:{fill:"#FFF1E5"},canvas:{fill:"#FFF1E5",stroke:"#D5CDBE","stroke-width":0.75}}},tooltip:{style:{container:{"background-color":"#FFF9F5",opacity:0.9,border:"0.5px solid #D5CDBE","border-radius":"3px",padding:"6px"},text:{"font-size":"11px",color:"#606060"},header:{"font-family":"Titillium Web SemiBold","font-size":"12px",color:"#33302E",padding:"0px"},body:{padding:"0px"}}},navigator:{scrollbar:{style:{button:{fill:"#D5CDBE"},track:{fill:"#F2E5D9"},scroller:{fill:"#D5CDBE"}}},window:{style:{handle:{fill:"#D5CDBE"},mask:{opacity:0.5,stroke:"#D5CDBE","stroke-width":0.75}}}},crossline:{style:{line:{stroke:"#D5CDBE","stroke-width":1}}},caption:{style:{text:{"font-size":16,"font-family":"Titillium Web SemiBold",fill:"#000000"}}},subcaption:{style:{text:{"font-size":12,"font-family":"Titillium Web Regular",fill:"#66605C"}}},plotconfig:{column:{style:{"plot:hover":{opacity:0.85},"plot:highlight":{opacity:0.85}}},line:{style:{plot:{"stroke-width":2}}},candlestick:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}},ohlc:{style:{bear:{stroke:"#B5323E",fill:"#B5323E"},"bear:hover":{opacity:0.85},"bear:highlight":{opacity:0.85},bull:{stroke:"#606060",fill:"#FFF9F5"},"bull:hover":{opacity:0.85},"bull:highlight":{opacity:0.85}}}},yaxis:[{referenceline:[{style:{marker:{fill:"#33302E",stroke:"#33302E","stroke-width":1.5}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark":{stroke:"#D5CDBE","stroke-width":0.75},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75},label:{color:"#606060"}}}],xaxis:{timemarker:[{style:{marker:{fill:"#262932",stroke:"#a8aaad","stroke-width":1},"marker-notch":{fill:"#262932",stroke:"#262932"},"marker:hover":{fill:"#101115",stroke:"#666666","stroke-width":1},"marker-notch:hover":{fill:"#101115",stroke:"#101115"},"marker-line":{stroke:"#262932"},"marker-line:hover":{stroke:"#101115"},text:{fill:"#a8aaad"},"text:hover":{fill:"#FFFFFF"}}}],style:{title:{"font-size":12,fill:"#33302E"},"tick-mark-major":{stroke:"#D5CDBE","stroke-width":0.75},"tick-mark-minor":{stroke:"#D5CDBE","stroke-width":0.5},"label-major":{color:"#606060"},"label-minor":{color:"#606060"},"label-context":{color:"#000000"},"grid-line":{stroke:"#D5CDBE","stroke-width":0.75}}},legend:{style:{text:{fill:"#33302E","font-size":12}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#66605C","font-family":"Titillium Web Regular"},"button-text:hover":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"button-text:active":{fill:"#33302E","font-family":"Titillium Web SemiBold"},separator:{stroke:"#D5CDBE","stroke-width":0.75}}},customRangeSelector:{style:{"title-text":{fill:"#33302E","font-family":"Titillium Web SemiBold"},"title-icon":{fill:"#33302E","font-family":"Titillium Web SemiBold"},container:{"background-color":"#FFF1E5"},label:{color:"#33302E","font-family":"Titillium Web SemiBold"},input:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E","font-family":"Titillium Web Regular"},select:{"background-color":"#FFF9F5",border:"0.5px solid #D5CDBE","border-radius":"3px",color:"#33302E"},"button-apply":{color:"#FFFFFF","background-color":"#33302E",border:"none"},"button-cancel":{color:"#33302E","background-color":"#FFF1E5",border:"none"},"button-apply:hover":{"font-family":"Titillium Web SemiBold"},"button-cancel:hover":{"font-family":"Titillium Web SemiBold"},"cal-header":{"background-color":"#000000","font-family":"Titillium Web Regular"},"cal-navprev":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-navnext":{"font-family":"Titillium Web Regular","font-size":"12px"},"cal-weekend":{"background-color":"#00000040"},"cal-days":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date":{"background-color":"#fff1e5",color:"#33302e","font-family":"Titillium Web Regular",border:"none"},"cal-date:hover":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-disableddate:hover":{"background-color":"#fff1e5",color:"#33302e80","font-family":"Titillium Web Regular",border:"none"},"cal-selecteddate":{"background-color":"#000000",color:"#ffffff","font-family":"Titillium Web Regular"}}}}}}};/* harmony default export */ var umber = ({extension:themeObject,name:"umberTheme",type:"theme"});
 ;// ./develop/wrappers/fusioncharts.theme.umber.js
 FusionCharts.addDep(umber);
-}();
-/******/ })()
-;
+
 }));

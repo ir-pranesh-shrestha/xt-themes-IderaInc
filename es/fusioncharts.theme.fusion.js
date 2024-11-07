@@ -6,8 +6,7 @@
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-/******/ (function() { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+/******/ var __webpack_modules__ = ({
 
 /***/ 660:
 /***/ (function(module) {
@@ -119,7 +118,6 @@ function toComment(sourceMap) {
 /***/ 72:
 /***/ (function(module) {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -210,7 +208,6 @@ module.exports = function (list, options) {
 /***/ 540:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -227,7 +224,6 @@ module.exports = insertStyleElement;
 /***/ 56:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -244,7 +240,6 @@ module.exports = setAttributesWithoutAttributes;
 /***/ 825:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -312,7 +307,6 @@ module.exports = domAPI;
 /***/ 113:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -330,72 +324,69 @@ module.exports = styleTagTransform;
 
 /***/ })
 
-/******/ 	});
+/******/ });
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
 /******/ 	}
-/******/ 	
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		id: moduleId,
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
+/******/ /* webpack/runtime/compat get default export */
+/******/ !function() {
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function() { return module['default']; } :
+/******/ 			function() { return module; };
+/******/ 		__webpack_require__.d(getter, { a: getter });
+/******/ 		return getter;
+/******/ 	};
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/define property getters */
+/******/ !function() {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = function(exports, definition) {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	!function() {
-/******/ 		__webpack_require__.nc = undefined;
-/******/ 	}();
-/******/ 	
+/******/ 		}
+/******/ 	};
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ !function() {
+/******/ 	__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/nonce */
+/******/ !function() {
+/******/ 	__webpack_require__.nc = undefined;
+/******/ }();
+/******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-!function() {
-"use strict";
 
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(72);
@@ -575,7 +566,5 @@ caption:{style:{text:{"font-size":18,"font-family":"Source Sans Pro SemiBold",fi
 subcaption:{style:{text:{"font-family":"Source Sans Pro","font-size":13,fill:"#999999"}}},crossline:{style:{line:{stroke:"#DFDFDF","stroke-width":1}}},chart:{paletteColors:"#5D62B5, #29C3BE, #F2726F, #FFC533, #62B58F, #BC95DF, #67CDF2",baseFont:"Source Sans Pro",multiCanvasTooltip:1,style:{text:{"font-family":"Source Sans Pro"},canvas:{stroke:"#DFDFDF","stroke-width":1}}},tooltip:{style:{container:{"background-color":"#FFFFFF",opacity:0.9,border:"1px solid #E1E1E1","border-radius":"2px",padding:"6px"},text:{"font-size":"13px",color:"#5A5A5A"},header:{color:"#5A5A5A","font-family":"Source Sans Pro SemiBold",padding:"0px"},body:{padding:"0px"}}},navigator:{scrollbar:{style:{button:{fill:"#EBEBEB"},track:{fill:"#FFFFFF",stroke:"#DFDFDF","stroke-width":1},scroller:{fill:"#EBEBEB"}}},window:{style:{handle:{fill:"#EBEBEB"}}}},extensions:{customRangeSelector:{style:{"title-text":{"font-family":"Source Sans Pro SemiBold"},"title-icon":{"font-family":"Source Sans Pro SemiBold"},label:{color:"#999999","font-family":"Source Sans Pro SemiBold"},"button-apply":{color:"#FFFFFF","background-color":"#5648D4",border:"none"},"button-apply:hover":{"font-family":"Source Sans Pro SemiBold"},"button-cancel":{color:"#999999","background-color":"#FFFFFF",border:"none"},"button-cancel:hover":{color:"#5648D4","font-family":"Source Sans Pro SemiBold"},"cal-selecteddate":{color:"#FEFEFE","font-family":"Source Sans Pro SemiBold","font-size":"11px"},"cal-date":{color:"#5F5F5F","font-family":"Source Sans Pro","font-size":"11px"},"cal-disableddate":{color:"#CACACA","font-family":"Source Sans Pro","font-size":"11px"}}},standardRangeSelector:{style:{"button-text":{fill:"#999999"},"button-text:hover":{fill:"#5648D4","font-family":"Source Sans Pro SemiBold"},"button-text:active":{fill:"#5648D4","font-family":"Source Sans Pro SemiBold"},separator:{stroke:"#DFDFDF"}}}},legend:{style:{text:{fill:"#7C7C7C","font-size":15,"font-family":"Source Sans Pro"}}},xaxis:{timemarker:[{style:{marker:{fill:"#62b58f",stroke:"#62b58f"},"marker:hover":{fill:"#3e8464",stroke:"#3e8464","stroke-width":1},"marker-box":{fill:"#F8B8B7",stroke:"#F8B8B7","stroke-width":1},"marker-box:hover":{fill:"#F2726F",stroke:"#F2726F","stroke-width":1},"marker-notch":{fill:"#F8B8B7",stroke:"#F8B8B7"},"marker-notch:hover":{fill:"#F2726F",stroke:"#F2726F"},"marker-line":{stroke:"#F8B8B7"},"marker-line:hover":{stroke:"#F2726F"},text:{fill:"#5F5F5F"},"text:hover":{fill:"#5F5F5F"}}}],style:{title:{"font-size":15,"font-family":"Source Sans Pro",fill:"#999999"},"grid-line":{stroke:"#DFDFDF","stroke-width":1},"tick-mark-major":{stroke:"#DFDFDF","stroke-width":1},"tick-mark-minor":{stroke:"#DFDFDF","stroke-width":0.75},"label-major":{color:"#5A5A5A"},"label-minor":{color:"#8D8D8D"},"label-context":{color:"#5A5A5A"}}},plotconfig:{column:{style:{"plot:hover":{opacity:0.75},"plot:highlight":{opacity:0.75}}},line:{style:{plot:{"stroke-width":1.5},anchor:{"stroke-width":0}}},area:{style:{anchor:{"stroke-width":0}}},candlestick:{style:{bear:{stroke:"#F2726F",fill:"#F2726F"},"bear:hover":{opacity:0.75},"bear:highlight":{opacity:0.75},bull:{stroke:"#62B58F",fill:"#62B58F"},"bull:hover":{opacity:0.75},"bull:highlight":{opacity:0.75}}},ohlc:{style:{bear:{stroke:"#F2726F",fill:"#F2726F"},"bear:hover":{opacity:0.75},"bear:highlight":{opacity:0.75},bull:{stroke:"#62B58F",fill:"#62B58F"},"bull:hover":{opacity:0.75},"bull:highlight":{opacity:0.75}}}},yaxis:[{style:{title:{"font-size":"15","font-family":"Source Sans Pro",fill:"#999999"},"tick-mark":{stroke:"#DFDFDF","stroke-width":1},"grid-line":{stroke:"#DFDFDF","stroke-width":1},label:{color:"#5A5A5A"}}}]}}};/* harmony default export */ var fusion = ({extension:themeObject,name:"fusionTheme",type:"theme"});
 ;// ./develop/wrappers/fusioncharts.theme.fusion.js
 FusionCharts.addDep(fusion);
-}();
-/******/ })()
-;
+
 }));

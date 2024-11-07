@@ -6,8 +6,7 @@
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-/******/ (function() { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+/******/ var __webpack_modules__ = ({
 
 /***/ 660:
 /***/ (function(module) {
@@ -119,7 +118,6 @@ function toComment(sourceMap) {
 /***/ 72:
 /***/ (function(module) {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -210,7 +208,6 @@ module.exports = function (list, options) {
 /***/ 540:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -227,7 +224,6 @@ module.exports = insertStyleElement;
 /***/ 56:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -244,7 +240,6 @@ module.exports = setAttributesWithoutAttributes;
 /***/ 825:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -312,7 +307,6 @@ module.exports = domAPI;
 /***/ 113:
 /***/ (function(module) {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -330,72 +324,69 @@ module.exports = styleTagTransform;
 
 /***/ })
 
-/******/ 	});
+/******/ });
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
 /******/ 	}
-/******/ 	
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		id: moduleId,
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
+/******/ /* webpack/runtime/compat get default export */
+/******/ !function() {
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function() { return module['default']; } :
+/******/ 			function() { return module; };
+/******/ 		__webpack_require__.d(getter, { a: getter });
+/******/ 		return getter;
+/******/ 	};
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/define property getters */
+/******/ !function() {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = function(exports, definition) {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	!function() {
-/******/ 		__webpack_require__.nc = undefined;
-/******/ 	}();
-/******/ 	
+/******/ 		}
+/******/ 	};
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ !function() {
+/******/ 	__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/nonce */
+/******/ !function() {
+/******/ 	__webpack_require__.nc = undefined;
+/******/ }();
+/******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-!function() {
-"use strict";
 
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(72);
@@ -479,7 +470,5 @@ waterfall2d:{chart:{positiveColor:"#F0E442",negativeColor:"#D55E00"}},// timeser
 timeseries:{chart:{paletteColors:"#5D62B5, #009E73, #F0E442, #56B4E9, #D55E00, #E69F00, #56B4E9",baseFont:"Source Sans Pro",multiCanvasTooltip:1,style:{text:{"font-family":"Source Sans Pro","font-size":"14px",fill:"#545454"},canvas:{stroke:"#545454","stroke-width":1}}},caption:{style:{text:{"font-size":"24px","font-family":"Source Sans Pro Semi-Bold",fill:"#000000"}}},subcaption:{style:{text:{"font-size":"20px","font-family":"Source Sans Pro",fill:"#545454","font-weight":400}}},crossline:{style:{line:{stroke:"#545454","stroke-width":1,opacity:0.5}}},tooltip:{style:{container:{"background-color":"#FFFFFF",opacity:1,border:"1px solid #545454","border-radius":"0px",padding:"6px"},text:{"font-size":"14px",color:"#545454"},header:{color:"#000000","font-family":"Source Sans Pro","font-size":"16px",padding:"0px"},body:{padding:"0px"}}},legend:{style:{text:{fill:"#545454","font-size":"16px","font-family":"Source Sans Pro"}}},navigator:{text:{style:{fill:"#ff0000"}},scrollbar:{style:{button:{fill:"rgba(84, 84, 84, 0.2)"},track:{fill:"#ededed"},scroller:{fill:"rgba(84, 84, 84, 0.2)"}}},window:{style:{handle:{fill:"rgba(84, 84, 84, 0.2)"},mask:{opacity:1,stroke:"#rgba(84, 84, 84, 0.2)","stroke-width":1}}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#545454","font-family":"Source Sans Pro","font-size":"16px"},"button-text:hover":{fill:"#000000","font-family":"Source Sans Pro","font-size":"16px"},"button-text:active":{fill:"#000000","font-family":"Source Sans Pro","font-size":"16px"},separator:{stroke:"#545454"}}},customRangeSelector:{style:{"title-text":{"font-family":"Source Sans Pro","font-size":"16px",fill:"#ff0000"},"title-icon":{"font-family":"Source Sans Pro","font-size":"16px",fill:"#000000"},label:{color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},input:{"background-color":"#fcfcfc",color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},"button-apply":{color:"#FFFFFF","background-color":"#5D62B5",border:"none","font-family":"Source Sans Pro","font-size":"16px"},"button-cancel":{color:"#545454","background-color":"#ffffff",border:"none","font-family":"Source Sans Pro","font-size":"16px"},"button-cancel:hover":{color:"#000000"},"cal-header":{"background-color":"#5D62B5","font-family":"Source Sans Pro","font-size":"16px"},"cal-navprev":{"font-family":"Source Sans Pro","font-size":"16px"},"cal-navnext":{"font-family":"Source Sans Pro","font-size":"16px"},"cal-weekend":{"background-color":"#e2e3f2"},"cal-days":{color:"#000000","font-family":"Source Sans Pro","font-size":"14px"},"cal-date":{color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},"cal-date:hover":{"background-color":"#5D62B5",color:"#FFFFFF","font-family":"Source Sans Pro",border:"none"},"cal-selecteddate":{"background-color":"#5D62B5",color:"#FFFFFF","font-family":"Source Sans Pro",border:"none"},"cal-disableddate":{color:"rgba(84, 84, 84, 0.5)","font-family":"Source Sans Pro"}}}},xaxis:{style:{title:{"font-size":16,"font-family":"Source Sans Pro",fill:"#000000"},"grid-line":{stroke:"#545454","stroke-width":1},"tick-mark-major":{stroke:"#545454","stroke-width":1},"tick-mark-minor":{stroke:"#545454","stroke-width":0.75},"label-major":{color:"#545454","font-size":14,"font-family":"Source Sans Pro"},"label-minor":{color:"#545454","font-size":14,opacity:0.75,"font-family":"Source Sans Pro"},"label-context":{color:"#545454","font-size":14,"font-family":"Source Sans Pro"}}},yaxis:[{style:{title:{"font-size":"16","font-family":"Source Sans Pro",fill:"#000000"},"tick-mark":{stroke:"#545454","stroke-width":1},"grid-line":{stroke:"#545454","stroke-width":1},label:{color:"#545454","font-size":14,"font-family":"Source Sans Pro"}},plot:[{value:"Downloads",type:"column"},{value:"Web Visits",type:"line"}]}]}}};/* harmony default export */ var accessibility = ({extension:themeObject,name:"accessibilityTheme",type:"theme"});
 ;// ./develop/wrappers/fusioncharts.theme.accessibility.js
 FusionCharts.addDep(accessibility);
-}();
-/******/ })()
-;
+
 }));
