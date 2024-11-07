@@ -16,39 +16,43 @@ let moduleWrapperHeader = `
 `,
   moduleWrapperFooter = `
 }));
-`;
+`,
 
-let debServerConfig = {
+  debServerConfig = {
     contentBase: path.join(__dirname, 'sample'),
     watchContentBase: true
   },
   moduleConfig = {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
-    }, {
-      test:/\.css$/,
-      use:[ 
+    rules: [
       {
-        loader: "style-loader",
-        options: {
-          insert: require.resolve("./insert-function"),
-        },
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       },
-      'css-loader'
-      ]
-    }]
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              insert: require.resolve('./insert-function')
+            }
+          },
+          'css-loader'
+        ]
+      }
+    ]
   };
 
-
 function getPlugins (isSource) {
-  var plugins = [new WrapperPlugin({
-    test: /\.js$/,
-    header: moduleWrapperHeader,
-    footer: moduleWrapperFooter
-  })];
-  if (!isSource){
+  var plugins = [
+    new WrapperPlugin({
+      test: /\.js$/,
+      header: moduleWrapperHeader,
+      footer: moduleWrapperFooter
+    })
+  ];
+  if (!isSource) {
     plugins.push(
       new TerserPlugin({
         parallel: true,
@@ -64,17 +68,15 @@ function getPlugins (isSource) {
             comments: /(?:^!|@(?:license|preserve|cc_on)|copyright)/i
           }
         },
-        extractComments: false,
+        extractComments: false
       })
     );
   }
   return plugins;
 }
 
-function getEntryObject(){
-  var themeFiles = fs
-    .readdirSync(path.resolve(__dirname, BASE_PATH))
-    .filter(file => file.match(/.*\.js$/));
+function getEntryObject () {
+  var themeFiles = fs.readdirSync(path.resolve(__dirname, BASE_PATH)).filter((file) => file.match(/.*\.js$/));
 
   let entryObj = themeFiles.reduce((entryObj, themeFile) => {
     entryObj[themeFile.replace(/.js$/, '')] = './' + path.join(BASE_PATH, themeFile);
@@ -86,41 +88,41 @@ function getEntryObject(){
 let entryObject = getEntryObject();
 
 module.exports = [
-{
-  entry: entryObject,
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'themes/min')
+  {
+    entry: entryObject,
+    output: {
+      filename: '[name].js',
+      path: path.resolve(__dirname, 'themes/min')
+    },
+    devServer: debServerConfig,
+    module: moduleConfig,
+    devtool: 'source-map',
+    plugins: getPlugins(false)
   },
-  devServer: debServerConfig,
-  module: moduleConfig,
-  devtool: 'source-map',
-  plugins: getPlugins(false),
-},
-{
-  entry: entryObject,
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'themes/source')
+  {
+    entry: entryObject,
+    output: {
+      filename: '[name].js',
+      path: path.resolve(__dirname, 'themes/source')
+    },
+    devServer: debServerConfig,
+    module: moduleConfig,
+    plugins: getPlugins(true),
+    optimization: {
+      minimize: false
+    }
   },
-  devServer: debServerConfig,
-  module: moduleConfig,
-  plugins: getPlugins(true),
-  optimization: {
-    minimize: false
+  {
+    entry: entryObject,
+    output: {
+      filename: '[name].js',
+      path: path.resolve(__dirname, 'es')
+    },
+    devServer: debServerConfig,
+    module: moduleConfig,
+    plugins: getPlugins(true),
+    optimization: {
+      minimize: false
+    }
   }
-},
-{
-  entry: entryObject,
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'es')
-  },
-  devServer: debServerConfig,
-  module: moduleConfig,
-  plugins: getPlugins(true),
-  optimization: {
-    minimize: false
-  }
-},
 ];

@@ -1,7 +1,0 @@
-/** !
- * @license Carbon Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
- * FusionCharts JavaScript Library
- *
- * Copyright FusionCharts, Inc.
- * License Information at <http://www.fusioncharts.com/license>
- */
