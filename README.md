@@ -4,14 +4,15 @@ This is the themes repository for FusionCharts.
 
 ## List of themes
 
-- fusion
-- candy
-- gammel
-- umber
-- carbon
-- fint
-- ocean
-- zune
+ - fusion
+ - candy
+ - gammel
+ - umber
+ - carbon
+ - fint
+ - ocean
+ - zune
+ - accessibility
 
 ## Repository organization
 
@@ -76,6 +77,6 @@ npm test
 npm run-script release
 ```
 
-- The release script will make changes to the `themes` folder. Commit the changes to those modified files.
-- Close the release branch as per Git Flow methods and tag on the master branch with `1.0.0`.
-- Enjoy!
+ - The release script will make changes to the `themes` folder. Commit the changes to those modified files.
+ - Close the release branch as per Git Flow methods and tag on the master branch with `1.0.0`.
+ - Enjoy!
