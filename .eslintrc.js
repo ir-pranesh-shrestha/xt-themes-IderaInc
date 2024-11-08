@@ -94,6 +94,5 @@ module.exports = {
     'no-shadow': ['error', { allow: ['err', 'error'] }],
     semi: ['error', 'always'],
     indent: ['error', 2, { SwitchCase: 1 }],
-    'one-var': ['error', { initialized: 'always', uninitialized: 'always' }]
   }
 };

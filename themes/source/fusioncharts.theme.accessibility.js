@@ -6,11 +6,11 @@
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 660:
-/***/ (function(module) {
+/***/ ((module) => {
 
 function insertAtTop(element){var parent=document.querySelector('head');// eslint-disable-next-line no-underscore-dangle
 const metaTag=document.querySelector(`meta[http-equiv="Content-Security-Policy"]`);if(metaTag){const content=metaTag.getAttribute('content');if(content){const match=content.match(/'nonce-([^']+)'/);if(match){element.setAttribute('nonce',match[1])}}}var lastInsertedElement=window._lastElementInsertedByStyleLoader;if(!lastInsertedElement){parent.insertBefore(element,parent.firstChild)}else if(lastInsertedElement.nextSibling){parent.insertBefore(element,lastInsertedElement.nextSibling)}else{parent.appendChild(element)}// eslint-disable-next-line no-underscore-dangle
@@ -19,7 +19,7 @@ window._lastElementInsertedByStyleLoader=element}module.exports=insertAtTop;
 /***/ }),
 
 /***/ 759:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((module, exports, __webpack_require__) => {
 
 exports = module.exports = __webpack_require__(765)(false);
 // imports
@@ -34,7 +34,7 @@ exports.push([module.id, "@font-face {\n  font-family: \"Source Sans Pro\";\n  f
 /***/ }),
 
 /***/ 765:
-/***/ (function(module) {
+/***/ ((module) => {
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -117,7 +117,7 @@ function toComment(sourceMap) {
 /***/ }),
 
 /***/ 72:
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -208,7 +208,7 @@ module.exports = function (list, options) {
 /***/ }),
 
 /***/ 540:
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -225,7 +225,7 @@ module.exports = insertStyleElement;
 /***/ }),
 
 /***/ 56:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -242,7 +242,7 @@ module.exports = setAttributesWithoutAttributes;
 /***/ }),
 
 /***/ 825:
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -310,7 +310,7 @@ module.exports = domAPI;
 /***/ }),
 
 /***/ 113:
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -358,43 +358,43 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
+/******/ 		__webpack_require__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 		__webpack_require__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-!function() {
+(() => {
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
@@ -443,7 +443,7 @@ var update = injectStylesIntoStyleTag_default()((fusioncharts_theme_accessibilit
 
 
 
-       /* harmony default export */ var accessibility_fusioncharts_theme_accessibility = ((fusioncharts_theme_accessibility_default()) && (fusioncharts_theme_accessibility_default()).locals ? (fusioncharts_theme_accessibility_default()).locals : undefined);
+       /* harmony default export */ const accessibility_fusioncharts_theme_accessibility = ((fusioncharts_theme_accessibility_default()) && (fusioncharts_theme_accessibility_default()).locals ? (fusioncharts_theme_accessibility_default()).locals : undefined);
 
 ;// ./develop/src/accessibility/index.js
 /*
@@ -476,10 +476,10 @@ dragline:{categories:[{category:[{fontItalic:"1"}]}]},// drag-able Area 2D Chart
 dragarea:{categories:[{category:[{fontItalic:"1"}]}]},// radar Chart
 radar:{chart:{anchorRadius:4,anchorBgColor:"inherit",anchorBgAlpha:60,anchorBorderAlpha:60,plotFillAlpha:60,legendIconSides:1}},// Waterfall / Cascade Chart
 waterfall2d:{chart:{positiveColor:"#F0E442",negativeColor:"#D55E00"}},// timeseries
-timeseries:{chart:{paletteColors:"#5D62B5, #009E73, #F0E442, #56B4E9, #D55E00, #E69F00, #56B4E9",baseFont:"Source Sans Pro",multiCanvasTooltip:1,style:{text:{"font-family":"Source Sans Pro","font-size":"14px",fill:"#545454"},canvas:{stroke:"#545454","stroke-width":1}}},caption:{style:{text:{"font-size":"24px","font-family":"Source Sans Pro Semi-Bold",fill:"#000000"}}},subcaption:{style:{text:{"font-size":"20px","font-family":"Source Sans Pro",fill:"#545454","font-weight":400}}},crossline:{style:{line:{stroke:"#545454","stroke-width":1,opacity:0.5}}},tooltip:{style:{container:{"background-color":"#FFFFFF",opacity:1,border:"1px solid #545454","border-radius":"0px",padding:"6px"},text:{"font-size":"14px",color:"#545454"},header:{color:"#000000","font-family":"Source Sans Pro","font-size":"16px",padding:"0px"},body:{padding:"0px"}}},legend:{style:{text:{fill:"#545454","font-size":"16px","font-family":"Source Sans Pro"}}},navigator:{text:{style:{fill:"#ff0000"}},scrollbar:{style:{button:{fill:"rgba(84, 84, 84, 0.2)"},track:{fill:"#ededed"},scroller:{fill:"rgba(84, 84, 84, 0.2)"}}},window:{style:{handle:{fill:"rgba(84, 84, 84, 0.2)"},mask:{opacity:1,stroke:"#rgba(84, 84, 84, 0.2)","stroke-width":1}}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#545454","font-family":"Source Sans Pro","font-size":"16px"},"button-text:hover":{fill:"#000000","font-family":"Source Sans Pro","font-size":"16px"},"button-text:active":{fill:"#000000","font-family":"Source Sans Pro","font-size":"16px"},separator:{stroke:"#545454"}}},customRangeSelector:{style:{"title-text":{"font-family":"Source Sans Pro","font-size":"16px",fill:"#ff0000"},"title-icon":{"font-family":"Source Sans Pro","font-size":"16px",fill:"#000000"},label:{color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},input:{"background-color":"#fcfcfc",color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},"button-apply":{color:"#FFFFFF","background-color":"#5D62B5",border:"none","font-family":"Source Sans Pro","font-size":"16px"},"button-cancel":{color:"#545454","background-color":"#ffffff",border:"none","font-family":"Source Sans Pro","font-size":"16px"},"button-cancel:hover":{color:"#000000"},"cal-header":{"background-color":"#5D62B5","font-family":"Source Sans Pro","font-size":"16px"},"cal-navprev":{"font-family":"Source Sans Pro","font-size":"16px"},"cal-navnext":{"font-family":"Source Sans Pro","font-size":"16px"},"cal-weekend":{"background-color":"#e2e3f2"},"cal-days":{color:"#000000","font-family":"Source Sans Pro","font-size":"14px"},"cal-date":{color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},"cal-date:hover":{"background-color":"#5D62B5",color:"#FFFFFF","font-family":"Source Sans Pro",border:"none"},"cal-selecteddate":{"background-color":"#5D62B5",color:"#FFFFFF","font-family":"Source Sans Pro",border:"none"},"cal-disableddate":{color:"rgba(84, 84, 84, 0.5)","font-family":"Source Sans Pro"}}}},xaxis:{style:{title:{"font-size":16,"font-family":"Source Sans Pro",fill:"#000000"},"grid-line":{stroke:"#545454","stroke-width":1},"tick-mark-major":{stroke:"#545454","stroke-width":1},"tick-mark-minor":{stroke:"#545454","stroke-width":0.75},"label-major":{color:"#545454","font-size":14,"font-family":"Source Sans Pro"},"label-minor":{color:"#545454","font-size":14,opacity:0.75,"font-family":"Source Sans Pro"},"label-context":{color:"#545454","font-size":14,"font-family":"Source Sans Pro"}}},yaxis:[{style:{title:{"font-size":"16","font-family":"Source Sans Pro",fill:"#000000"},"tick-mark":{stroke:"#545454","stroke-width":1},"grid-line":{stroke:"#545454","stroke-width":1},label:{color:"#545454","font-size":14,"font-family":"Source Sans Pro"}},plot:[{value:"Downloads",type:"column"},{value:"Web Visits",type:"line"}]}]}}};/* harmony default export */ var accessibility = ({extension:themeObject,name:"accessibilityTheme",type:"theme"});
+timeseries:{chart:{paletteColors:"#5D62B5, #009E73, #F0E442, #56B4E9, #D55E00, #E69F00, #56B4E9",baseFont:"Source Sans Pro",multiCanvasTooltip:1,style:{text:{"font-family":"Source Sans Pro","font-size":"14px",fill:"#545454"},canvas:{stroke:"#545454","stroke-width":1}}},caption:{style:{text:{"font-size":"24px","font-family":"Source Sans Pro Semi-Bold",fill:"#000000"}}},subcaption:{style:{text:{"font-size":"20px","font-family":"Source Sans Pro",fill:"#545454","font-weight":400}}},crossline:{style:{line:{stroke:"#545454","stroke-width":1,opacity:0.5}}},tooltip:{style:{container:{"background-color":"#FFFFFF",opacity:1,border:"1px solid #545454","border-radius":"0px",padding:"6px"},text:{"font-size":"14px",color:"#545454"},header:{color:"#000000","font-family":"Source Sans Pro","font-size":"16px",padding:"0px"},body:{padding:"0px"}}},legend:{style:{text:{fill:"#545454","font-size":"16px","font-family":"Source Sans Pro"}}},navigator:{text:{style:{fill:"#ff0000"}},scrollbar:{style:{button:{fill:"rgba(84, 84, 84, 0.2)"},track:{fill:"#ededed"},scroller:{fill:"rgba(84, 84, 84, 0.2)"}}},window:{style:{handle:{fill:"rgba(84, 84, 84, 0.2)"},mask:{opacity:1,stroke:"#rgba(84, 84, 84, 0.2)","stroke-width":1}}}},extensions:{standardRangeSelector:{style:{"button-text":{fill:"#545454","font-family":"Source Sans Pro","font-size":"16px"},"button-text:hover":{fill:"#000000","font-family":"Source Sans Pro","font-size":"16px"},"button-text:active":{fill:"#000000","font-family":"Source Sans Pro","font-size":"16px"},separator:{stroke:"#545454"}}},customRangeSelector:{style:{"title-text":{"font-family":"Source Sans Pro","font-size":"16px",fill:"#ff0000"},"title-icon":{"font-family":"Source Sans Pro","font-size":"16px",fill:"#000000"},label:{color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},input:{"background-color":"#fcfcfc",color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},"button-apply":{color:"#FFFFFF","background-color":"#5D62B5",border:"none","font-family":"Source Sans Pro","font-size":"16px"},"button-cancel":{color:"#545454","background-color":"#ffffff",border:"none","font-family":"Source Sans Pro","font-size":"16px"},"button-cancel:hover":{color:"#000000"},"cal-header":{"background-color":"#5D62B5","font-family":"Source Sans Pro","font-size":"16px"},"cal-navprev":{"font-family":"Source Sans Pro","font-size":"16px"},"cal-navnext":{"font-family":"Source Sans Pro","font-size":"16px"},"cal-weekend":{"background-color":"#e2e3f2"},"cal-days":{color:"#000000","font-family":"Source Sans Pro","font-size":"14px"},"cal-date":{color:"#545454","font-family":"Source Sans Pro","font-size":"14px"},"cal-date:hover":{"background-color":"#5D62B5",color:"#FFFFFF","font-family":"Source Sans Pro",border:"none"},"cal-selecteddate":{"background-color":"#5D62B5",color:"#FFFFFF","font-family":"Source Sans Pro",border:"none"},"cal-disableddate":{color:"rgba(84, 84, 84, 0.5)","font-family":"Source Sans Pro"}}}},xaxis:{style:{title:{"font-size":16,"font-family":"Source Sans Pro",fill:"#000000"},"grid-line":{stroke:"#545454","stroke-width":1},"tick-mark-major":{stroke:"#545454","stroke-width":1},"tick-mark-minor":{stroke:"#545454","stroke-width":0.75},"label-major":{color:"#545454","font-size":14,"font-family":"Source Sans Pro"},"label-minor":{color:"#545454","font-size":14,opacity:0.75,"font-family":"Source Sans Pro"},"label-context":{color:"#545454","font-size":14,"font-family":"Source Sans Pro"}}},yaxis:[{style:{title:{"font-size":"16","font-family":"Source Sans Pro",fill:"#000000"},"tick-mark":{stroke:"#545454","stroke-width":1},"grid-line":{stroke:"#545454","stroke-width":1},label:{color:"#545454","font-size":14,"font-family":"Source Sans Pro"}},plot:[{value:"Downloads",type:"column"},{value:"Web Visits",type:"line"}]}]}}};/* harmony default export */ const accessibility = ({extension:themeObject,name:"accessibilityTheme",type:"theme"});
 ;// ./develop/wrappers/fusioncharts.theme.accessibility.js
 FusionCharts.addDep(accessibility);
-}();
+})();
+
 /******/ })()
-;
-}));
+;}));
