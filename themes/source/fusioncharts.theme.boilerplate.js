@@ -25,5 +25,4 @@ boilerplateBasic={extension:themeArray[0],name:'boilerplateBasicTheme',type:'the
 ;// ./develop/wrappers/fusioncharts.theme.boilerplate.js
 FusionCharts.addDep(boilerplateBasic);FusionCharts.addDep(boilerplateExtended);
 /******/ })()
-;
-}));
+;}));

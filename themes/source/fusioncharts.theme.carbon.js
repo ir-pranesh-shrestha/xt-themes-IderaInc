@@ -20,5 +20,4 @@
 ;// ./develop/wrappers/fusioncharts.theme.carbon.js
 FusionCharts.addDep(carbon);
 /******/ })()
-;
-}));
+;}));

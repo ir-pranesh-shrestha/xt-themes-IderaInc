@@ -588,5 +588,4 @@ FusionCharts.addDep(umber);
 })();
 
 /******/ })()
-;
-}));
+;}));

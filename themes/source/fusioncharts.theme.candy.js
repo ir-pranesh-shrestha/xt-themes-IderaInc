@@ -580,5 +580,4 @@ FusionCharts.addDep(candy);
 })();
 
 /******/ })()
-;
-}));
+;}));

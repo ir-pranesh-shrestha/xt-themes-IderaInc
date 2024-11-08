@@ -20,5 +20,4 @@
 ;// ./develop/wrappers/fusioncharts.theme.zune.js
 FusionCharts.addDep(zune);
 /******/ })()
-;
-}));
+;}));

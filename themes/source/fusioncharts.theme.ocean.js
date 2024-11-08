@@ -20,5 +20,4 @@
 ;// ./develop/wrappers/fusioncharts.theme.ocean.js
 FusionCharts.addDep(ocean);
 /******/ })()
-;
-}));
+;}));
