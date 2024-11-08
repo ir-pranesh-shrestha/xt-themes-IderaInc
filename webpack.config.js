@@ -5,8 +5,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 const fs = require('fs-extra');
 const BASE_PATH = './develop/wrappers';
 
-let moduleWrapperFooter = '}));';
-let moduleWrapperHeader = `
+const moduleWrapperFooter = '}));';
+const moduleWrapperHeader = `
 (function (factory) {
   if (typeof module === 'object' && typeof module.exports !== "undefined") {
       module.exports = factory;
@@ -16,11 +16,11 @@ let moduleWrapperHeader = `
 }(function (FusionCharts) {
 `;
 
-let debServerConfig = {
+const debServerConfig = {
   contentBase: path.join(__dirname, 'sample'),
   watchContentBase: true
 };
-let moduleConfig = {
+const moduleConfig = {
   rules: [
     {
       test: /\.js$/,
@@ -42,18 +42,16 @@ let moduleConfig = {
   ]
 };
 
-function getPlugins (isSource, isUMD) {
-  var plugins = [];
+function getPlugins (isSource) {
+  let plugins = [];
 
-  if (isUMD) {
-    plugins.push(
-      new WrapperPlugin({
-        test: /\.js$/,
-        header: moduleWrapperHeader,
-        footer: moduleWrapperFooter
-      })
-    );
-  }
+  plugins.push(
+    new WrapperPlugin({
+      test: /\.js$/,
+      header: moduleWrapperHeader,
+      footer: moduleWrapperFooter
+    })
+  );
 
   if (!isSource) {
     plugins.push(
@@ -79,13 +77,11 @@ function getPlugins (isSource, isUMD) {
 }
 
 function getEntryObject () {
-  var themeFiles = fs.readdirSync(path.resolve(__dirname, BASE_PATH)).filter((file) => file.match(/.*\.js$/));
-
-  let entryObj = themeFiles.reduce((entryObj, themeFile) => {
+  let themeFiles = fs.readdirSync(path.resolve(__dirname, BASE_PATH)).filter((file) => file.match(/.*\.js$/));
+  return themeFiles.reduce((entryObj, themeFile) => {
     entryObj[themeFile.replace(/.js$/, '')] = './' + path.join(BASE_PATH, themeFile);
     return entryObj;
   }, {});
-  return entryObj;
 }
 
 let entryObject = getEntryObject();
@@ -100,7 +96,7 @@ module.exports = [
     devServer: debServerConfig,
     module: moduleConfig,
     devtool: 'source-map',
-    plugins: getPlugins(false, true)
+    plugins: getPlugins(false)
   },
   {
     entry: entryObject,
@@ -110,7 +106,7 @@ module.exports = [
     },
     devServer: debServerConfig,
     module: moduleConfig,
-    plugins: getPlugins(true, true),
+    plugins: getPlugins(true),
     optimization: {
       minimize: false
     }
@@ -128,6 +124,7 @@ module.exports = [
     experiments: {
       outputModule: true
     },
+    // plugins not needed. umd wrapper not needed for esm.
     // plugins: getPlugins(true, false),
     optimization: {
       minimize: false

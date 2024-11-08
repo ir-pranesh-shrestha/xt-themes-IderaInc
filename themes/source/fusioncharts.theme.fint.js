@@ -20,5 +20,4 @@
 ;// ./develop/wrappers/fusioncharts.theme.fint.js
 FusionCharts.addDep(fint);
 /******/ })()
-;
-}));
+;}));

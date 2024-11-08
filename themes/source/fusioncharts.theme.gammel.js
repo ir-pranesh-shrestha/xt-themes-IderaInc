@@ -141,5 +141,4 @@ subcaption:{style:{text:{"font-family":"Lucida Grande, Lucida Sans Unicode, Aria
 ;// ./develop/wrappers/fusioncharts.theme.gammel.js
 FusionCharts.addDep(gammel);
 /******/ })()
-;
-}));
+;}));

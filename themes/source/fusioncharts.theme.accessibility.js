@@ -482,5 +482,4 @@ FusionCharts.addDep(accessibility);
 })();
 
 /******/ })()
-;
-}));
+;}));
