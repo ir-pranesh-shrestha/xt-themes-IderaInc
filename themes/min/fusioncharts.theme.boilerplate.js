@@ -1,4 +1,4 @@
-(function(factory){if(typeof module==="object"&&typeof module.exports!=="undefined"){module.exports=factory}else{factory(FusionCharts)}})((function(FusionCharts){(function(){"use strict";
+(function(factory){if(typeof module==="object"&&typeof module.exports!=="undefined"){module.exports=factory}else{factory(FusionCharts)}})((function(FusionCharts){(()=>{"use strict";
 /** !
  * @license Boilerplate Theme v//? write(JSON.parse(require('fs').readFileSync('./package.json')).version);
  * FusionCharts JavaScript Library

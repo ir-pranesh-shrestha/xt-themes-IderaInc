@@ -1,11 +1,3 @@
-
-(function (factory) {
-  if (typeof module === 'object' && typeof module.exports !== "undefined") {
-      module.exports = factory;
-  } else {
-      factory(FusionCharts);
-  }
-}(function (FusionCharts) {
 var __webpack_exports__ = {};
 
 ;// ./develop/src/boilerplate/index.js
@@ -23,5 +15,3 @@ var __webpack_exports__ = {};
 boilerplateBasic={extension:themeArray[0],name:'boilerplateBasicTheme',type:'theme'},boilerplateExtended={extension:themeArray[1],name:'boilerplateExtendedTheme',type:'theme'};
 ;// ./develop/wrappers/fusioncharts.theme.boilerplate.js
 FusionCharts.addDep(boilerplateBasic);FusionCharts.addDep(boilerplateExtended);
-
-}));

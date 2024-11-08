@@ -1,10 +1,11 @@
-const path = require('path'),
-  webpack = require('webpack'),
-  WrapperPlugin = require('wrapper-webpack-plugin'),
-  TerserPlugin = require('terser-webpack-plugin'),
-  fs = require('fs-extra'),
-  BASE_PATH = './develop/wrappers';
+const path = require('path');
+const webpack = require('webpack');
+const WrapperPlugin = require('wrapper-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const fs = require('fs-extra');
+const BASE_PATH = './develop/wrappers';
 
+let moduleWrapperFooter = '}));';
 let moduleWrapperHeader = `
 (function (factory) {
   if (typeof module === 'object' && typeof module.exports !== "undefined") {
@@ -13,42 +14,48 @@ let moduleWrapperHeader = `
       factory(FusionCharts);
   }
 }(function (FusionCharts) {
-`,
-  moduleWrapperFooter = `
-}));
 `;
 
 let debServerConfig = {
-    contentBase: path.join(__dirname, 'sample'),
-    watchContentBase: true
-  },
-  moduleConfig = {
-    rules: [{
+  contentBase: path.join(__dirname, 'sample'),
+  watchContentBase: true
+};
+let moduleConfig = {
+  rules: [
+    {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
-    }, {
-      test:/\.css$/,
-      use:[ 
-      {
-        loader: "style-loader",
-        options: {
-          insert: require.resolve("./insert-function"),
+    },
+    {
+      test: /\.css$/,
+      use: [
+        {
+          loader: 'style-loader',
+          options: {
+            insert: require.resolve('./insert-function')
+          }
         },
-      },
-      'css-loader'
+        'css-loader'
       ]
-    }]
-  };
+    }
+  ]
+};
 
+function getPlugins (isSource, isUMD) {
+  var plugins = [];
 
-function getPlugins (isSource) {
-  var plugins = [new WrapperPlugin({
-    test: /\.js$/,
-    header: moduleWrapperHeader,
-    footer: moduleWrapperFooter
-  })];
-  if (!isSource){
+  if (isUMD) {
+    plugins.push(
+      new WrapperPlugin({
+        test: /\.js$/,
+        header: moduleWrapperHeader,
+        footer: moduleWrapperFooter
+      })
+    );
+  }
+
+  if (!isSource) {
     plugins.push(
       new TerserPlugin({
         parallel: true,
@@ -64,17 +71,15 @@ function getPlugins (isSource) {
             comments: /(?:^!|@(?:license|preserve|cc_on)|copyright)/i
           }
         },
-        extractComments: false,
+        extractComments: false
       })
     );
   }
   return plugins;
 }
 
-function getEntryObject(){
-  var themeFiles = fs
-    .readdirSync(path.resolve(__dirname, BASE_PATH))
-    .filter(file => file.match(/.*\.js$/));
+function getEntryObject () {
+  var themeFiles = fs.readdirSync(path.resolve(__dirname, BASE_PATH)).filter((file) => file.match(/.*\.js$/));
 
   let entryObj = themeFiles.reduce((entryObj, themeFile) => {
     entryObj[themeFile.replace(/.js$/, '')] = './' + path.join(BASE_PATH, themeFile);
@@ -86,46 +91,46 @@ function getEntryObject(){
 let entryObject = getEntryObject();
 
 module.exports = [
-{
-  entry: entryObject,
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'themes/min')
+  {
+    entry: entryObject,
+    output: {
+      filename: '[name].js',
+      path: path.resolve(__dirname, 'themes/min')
+    },
+    devServer: debServerConfig,
+    module: moduleConfig,
+    devtool: 'source-map',
+    plugins: getPlugins(false, true)
   },
-  devServer: debServerConfig,
-  module: moduleConfig,
-  devtool: 'source-map',
-  plugins: getPlugins(false),
-},
-{
-  entry: entryObject,
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'themes/source')
+  {
+    entry: entryObject,
+    output: {
+      filename: '[name].js',
+      path: path.resolve(__dirname, 'themes/source')
+    },
+    devServer: debServerConfig,
+    module: moduleConfig,
+    plugins: getPlugins(true, true),
+    optimization: {
+      minimize: false
+    }
   },
-  devServer: debServerConfig,
-  module: moduleConfig,
-  plugins: getPlugins(true),
-  optimization: {
-    minimize: false
+  {
+    entry: entryObject,
+    output: {
+      filename: '[name].js',
+      path: path.resolve(__dirname, 'es'),
+      module: true,
+      libraryTarget: 'module'
+    },
+    devServer: debServerConfig,
+    module: moduleConfig,
+    experiments: {
+      outputModule: true
+    },
+    // plugins: getPlugins(true, false),
+    optimization: {
+      minimize: false
+    }
   }
-},
-{
-  entry: entryObject,
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'es'),
-    module: true, 
-    libraryTarget: 'module',
-  },
-  devServer: debServerConfig,
-  module: moduleConfig,
-  experiments: {
-    outputModule: true, 
-  },
-  plugins: getPlugins(true),
-  optimization: {
-    minimize: false
-  }
-},
 ];
