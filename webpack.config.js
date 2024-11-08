@@ -125,7 +125,7 @@ module.exports = [
       outputModule: true
     },
     // plugins not needed. umd wrapper not needed for esm.
-    // plugins: getPlugins(true, false),
+    // plugins: getPlugins(true, false)
     optimization: {
       minimize: false
     }
