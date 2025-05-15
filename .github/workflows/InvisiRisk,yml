@@ -1,1 +1,59 @@
+name:  IderaInc x InvisiRisk 
 
+on:
+  schedule:
+    - cron: '45 2 * * *'  # Runs daily at 8:30 AM Nepal Time
+  workflow_dispatch:
+
+permissions:
+  checks: write
+  contents: write
+  packages: read
+  actions: write
+
+jobs:
+  sync-and-build:
+    runs-on: ubuntu-latest
+    name: Sync fork and Run build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up Git
+        run: |
+         git config user.name "ir-pranesh-shrestha"
+          git config user.email "pranesh.shrestha@invisirisk.com"
+          
+      - name: Add upstream and sync fork
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
+        run: |
+          git remote add upstream https://github.com/IderaInc/xt-themes.git
+          git fetch upstream
+          git checkout master
+          git merge upstream/master --no-edit
+          git push https://x-access-token:${GITHUB_TOKEN}@https://github.com/ir-pranesh-shrestha/xt-themes-IderaInc master
+          
+      - name: Setup PSE
+        uses: invisirisk/pse-action@latest
+        with:
+          api_url: "https://app.invisirisk.com"
+          app_token: ${{ secrets.IR_API_KEY_PROD }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install 
+
+      - name: Cleanup PSE
+        if: always()
+        uses: invisirisk/pse-action@latest
+        with:
+          cleanup: "true"
