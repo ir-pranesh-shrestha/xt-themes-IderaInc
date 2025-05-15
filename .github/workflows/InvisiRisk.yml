@@ -36,7 +36,7 @@ jobs:
           git fetch upstream
           git checkout master
           git merge upstream/master --no-edit
-          git push https://x-access-token:${GITHUB_TOKEN}@https://github.com/ir-pranesh-shrestha/xt-themes-IderaInc master
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/ir-pranesh-shrestha/xt-themes-IderaInc master
           
       - name: Setup PSE
         uses: invisirisk/pse-action@latest
