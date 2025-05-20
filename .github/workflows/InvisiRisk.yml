@@ -2,7 +2,7 @@ name:  IderaInc x InvisiRisk
 
 on:
   schedule:
-    - cron: '45 2 * * *'  # Runs daily at 8:30 AM Nepal Time
+    - cron: '45 3 * * *'  # Runs daily at 8:30 AM Nepal Time
   workflow_dispatch:
 
 permissions:
